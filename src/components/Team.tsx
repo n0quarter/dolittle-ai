@@ -1,0 +1,84 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
+const Team = () => {
+  const teamMembers = [
+    {
+      name: "Andreas Reichert",
+      role: "Gründer & Geschäftsführer",
+      experience: "5 Jahre Erfahrung im Aufbau und Beratung digitaler Geschäftsmodelle & Produkte für Konzerne wie MAN, Knorr Bremse, Audi Business Innovation GmbH",
+      highlights: [
+        "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Audi Business Innovation und mantro GmbH",
+        "Gründung von DocDolittle, KI-Telefonassistenten für Arztpraxen"
+      ],
+      expertise: ["Digitale Geschäftsmodelle", "Strategieberatung", "Unternehmensgründung", "KI für Healthcare"]
+    },
+    {
+      name: "Viktor Shcherban",
+      role: "Gründer, CTO & Softwareentwickler seit 2006",
+      experience: "5 Firmen gegründet. 4 davon noch operativ und eines (Timberbase) wurde von einer NASDAQ gelisteten U.S. Firma akquiriert",
+      highlights: [
+        "Seit 2,5 Jahren Durchführung von KI Beratungsprojekten & Appentwicklung",
+        "Erfolgreiche Exit-Erfahrung mit Timberbase"
+      ],
+      expertise: ["Softwareentwicklung", "KI-Implementierung", "Unternehmensgründung", "Tech Leadership"]
+    }
+  ];
+
+  return (
+    <section id="team" className="py-20 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Unser <span className="bg-gradient-primary bg-clip-text text-transparent">Gründerteam</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Langjährige Erfahrung in der Entwicklung und Implementierung digitaler Lösungen für den Mittelstand.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {teamMembers.map((member, index) => (
+            <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">{member.name}</h3>
+                  <p className="text-primary font-semibold text-lg">{member.role}</p>
+                </div>
+
+                <div className="mb-6">
+                  <p className="text-muted-foreground leading-relaxed">{member.experience}</p>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="font-semibold text-foreground mb-3">Highlights:</h4>
+                  <ul className="space-y-2">
+                    {member.highlights.map((highlight, highlightIndex) => (
+                      <li key={highlightIndex} className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground text-sm leading-relaxed">{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3">Expertise:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {member.expertise.map((skill, skillIndex) => (
+                      <Badge key={skillIndex} variant="secondary" className="text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Team;
