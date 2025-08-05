@@ -1,11 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import viktorPhoto from "@/assets/viktor-photo.png";
+import andreasPhoto from "@/assets/andreas-photo.png";
 
 const Team = () => {
   const teamMembers = [
     {
       name: "Andreas Reichert",
       role: "Gründer & Geschäftsführer",
+      photo: andreasPhoto,
       experience: "5 Jahre Erfahrung im Aufbau und Beratung digitaler Geschäftsmodelle & Produkte für Konzerne wie MAN, Knorr Bremse, Audi Business Innovation GmbH",
       highlights: [
         "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Audi Business Innovation und mantro GmbH",
@@ -16,6 +19,7 @@ const Team = () => {
     {
       name: "Viktor Shcherban",
       role: "Gründer, CTO & Softwareentwickler seit 2006",
+      photo: viktorPhoto,
       experience: "5 Firmen gegründet. 4 davon noch operativ und eines (Timberbase) wurde von einer NASDAQ gelisteten U.S. Firma akquiriert",
       highlights: [
         "Seit 2,5 Jahren Durchführung von KI Beratungsprojekten & Appentwicklung",
@@ -41,9 +45,18 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300">
               <CardContent className="p-8">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{member.name}</h3>
-                  <p className="text-primary font-semibold text-lg">{member.role}</p>
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src={member.photo} 
+                      alt={`${member.name} - ${member.role}`}
+                      className="w-24 h-24 rounded-full object-cover shadow-medium"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">{member.name}</h3>
+                    <p className="text-primary font-semibold text-lg">{member.role}</p>
+                  </div>
                 </div>
 
                 <div className="mb-6">
