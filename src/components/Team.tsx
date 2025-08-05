@@ -1,14 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import viktorPhoto from "@/assets/viktor-photo.png";
-import andreasPhoto from "@/assets/andreas-photo.png";
 
 const Team = () => {
   const teamMembers = [
     {
       name: "Andreas Reichert",
       role: "Gründer & Geschäftsführer",
-      photo: andreasPhoto,
+      photo: "/lovable-uploads/6298ffd0-3385-493f-85de-d3ab57902dc9.png",
       experience: "5 Jahre Erfahrung im Aufbau und Beratung digitaler Geschäftsmodelle & Produkte für Konzerne wie MAN, Knorr Bremse, Audi Business Innovation GmbH",
       highlights: [
         "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Audi Business Innovation und mantro GmbH",
@@ -19,7 +17,7 @@ const Team = () => {
     {
       name: "Viktor Shcherban",
       role: "Gründer, CTO & Softwareentwickler seit 2006",
-      photo: viktorPhoto,
+      photo: "/lovable-uploads/e1b4c386-8c58-42ec-b26b-8a19ef8466f7.png",
       experience: "5 Firmen gegründet. 4 davon noch operativ und eines (Timberbase) wurde von einer NASDAQ gelisteten U.S. Firma akquiriert",
       highlights: [
         "Seit 2,5 Jahren Durchführung von KI Beratungsprojekten & Appentwicklung",
