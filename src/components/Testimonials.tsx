@@ -1,0 +1,65 @@
+import { Card, CardContent } from "@/components/ui/card";
+
+const Testimonials = () => {
+  const testimonials = [
+    {
+      name: "Jens Naie",
+      title: "CTO, Doodle AG",
+      image: "https://ai.asdcode.com/jens.png",
+      text: "Viktor's generative AI workshop was a resounding success! He skillfully brought our team, with varying levels of experience, to a shared understanding, addressing common AI anxieties with clarity and practical advice. The insights he provided on effective AI usage, and its limitations, were invaluable. The hands-on coding exercises with Cursor, coupled with his demonstration of TDD automated with AI, were incredibly impactful. He empowered us to see AI not as a threat, but as a powerful tool to enhance our development workflow. We left feeling inspired and equipped to integrate generative AI into our projects. Highly recommended!"
+    },
+    {
+      name: "Tim Yevgrashyn",
+      title: "CTO, Stepico",
+      image: "https://ai.asdcode.com/tim.png",
+      text: "The practical focus of this workshop was a game-changer for our development team. Instead of just discussing AI tools, our engineers actually learned how to implement them effectively in their day-to-day coding. The hands-on exercises and real-world applications delivered solid value that we're already seeing in our productivity metrics."
+    }
+  ];
+
+  return (
+    <section id="testimonials" className="py-20 bg-muted/30">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Was <span className="bg-gradient-primary bg-clip-text text-transparent">Kunden sagen</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Erfahrungen von Führungskräften, die bereits erfolgreich KI in ihren Unternehmen implementiert haben.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 bg-card">
+              <CardContent className="p-8">
+                <div className="flex items-start gap-6 mb-6">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src={testimonial.image} 
+                      alt={`${testimonial.name} - ${testimonial.title}`}
+                      className="w-16 h-16 rounded-full object-cover shadow-medium"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-1">{testimonial.name}</h3>
+                    <p className="text-primary font-semibold text-sm">{testimonial.title}</p>
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <div className="text-4xl text-primary/20 absolute -top-2 -left-2">"</div>
+                  <blockquote className="text-muted-foreground leading-relaxed pl-6">
+                    {testimonial.text}
+                  </blockquote>
+                  <div className="text-4xl text-primary/20 absolute -bottom-2 right-0 rotate-180">"</div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;
