@@ -21,7 +21,7 @@ const Team = () => {
       experience: "5 Firmen gegründet. 4 davon noch operativ und eines (Timberbase) wurde von einer NASDAQ gelisteten U.S. Firma akquiriert",
       highlights: [
         "Seit 2,5 Jahren Durchführung von KI Beratungsprojekten & Appentwicklung",
-        "Erfolgreiche Exit-Erfahrung mit Timberbase"
+        "Erfolgreicher Exit mit Timberbase (akquiriert von NASDAQ gelisteter U.S. Firma)"
       ],
       expertise: ["Softwareentwicklung", "KI-Implementierung", "Unternehmensgründung", "Tech Leadership"]
     }
