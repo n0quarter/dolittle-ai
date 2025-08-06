@@ -20,8 +20,8 @@ const Benefits = () => {
     },
     {
       icon: Target,
-      title: "Mittelstand-fokussiert",
-      description: "Speziell entwickelte Lösungen für mittelständische Unternehmen mit pragmatischen, kosteneffizienten Ansätzen."
+      title: "Unternehmensfokussiert",
+      description: "Speziell entwickelte Lösungen für Unternehmen mit pragmatischen, kosteneffizienten Ansätzen."
     }
   ];
 

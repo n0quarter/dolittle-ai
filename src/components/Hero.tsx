@@ -15,8 +15,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-          KI-Strategien für den
-          <span className="bg-gradient-primary bg-clip-text text-transparent"> Mittelstand</span>
+          <span className="bg-gradient-primary bg-clip-text text-transparent">KI-Lösungen für Ihr Unternehmen</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">

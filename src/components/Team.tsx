@@ -35,7 +35,7 @@ const Team = () => {
             Unser <span className="bg-gradient-primary bg-clip-text text-transparent">Gründerteam</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Langjährige Erfahrung in der Entwicklung und Implementierung digitaler Lösungen für den Mittelstand.
+            Langjährige Erfahrung in der Entwicklung und Implementierung digitaler Lösungen für Unternehmen.
           </p>
         </div>
 

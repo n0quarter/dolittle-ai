@@ -6,7 +6,7 @@ const Services = () => {
     {
       icon: Brain,
       title: "KI-Strategieberatung",
-      description: "Entwicklung maßgeschneiderter KI-Strategien für mittelständische Unternehmen. Wir analysieren Ihre Prozesse und identifizieren KI-Potentiale.",
+      description: "Entwicklung maßgeschneiderter KI-Lösungen für Ihr Unternehmen. Wir analysieren Ihre Prozesse und identifizieren KI-Potentiale.",
       features: ["Prozessanalyse", "ROI-Bewertung", "Roadmap-Entwicklung", "Technologie-Auswahl"]
     },
     {

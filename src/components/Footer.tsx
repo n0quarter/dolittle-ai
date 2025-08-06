@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-xl font-bold">Dolittle AI Consulting</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Ihr Partner für DSGVO-konforme KI-Lösungen im Mittelstand. 
+              Ihr Partner für DSGVO-konforme KI-Lösungen für Ihr Unternehmen. 
               Von der Strategieentwicklung bis zur Implementierung.
             </p>
             <div className="text-gray-300">
