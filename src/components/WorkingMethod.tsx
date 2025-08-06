@@ -79,7 +79,7 @@ const WorkingMethod = () => {
               <CardContent className="p-6">
                 <div className="flex items-center justify-center mb-4">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-primary rounded-full">
-                    <span className="text-white font-bold text-lg">Phase {phase.phase}</span>
+                    <span className="text-white font-bold text-lg">{phase.phase}</span>
                   </div>
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-3">{phase.title}</h4>
