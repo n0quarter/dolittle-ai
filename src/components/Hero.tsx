@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">4</div>
-            <div className="text-muted-foreground">Erfolgreiche Unternehmen</div>
+            <div className="text-muted-foreground">5 erfolgreiche Unternehmensgründungen</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">100%</div>
