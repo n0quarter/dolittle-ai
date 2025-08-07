@@ -44,7 +44,7 @@ const ExampleProjects = () => {
       icon: MessageSquare,
       title: "AskSchmidt",
       description: "KI-gestützter Telegram Bot zur Übersetzung deutscher Behördenbriefe",
-      image: "/lovable-uploads/b8a3c4a6-2eeb-4c70-a950-0434500f5f3e.png",
+      image: "/lovable-uploads/9eb10ba1-a237-4bc1-b9a0-382b8b20f746.png",
       features: [
         "Fotografieren und Senden von Behördenbriefen per Telegram",
         "Automatische Übersetzung und Verständlichmachung",
