@@ -1,15 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ai-consulting.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
       </div>
       
       {/* Content */}
@@ -39,12 +35,12 @@ const Hero = () => {
             <div className="text-muted-foreground">Jahre KI-Erfahrung</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">4</div>
-            <div className="text-muted-foreground">5 erfolgreiche Unternehmensgründungen</div>
+            <div className="text-4xl font-bold text-primary mb-2">5</div>
+            <div className="text-muted-foreground">erfolgreiche Unternehmensgründungen</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">&gt;30</div>
-            <div className="text-muted-foreground">Digitalprojekte</div>
+            <div className="text-4xl font-bold text-primary mb-2">>50</div>
+            <div className="text-muted-foreground">Digitalprojekte umgesetzt</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">100%</div>
@@ -52,8 +48,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
