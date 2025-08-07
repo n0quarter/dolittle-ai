@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="text-muted-foreground">erfolgreiche Unternehmensgründungen</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">>50</div>
+            <div className="text-4xl font-bold text-primary mb-2">{'>'}50</div>
             <div className="text-muted-foreground">Digitalprojekte umgesetzt</div>
           </div>
           <div className="text-center">
