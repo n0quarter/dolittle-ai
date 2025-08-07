@@ -87,17 +87,16 @@ const ExampleProjects = () => {
             <div className="flex">
               {projects.map((project, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-4">
-                  <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/20 bg-card/50 backdrop-blur-sm h-full max-w-4xl mx-auto">
-                    <div className="md:flex">
+                  <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/20 bg-card/50 backdrop-blur-sm h-full max-w-5xl mx-auto">
+                    <div className="md:flex md:h-96">
                       {project.image && (
-                        <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden md:rounded-l-lg rounded-t-lg md:rounded-tr-none">
+                        <div className="md:w-1/2 relative h-64 md:h-full overflow-hidden md:rounded-l-lg rounded-t-lg md:rounded-tr-none">
                           <img 
                             src={project.image} 
                             alt={project.title}
-                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-contain bg-white group-hover:scale-105 transition-transform duration-300"
                             style={{ 
-                              objectPosition: index === 0 ? 'center 20%' : index === 1 ? 'center center' : 'center 15%',
-                              transform: index === 2 ? 'scale(1.2)' : index === 1 ? 'scale(1)' : 'scale(1.1)'
+                              padding: '20px'
                             }}
                           />
                         </div>
