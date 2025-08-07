@@ -96,8 +96,8 @@ const ExampleProjects = () => {
                             alt={project.title}
                             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                             style={{ 
-                              objectPosition: index === 0 ? 'center top' : index === 1 ? 'center center' : 'center top',
-                              transform: index === 2 ? 'scale(1.1)' : 'scale(1)'
+                              objectPosition: index === 0 ? 'center 20%' : index === 1 ? 'center 30%' : 'center 15%',
+                              transform: index === 2 ? 'scale(1.2)' : 'scale(1.1)'
                             }}
                           />
                         </div>
