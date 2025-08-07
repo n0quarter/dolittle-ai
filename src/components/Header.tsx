@@ -11,8 +11,8 @@ const Header = () => {
                 <span className="font-extrabold">D</span><span className="font-normal italic">AI</span>
               </span>
             </div>
-            <span className="text-xl font-bold text-foreground">
-              <span className="text-primary font-extrabold">D</span>olittle <span className="text-foreground">AI</span>
+            <span className="text-xl font-bold">
+              <span className="text-foreground">Dolittle</span> <span className="text-primary">AI</span>
             </span>
           </div>
           
