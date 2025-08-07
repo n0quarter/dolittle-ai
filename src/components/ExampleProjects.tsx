@@ -94,7 +94,11 @@ const ExampleProjects = () => {
                           <img 
                             src={project.image} 
                             alt={project.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                            style={{ 
+                              objectPosition: index === 0 ? 'center top' : index === 1 ? 'center center' : 'center top',
+                              transform: index === 2 ? 'scale(1.1)' : 'scale(1)'
+                            }}
                           />
                         </div>
                       )}
