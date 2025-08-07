@@ -17,8 +17,7 @@ const Footer = () => {
               Von der Strategieentwicklung bis zur Implementierung.
             </p>
             <div className="text-muted-foreground">
-              <p>E-Mail: info@dolittle-ai.de</p>
-              <p>Telefon: +49 (0) 123 456 789</p>
+              <p>E-Mail: andreas.reichert@dolittle-ai.de</p>
             </div>
           </div>
 
