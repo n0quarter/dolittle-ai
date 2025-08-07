@@ -7,9 +7,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-10 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs">DAA</span>
+              <span className="text-white font-bold text-xs">DA</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Dolittle AI Agency</span>
+            <span className="text-xl font-bold text-foreground">
+              <span className="text-primary font-extrabold">D</span>olittle <span className="text-foreground">AI</span>
+            </span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
