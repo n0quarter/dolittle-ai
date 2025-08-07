@@ -8,7 +8,7 @@ const WorkingMethod = () => {
   }, {
     icon: Target,
     title: "Lösungsmindset",
-    description: "Wir wollen die Probleme unserer Kunden lösen. Wir beraten nicht nur, wir setzen um."
+    description: "Wir wollen mit Ihnen funktionierende Lösungen schaffen und sie nicht mit Powerpoint beeindrucken."
   }];
   const phases = [{
     phase: "1",
