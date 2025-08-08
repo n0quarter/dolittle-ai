@@ -21,7 +21,7 @@ const Datenschutz = () => {
               <p className="mb-2">Verantwortlich für die Datenverarbeitung im Rahmen dieser Website ist:</p>
               <div className="ml-4">
                 <p className="font-semibold">DocDolittle GbR.</p>
-                <p>Pintschstr 16, 10249 Berlin.</p>
+                <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor.</p>
                 <p>docdolittle@email.de</p>
               </div>
             </section>
