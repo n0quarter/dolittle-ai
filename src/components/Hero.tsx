@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ai-consulting.jpg";
+import CountUp from "@/components/ui/count-up";
 const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background Image */}
@@ -31,19 +32,19 @@ const Hero = () => {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 max-w-5xl mx-auto">
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">5+</div>
+            <CountUp end={5} suffix="+" className="text-4xl font-bold text-primary mb-2" />
             <div className="text-muted-foreground">Jahre KI-Erfahrung</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">5</div>
+            <CountUp end={5} className="text-4xl font-bold text-primary mb-2" />
             <div className="text-muted-foreground">erfolgreiche Unternehmensgründungen</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">{'>'}50</div>
+            <CountUp end={50} prefix=">" className="text-4xl font-bold text-primary mb-2" />
             <div className="text-muted-foreground">Digitalprojekte umgesetzt</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">100%</div>
+            <CountUp end={100} suffix="%" className="text-4xl font-bold text-primary mb-2" />
             <div className="text-muted-foreground">DSGVO-konform</div>
           </div>
         </div>
