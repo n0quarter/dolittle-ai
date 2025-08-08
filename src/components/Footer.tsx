@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Dolittle AI Consulting. Alle Rechte vorbehalten.</p>
+          <p>&copy; 2025 Dolittle AI</p>
           <div className="flex justify-center space-x-6 mt-4">
             <a href="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</a>
             <a href="/impressum" className="hover:text-foreground transition-colors">Impressum</a>
