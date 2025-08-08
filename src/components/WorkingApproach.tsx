@@ -5,7 +5,7 @@ const WorkingApproach = () => {
   const methods = [{
     icon: CheckCircle,
     title: "Pragmatisch",
-    description: "Wir wollen mit Ihnen funktionierende Lösungen schaffen und sie nicht mit Powerpoint beeindrucken."
+    description: "Wir wollen mit Ihnen funktionierende Lösungen schaffen und sie nicht mit Powerpoint langweilen."
   }, {
     icon: Target,
     title: "Lösungsmindset",
