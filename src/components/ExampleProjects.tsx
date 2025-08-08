@@ -34,11 +34,10 @@ const ExampleProjects = () => {
       features: [
         "Automatische Anrufannahme und Terminvergabe",
         "Intelligente Klassifizierung von Patientenanfragen",
-        "Nahtlose Integration in Praxisverwaltungssysteme",
-        "Reduktion der Telefonwarteschleifen um 80%"
+        "SMS Service"
       ],
-      technologies: ["Speech-to-Text", "NLP", "Terminplanung", "FHIR Integration"],
-      results: "2 Minuten durchschnittliche Bearbeitungszeit pro Anruf"
+      technologies: ["Speech-to-Text", "NLP", "Terminplanung", "Conversational AI"],
+      results: "40% weniger Zeit am Telefon"
     },
     {
       icon: MessageSquare,
