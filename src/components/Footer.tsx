@@ -7,8 +7,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">D</span>
+              <div className="w-10 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">
+                  <span className="font-extrabold">D</span><span className="font-normal italic">AI</span>
+                </span>
               </div>
               <span className="text-xl font-bold">Dolittle AI Consulting</span>
             </div>
