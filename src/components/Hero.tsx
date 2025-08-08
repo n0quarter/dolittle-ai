@@ -21,7 +21,7 @@ const Hero = () => {
                 text="KI-Lösungen für mein Unternehmen"
                 speed={35}
                 startDelay={300}
-                className="text-2xl md:text-4xl bg-gradient-primary bg-clip-text text-transparent"
+                className="text-2xl md:text-4xl bg-gradient-primary bg-clip-text text-transparent whitespace-nowrap"
               />
             </div>
           </div>
