@@ -73,8 +73,8 @@ const ExampleProjects = () => {
     <section className="py-24 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            Erfolgreiche Beispielprojekte
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Erfolgreiche <span className="bg-gradient-primary bg-clip-text text-transparent">Beispielprojekte</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Einblicke in konkrete KI-Lösungen, die wir für unsere Kunden entwickelt haben und die messbare Erfolge erzielen.

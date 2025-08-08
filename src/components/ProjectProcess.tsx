@@ -23,9 +23,9 @@ const ProjectProcess = () => {
     <section id="project-process" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Unser <span className="bg-gradient-primary bg-clip-text text-transparent">Projektablauf</span>
-          </h3>
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             In 4 strukturierten Phasen von der Idee zur erfolgreichen KI-Implementierung
           </p>
