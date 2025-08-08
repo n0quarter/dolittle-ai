@@ -10,7 +10,7 @@ const Team = () => {
       experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Firmen, Geschäftsmodelle & Produkte für Konzerne und Mittelständler",
       highlights: [
         "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Konzernpartnern",
-        "Gründung von DocDolittle, KI-Telefonassistenten für Arztpraxen"
+        "Gründung DocDolittle, die smarte Inbox mit KI-Telefonassistenten für Ärzte"
       ],
       expertise: ["Digitale Geschäftsmodelle", "Strategieberatung", "Unternehmensgründung", "KI für Healthcare"]
     },
@@ -21,7 +21,7 @@ const Team = () => {
       experience: "5 Firmen gegründet. 4 davon noch operativ und eines (Timberbase) wurde von einer NASDAQ gelisteten U.S. Firma akquiriert",
       highlights: [
         "Seit 2,5 Jahren Durchführung von KI Beratungsprojekten & Appentwicklung",
-        "Erfolgreicher Exit mit Timberbase (akquiriert von NASDAQ gelisteter U.S. Firma)"
+        "Gründung DocDolittle, die smarte Inbox mit KI-Telefonassistenten für Ärzte"
       ],
       expertise: ["Softwareentwicklung", "KI-Implementierung", "Unternehmensgründung", "Tech Leadership"]
     }
