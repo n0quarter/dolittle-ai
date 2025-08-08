@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium">
               <Search className="h-5 w-5 text-muted-foreground" />
               <Typewriter
-                text="KI-Lösungen für Ihr Unternehmen"
+                text="KI-Lösungen für mein Unternehmen"
                 speed={35}
                 startDelay={300}
                 className="text-2xl md:text-4xl bg-gradient-primary bg-clip-text text-transparent"
