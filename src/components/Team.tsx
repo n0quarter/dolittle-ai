@@ -48,7 +48,7 @@ const Team = () => {
                     <img
                       src={member.photo}
                       alt={`${member.name} - ${member.role}`}
-                      className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover shadow-medium"
+                      className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover shadow-medium"
                       loading="lazy"
                       decoding="async"
                     />
