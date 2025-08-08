@@ -30,10 +30,10 @@ const ExampleProjects = () => {
       icon: Phone,
       title: "DocDolittle",
       description: "Der smarte KI Telefonassistent und smarter Inbox für Arztpraxen",
-      image: "/lovable-uploads/24273189-d3d8-48e2-b6f7-0d030022e9a2.png",
+      image: `${import.meta.env.BASE_URL}lovable-uploads/24273189-d3d8-48e2-b6f7-0d030022e9a2.png`,
       features: [
         "Automatische Anrufannahme und Terminvergabe",
-        "Intelligente Klassifizierung von Patientenanfragen", 
+        "Intelligente Klassifizierung von Patientenanfragen",
         "Nahtlose Integration in Praxisverwaltungssysteme",
         "Reduktion der Telefonwarteschleifen um 80%"
       ],
@@ -44,7 +44,7 @@ const ExampleProjects = () => {
       icon: MessageSquare,
       title: "AskSchmidt",
       description: "KI-gestützter Telegram Bot zur Übersetzung deutscher Behördenbriefe",
-      image: "/lovable-uploads/9eb10ba1-a237-4bc1-b9a0-382b8b20f746.png",
+      image: `${import.meta.env.BASE_URL}lovable-uploads/9eb10ba1-a237-4bc1-b9a0-382b8b20f746.png`,
       features: [
         "Fotografieren und Senden von Behördenbriefen per Telegram",
         "Automatische Übersetzung und Verständlichmachung",
@@ -58,7 +58,7 @@ const ExampleProjects = () => {
       icon: TrendingUp,
       title: "AI Agent Monitoring System",
       description: "Überwachung und Optimierung von KI-Agenten in Echtzeit",
-      image: "/lovable-uploads/a79aa940-f224-4ab4-be88-114725cad4d2.png",
+      image: `${import.meta.env.BASE_URL}lovable-uploads/a79aa940-f224-4ab4-be88-114725cad4d2.png`,
       features: [
         "Echtzeit-Monitoring aller KI-Agent Aktivitäten",
         "Performance-Metriken und Kosten-Tracking",
@@ -92,16 +92,16 @@ const ExampleProjects = () => {
                       {project.image && (
                         <div className="md:w-1/2 relative h-80 md:h-full overflow-hidden md:rounded-l-lg rounded-t-lg md:rounded-tr-none">
                           <img
-                            src={project.image} 
+                            src={project.image}
                             alt={project.title}
                             className="w-full h-full object-contain bg-white group-hover:scale-105 transition-transform duration-300"
-                            style={{ 
+                            style={{
                               padding: '20px'
                             }}
                           />
                         </div>
                       )}
-                      
+
                       <div className={`${project.image ? 'md:w-1/2' : 'w-full'} flex flex-col`}>
                         <CardHeader className="pb-4">
                           <div className="flex items-center gap-3 mb-4">
@@ -118,7 +118,7 @@ const ExampleProjects = () => {
                             {project.description}
                           </CardDescription>
                         </CardHeader>
-                        
+
                         <CardContent className="space-y-6 flex-1">
                           <div>
                             <h4 className="font-semibold mb-3 text-foreground">Kernfunktionen:</h4>

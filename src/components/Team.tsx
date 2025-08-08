@@ -6,7 +6,7 @@ const Team = () => {
     {
       name: "Andreas Reichert",
       role: "Gründer & Geschäftsführer",
-      photo: "/lovable-uploads/6298ffd0-3385-493f-85de-d3ab57902dc9.png",
+      photo: `${import.meta.env.BASE_URL}lovable-uploads/6298ffd0-3385-493f-85de-d3ab57902dc9.png`,
       experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Geschäftsmodelle & Produkte für Konzerne und Mittelständler",
       highlights: [
         "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Konzernpartnern",
@@ -17,7 +17,7 @@ const Team = () => {
     {
       name: "Viktor Shcherban",
       role: "Gründer, CTO & Softwareentwickler seit 2006",
-      photo: "/lovable-uploads/e1b4c386-8c58-42ec-b26b-8a19ef8466f7.png",
+      photo: `${import.meta.env.BASE_URL}lovable-uploads/e1b4c386-8c58-42ec-b26b-8a19ef8466f7.png`,
       experience: "5 Firmen gegründet. 4 davon noch operativ und eines (Timberbase) wurde von einer NASDAQ gelisteten U.S. Firma akquiriert",
       highlights: [
         "Seit 2,5 Jahren Durchführung von KI Beratungsprojekten & Appentwicklung",
@@ -45,8 +45,8 @@ const Team = () => {
               <CardContent className="p-8">
                 <div className="flex items-start gap-6 mb-6">
                   <div className="flex-shrink-0">
-                    <img 
-                      src={member.photo} 
+                    <img
+                      src={member.photo}
                       alt={`${member.name} - ${member.role}`}
                       className="w-24 h-24 rounded-full object-cover shadow-medium"
                     />
