@@ -1,45 +1,34 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, TrendingDown, Zap, Target } from "lucide-react";
-
 const Benefits = () => {
-  const benefits = [
-    {
-      icon: Shield,
-      title: "100% DSGVO-konform",
-      description: "Alle unsere KI-Lösungen erfüllen höchste Datenschutzstandards und sind vollständig DSGVO-konform implementiert."
-    },
-    {
-      icon: TrendingDown,
-      title: "Prozesskosten senken",
-      description: "Reduzieren Sie Ihre operativen Kosten durch intelligente Automatisierung und optimierte Workflows um bis zu 40%."
-    },
-    {
-      icon: Zap,
-      title: "Schnelle Implementierung",
-      description: "Von der Konzeption bis zur Umsetzung - wir bringen Ihre KI-Projekte in kürzester Zeit produktiv zum Einsatz."
-    },
-    {
-      icon: Target,
-      title: "Unternehmensfokussiert",
-      description: "Speziell entwickelte Lösungen für Unternehmen mit pragmatischen, kosteneffizienten Ansätzen."
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-gradient-secondary">
+  const benefits = [{
+    icon: Shield,
+    title: "100% DSGVO-konform",
+    description: "Alle unsere KI-Lösungen erfüllen höchste Datenschutzstandards und sind vollständig DSGVO-konform implementiert."
+  }, {
+    icon: TrendingDown,
+    title: "Prozesskosten senken",
+    description: "Reduzieren Sie Ihre operativen Kosten durch intelligente Automatisierung und optimierte Workflows um bis zu 40%."
+  }, {
+    icon: Zap,
+    title: "Schnelle Implementierung",
+    description: "Von der Konzeption bis zur Umsetzung - wir bringen Ihre KI-Projekte in kürzester Zeit produktiv zum Einsatz."
+  }, {
+    icon: Target,
+    title: "Unternehmensfokussiert",
+    description: "Speziell entwickelte Lösungen für Unternehmen mit pragmatischen, kosteneffizienten Ansätzen."
+  }];
+  return <section id="about" className="py-20 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Warum <span className="bg-gradient-primary bg-clip-text text-transparent">Dolittle AI</span>?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Wir verstehen die besonderen Herausforderungen mittelständischer Unternehmen und entwickeln maßgeschneiderte KI-Lösungen.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Wir verstehen die besonderen Herausforderungen von Unternehmen und entwickeln maßgeschneiderte KI-Lösungen.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {benefits.map((benefit, index) => (
-            <Card key={index} className="text-center shadow-medium hover:shadow-strong transition-all duration-300 group">
+          {benefits.map((benefit, index) => <Card key={index} className="text-center shadow-medium hover:shadow-strong transition-all duration-300 group">
               <CardHeader>
                 <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <benefit.icon className="w-8 h-8 text-white" />
@@ -49,8 +38,7 @@ const Benefits = () => {
               <CardContent>
                 <p className="text-muted-foreground">{benefit.description}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* CTA Section */}
@@ -69,8 +57,6 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Benefits;
