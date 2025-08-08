@@ -19,7 +19,7 @@ const Footer = () => {
               Von der Strategieentwicklung bis zur Implementierung.
             </p>
             <div className="text-muted-foreground">
-              <p>E-Mail: andreas.reichert@dolittle-ai.de</p>
+              <p>E-Mail: andreas.reichert@docdolittle.io</p>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#team" className="hover:text-foreground transition-colors">Über uns</a></li>
               <li><a href="#team" className="hover:text-foreground transition-colors">Team</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Karriere</a></li>
+              
               <li><a href="#" className="hover:text-foreground transition-colors">Kontakt</a></li>
             </ul>
           </div>
@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="flex justify-center space-x-6 mt-4">
             <a href="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</a>
             <a href="/impressum" className="hover:text-foreground transition-colors">Impressum</a>
-            <a href="#" className="hover:text-foreground transition-colors">AGB</a>
+            
           </div>
         </div>
       </div>
