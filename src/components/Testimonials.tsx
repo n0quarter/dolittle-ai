@@ -21,7 +21,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Was <span className="bg-gradient-primary bg-clip-text text-transparent">Kunden</span> über unsere Arbeitsweise sagen
+            Was <span className="bg-gradient-primary bg-clip-text text-transparent">Kunden</span> über uns sagen
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Erfahrungen von Führungskräften, die bereits erfolgreich KI in ihren Unternehmen implementiert haben.
