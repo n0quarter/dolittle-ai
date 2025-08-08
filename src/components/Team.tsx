@@ -48,7 +48,9 @@ const Team = () => {
                     <img
                       src={member.photo}
                       alt={`${member.name} - ${member.role}`}
-                      className="w-24 h-24 rounded-full object-cover shadow-medium"
+                      className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover shadow-medium"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="flex-1">
