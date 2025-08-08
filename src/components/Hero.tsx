@@ -20,8 +20,8 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="shadow-strong text-lg px-8 py-6">
-            Kostenlose Beratung anfragen
+          <Button asChild size="lg" className="shadow-strong text-lg px-8 py-6">
+            <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Kostenlose Beratung anfragen</a>
           </Button>
           <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-2">
             Unsere Leistungen entdecken

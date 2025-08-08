@@ -51,9 +51,9 @@ const Benefits = () => {
             Vereinbaren Sie noch heute Ihr kostenloses Beratungsgespräch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-medium">
+            <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer" className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-medium">
               Kostenlose Beratung buchen
-            </button>
+            </a>
           </div>
         </div>
       </div>
