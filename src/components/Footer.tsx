@@ -12,7 +12,9 @@ const Footer = () => {
                   <span className="font-extrabold">D</span><span className="font-normal italic">AI</span>
                 </span>
               </div>
-              <span className="text-xl font-bold">Dolittle AI Consulting</span>
+              <span className="text-xl font-bold">
+                <span className="text-foreground">Dolittle</span> <span className="text-primary">AI</span>
+              </span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               Ihr Partner für DSGVO-konforme KI-Lösungen für Ihr Unternehmen. 
