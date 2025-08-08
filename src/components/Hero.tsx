@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ai-consulting.jpg";
 import CountUp from "@/components/ui/count-up";
+import Typewriter from "@/components/ui/typewriter";
+import { Search } from "lucide-react";
 const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background Image */}
@@ -12,7 +14,17 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-          <span className="bg-gradient-primary bg-clip-text text-transparent">KI-Lösungen für Ihr Unternehmen</span>
+          <div className="mx-auto max-w-2xl animate-enter">
+            <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium">
+              <Search className="h-5 w-5 text-muted-foreground" />
+              <Typewriter
+                text="KI-Lösungen für Ihr Unternehmen"
+                speed={35}
+                startDelay={300}
+                className="text-2xl md:text-4xl bg-gradient-primary bg-clip-text text-transparent"
+              />
+            </div>
+          </div>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
