@@ -60,7 +60,7 @@ const Team = () => {
                 </div>
 
                 <div className="mb-6">
-                  <p className="text-muted-foreground leading-relaxed">Firmen, Geschäftsmodelle & Produkte</p>
+                  <p className="text-muted-foreground leading-relaxed">{member.experience}</p>
                 </div>
 
                 <div className="mb-6">
