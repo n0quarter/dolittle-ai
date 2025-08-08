@@ -30,7 +30,7 @@ const ExampleProjects = () => {
       icon: Phone,
       title: "DocDolittle",
       description: "Der smarte KI Telefonassistent und smarter Inbox für Arztpraxen",
-      image: `${import.meta.env.BASE_URL}lovable-uploads/24273189-d3d8-48e2-b6f7-0d030022e9a2.png`,
+      image: "/lovable-uploads/24273189-d3d8-48e2-b6f7-0d030022e9a2.png",
       features: [
         "Automatische Anrufannahme und Terminvergabe",
         "Intelligente Klassifizierung von Patientenanfragen",
@@ -44,7 +44,7 @@ const ExampleProjects = () => {
       icon: MessageSquare,
       title: "AskSchmidt",
       description: "KI-gestützter Telegram Bot zur Übersetzung deutscher Behördenbriefe",
-      image: `${import.meta.env.BASE_URL}lovable-uploads/9eb10ba1-a237-4bc1-b9a0-382b8b20f746.png`,
+      image: "/lovable-uploads/9eb10ba1-a237-4bc1-b9a0-382b8b20f746.png",
       features: [
         "Fotografieren und Senden von Behördenbriefen per Telegram",
         "Automatische Übersetzung und Verständlichmachung",
@@ -58,7 +58,7 @@ const ExampleProjects = () => {
       icon: TrendingUp,
       title: "AI Agent Monitoring System",
       description: "Überwachung und Optimierung von KI-Agenten in Echtzeit",
-      image: `${import.meta.env.BASE_URL}lovable-uploads/a79aa940-f224-4ab4-be88-114725cad4d2.png`,
+      image: "/lovable-uploads/a79aa940-f224-4ab4-be88-114725cad4d2.png",
       features: [
         "Echtzeit-Monitoring aller KI-Agent Aktivitäten",
         "Performance-Metriken und Kosten-Tracking",

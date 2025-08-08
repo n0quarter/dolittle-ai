@@ -4,27 +4,27 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 const certificates = [
   {
     title: "Datenschutz – Grundlagen 2025",
-    src: `${import.meta.env.BASE_URL}lovable-uploads/d7505eaa-2501-400a-898f-aad0f4c01375.png`,
+    src: "/lovable-uploads/d7505eaa-2501-400a-898f-aad0f4c01375.png",
     alt: "Abschlusszertifikat Datenschutz – Grundlagen 2025",
   },
   {
     title: "Homeoffice & Mobiles Arbeiten 2024",
-    src: `${import.meta.env.BASE_URL}lovable-uploads/14d2d683-05ea-4f64-9016-da0c2b58f8f6.png`,
+    src: "/lovable-uploads/14d2d683-05ea-4f64-9016-da0c2b58f8f6.png",
     alt: "Abschlusszertifikat Homeoffice & Mobiles Arbeiten 2024",
   },
   {
     title: "Informationssicherheit – Grundlagen 2025",
-    src: `${import.meta.env.BASE_URL}lovable-uploads/70821974-90e5-417a-89c7-14fed5137b94.png`,
+    src: "/lovable-uploads/70821974-90e5-417a-89c7-14fed5137b94.png",
     alt: "Abschlusszertifikat Informationssicherheit – Grundlagen 2025",
   },
   {
     title: "NIS2 Grundlagen",
-    src: `${import.meta.env.BASE_URL}lovable-uploads/acfea587-13ac-4e15-9c22-9291bb655556.png`,
+    src: "/lovable-uploads/acfea587-13ac-4e15-9c22-9291bb655556.png",
     alt: "Abschlusszertifikat NIS2 Grundlagen",
   },
   {
     title: "Phishing – Grundlagen 2025",
-    src: `${import.meta.env.BASE_URL}lovable-uploads/97bae526-0832-4bb0-b59c-8dd85b256922.png`,
+    src: "/lovable-uploads/97bae526-0832-4bb0-b59c-8dd85b256922.png",
     alt: "Abschlusszertifikat Phishing – Grundlagen 2025",
   },
 ];
