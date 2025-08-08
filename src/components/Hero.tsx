@@ -15,14 +15,14 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
           <div className="mx-auto max-w-2xl animate-enter">
-            <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-nowrap overflow-hidden">
+            <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-nowrap overflow-x-auto">
               <Search className="h-5 w-5 text-muted-foreground shrink-0" />
               <div className="flex-1 min-w-0">
                 <Typewriter
                   text="KI-Lösungen für mein Unternehmen"
                   speed={35}
                   startDelay={300}
-                  className="text-2xl md:text-4xl bg-gradient-primary bg-clip-text text-transparent truncate"
+                  className="text-2xl md:text-4xl bg-gradient-primary bg-clip-text text-transparent"
                 />
               </div>
             </div>
