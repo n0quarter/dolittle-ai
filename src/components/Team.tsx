@@ -7,7 +7,7 @@ const Team = () => {
       name: "Andreas Reichert",
       role: "Gründer & Geschäftsführer",
       photo: "/lovable-uploads/6298ffd0-3385-493f-85de-d3ab57902dc9.png",
-      experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Geschäftsmodelle & Produkte für Konzerne und Mittelständler",
+      experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Firmen, Geschäftsmodelle & Produkte für Konzerne und Mittelständler",
       highlights: [
         "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Konzernpartnern",
         "Gründung von DocDolittle, KI-Telefonassistenten für Arztpraxen"
