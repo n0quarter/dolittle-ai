@@ -40,7 +40,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
     <span className={className}>
       {displayed}
       {cursor && displayed.length < text.length ? (
-        <span className="border-r-2 border-primary ml-0.5 animate-pulse" />
+        <span className="inline-block align-middle border-r-2 border-primary ml-1 animate-pulse h-[1em]" />
       ) : null}
     </span>
   );

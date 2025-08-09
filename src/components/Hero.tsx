@@ -10,30 +10,30 @@ const Hero = () => {
       backgroundImage: `url(${heroImage})`
     }}>
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
           <div className="mx-auto max-w-2xl animate-enter">
             <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-nowrap overflow-x-auto">
               <Search className="h-5 w-5 text-muted-foreground shrink-0" />
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 flex items-center">
                 <Typewriter
                   text="KI-Lösungen für mein Unternehmen"
                   speed={35}
                   startDelay={300}
-                  className="text-2xl md:text-4xl bg-gradient-primary bg-clip-text text-transparent"
+                  className="text-2xl md:text-4xl leading-none bg-gradient-primary bg-clip-text text-transparent"
                 />
               </div>
             </div>
           </div>
         </h1>
-        
+
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-          Entwickeln Sie DSGVO-konforme KI-Lösungen, die Ihre Prozesskosten senken und 
+          Entwickeln Sie DSGVO-konforme KI-Lösungen, die Ihre Prozesskosten senken und
           Ihr Unternehmen zukunftsfähig machen.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button asChild size="lg" className="shadow-strong text-lg px-8 py-6">
             <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Termin vereinbaren</a>
@@ -42,7 +42,7 @@ const Hero = () => {
             Unsere Leistungen entdecken
           </Button>
         </div>
-        
+
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 max-w-5xl mx-auto">
           <div className="text-center">
