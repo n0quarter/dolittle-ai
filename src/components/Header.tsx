@@ -16,12 +16,27 @@ const Header = () => {
             </span>
           </a>
           
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6 overflow-x-auto">
+            <a href="/#team" className="text-foreground hover:text-primary transition-colors">
+              Team
+            </a>
             <a href="/#services" className="text-foreground hover:text-primary transition-colors">
               Services
             </a>
-            <a href="/#team" className="text-foreground hover:text-primary transition-colors">
-              Team
+            <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
+              Testimonials
+            </a>
+            <a href="/#working-approach" className="text-foreground hover:text-primary transition-colors">
+              Arbeitsweise
+            </a>
+            <a href="/#beispielprojekte" className="text-foreground hover:text-primary transition-colors">
+              Beispielprojekte
+            </a>
+            <a href="/#project-process" className="text-foreground hover:text-primary transition-colors">
+              Projektablauf
+            </a>
+            <a href="/#datenschutzschulungen" className="text-foreground hover:text-primary transition-colors">
+              Datenschutzschulungen
             </a>
             <a href="/#about" className="text-foreground hover:text-primary transition-colors">
               Über uns
