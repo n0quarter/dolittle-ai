@@ -38,8 +38,8 @@ const Hero = () => {
           <Button asChild size="lg" className="shadow-strong text-lg px-8 py-6">
             <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Termin vereinbaren</a>
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-2">
-            Unsere Leistungen entdecken
+          <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-2">
+            <a href="/#services">Unsere Services</a>
           </Button>
         </div>
 
