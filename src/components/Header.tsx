@@ -41,9 +41,6 @@ const Header = () => {
             <a href="/#about" className="text-foreground hover:text-primary transition-colors">
               Über uns
             </a>
-            <Button className="shadow-medium">
-              Kontakt aufnehmen
-            </Button>
           </nav>
         </div>
       </div>
