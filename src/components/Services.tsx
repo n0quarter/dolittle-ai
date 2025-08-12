@@ -89,19 +89,6 @@ const Services = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                {service.title === "Agenten & Workflows" && (
-                  <aside aria-label="Unterstützte Modelle" className="mb-6">
-                    <div className="flex flex-wrap items-center gap-6 opacity-90">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg" alt="Anthropic Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Google Gemini Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Meta_Platforms_Inc._logo.svg" alt="Meta (Llama) Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mistral_AI_logo_%282025%E2%80%93%29.svg" alt="Mistral AI Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/DeepSeek_logo.svg" alt="DeepSeek Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Perplexity_AI_logo.svg" alt="Perplexity Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
-                    </div>
-                  </aside>
-                )}
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm">
