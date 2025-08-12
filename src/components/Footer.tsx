@@ -17,7 +17,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Ihr Partner für DSGVO-konforme KI-Lösungen für Ihr Unternehmen. 
+              Ihr Partner für DSGVO-konforme KI-Lösungen für Ihr Unternehmen.
               Von der Strategieentwicklung bis zur Implementierung.
             </p>
             <div className="text-muted-foreground">
@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Leistungen</h4>
+            <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#services" className="hover:text-foreground transition-colors">KI-Strategieberatung</a></li>
               <li><a href="#services" className="hover:text-foreground transition-colors">Framework Entwicklung</a></li>
@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#team" className="hover:text-foreground transition-colors">Über uns</a></li>
               <li><a href="#team" className="hover:text-foreground transition-colors">Team</a></li>
-              
+
               <li><a href="#" className="hover:text-foreground transition-colors">Kontakt</a></li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="flex justify-center space-x-6 mt-4">
             <a href="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</a>
             <a href="/impressum" className="hover:text-foreground transition-colors">Impressum</a>
-            
+
           </div>
         </div>
       </div>

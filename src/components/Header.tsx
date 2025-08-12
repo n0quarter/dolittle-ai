@@ -23,23 +23,8 @@ const Header = () => {
             <a href="/#services" className="text-foreground hover:text-primary transition-colors">
               Services
             </a>
-            <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
-              Testimonials
-            </a>
-            <a href="/#working-approach" className="text-foreground hover:text-primary transition-colors">
-              Arbeitsweise
-            </a>
             <a href="/#beispielprojekte" className="text-foreground hover:text-primary transition-colors">
               Beispielprojekte
-            </a>
-            <a href="/#project-process" className="text-foreground hover:text-primary transition-colors">
-              Projektablauf
-            </a>
-            <a href="/#datenschutzschulungen" className="text-foreground hover:text-primary transition-colors">
-              Datenschutzschulungen
-            </a>
-            <a href="/#about" className="text-foreground hover:text-primary transition-colors">
-              Über uns
             </a>
             <Button className="shadow-medium">
               Kontakt aufnehmen
