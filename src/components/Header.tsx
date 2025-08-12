@@ -26,9 +26,6 @@ const Header = () => {
             <a href="/#beispielprojekte" className="text-foreground hover:text-primary transition-colors">
               Beispielprojekte
             </a>
-            <Button className="shadow-medium">
-              Kontakt aufnehmen
-            </Button>
           </nav>
         </div>
       </div>
