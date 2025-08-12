@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Brain, Cog, Users, BookOpen } from "lucide-react";
 
 const Services = () => {
@@ -6,27 +7,58 @@ const Services = () => {
     {
       icon: Brain,
       title: "KI-Strategieberatung",
-      description: "Entwicklung maßgeschneiderter KI-Lösungen für Ihr Unternehmen. Wir analysieren Ihre Prozesse und identifizieren KI-Potentiale.",
-      features: ["Prozessanalyse", "ROI-Bewertung", "Roadmap-Entwicklung", "Technologie-Auswahl"]
+      description:
+        "Entwicklung maßgeschneiderter KI-Lösungen für Ihr Unternehmen. Wir analysieren Ihre Prozesse und identifizieren KI-Potentiale.",
+      features: ["Prozessanalyse", "ROI-Bewertung", "Roadmap-Entwicklung", "Technologie-Auswahl"],
+      imageSrc:
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: KI-Strategieberatung – Analyse und Roadmap"
     },
     {
       icon: Cog,
       title: "KI-Framework Entwicklung",
-      description: "Implementierung und Entwicklung von KI-Frameworks, die perfekt auf Ihre Unternehmensanforderungen zugeschnitten sind.",
-      features: ["Custom AI-Lösungen", "Integration bestehender Systeme", "Skalierbare Architekturen", "DSGVO-Compliance"]
+      description:
+        "Implementierung und Entwicklung von KI-Frameworks, die perfekt auf Ihre Unternehmensanforderungen zugeschnitten sind.",
+      features: [
+        "Custom AI-Lösungen",
+        "Integration bestehender Systeme",
+        "Skalierbare Architekturen",
+        "DSGVO-Compliance",
+      ],
+      imageSrc:
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: KI-Frameworks – skalierbare Architekturen"
     },
     {
       icon: Users,
       title: "Agenten & Workflows",
-      description: "Intelligente Automatisierung durch KI-Agenten und optimierte Workflows für maximale Effizienzsteigerung.",
-      features: ["Intelligente Automatisierung", "Workflow-Optimierung", "24/7 KI-Assistenten", "Prozesskosten-Reduktion"]
+      description:
+        "Intelligente Automatisierung durch KI-Agenten und optimierte Workflows für maximale Effizienzsteigerung.",
+      features: [
+        "Intelligente Automatisierung",
+        "Workflow-Optimierung",
+        "24/7 KI-Assistenten",
+        "Prozesskosten-Reduktion",
+      ],
+      imageSrc:
+        "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: KI-Agenten & Workflows – Automatisierung"
     },
     {
       icon: BookOpen,
       title: "Workshops & Training",
-      description: "Schulungen und Workshops für Ihr Team, um KI-Technologien erfolgreich im Unternehmen einzusetzen.",
-      features: ["Mitarbeiter-Schulungen", "Hands-on Workshops", "Change Management", "Kontinuierlicher Support"]
-    }
+      description:
+        "Schulungen und Workshops für Ihr Team, um KI-Technologien erfolgreich im Unternehmen einzusetzen.",
+      features: [
+        "Mitarbeiter-Schulungen",
+        "Hands-on Workshops",
+        "Change Management",
+        "Kontinuierlicher Support",
+      ],
+      imageSrc:
+        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: Workshops & Training – Team Schulung"
+    },
   ];
 
   return (
@@ -40,6 +72,7 @@ const Services = () => {
             Von der Strategieentwicklung bis zur Implementierung - wir begleiten Sie auf dem Weg zur KI-getriebenen Digitalisierung.
           </p>
         </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
