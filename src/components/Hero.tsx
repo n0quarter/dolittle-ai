@@ -14,15 +14,18 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-          <div className="mx-auto max-w-2xl animate-enter">
-            <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-nowrap overflow-x-auto">
+          <div className="mx-auto max-w-2xl md:animate-enter">
+            <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-normal md:whitespace-nowrap overflow-visible">
               <Search className="h-5 w-5 text-muted-foreground shrink-0" />
               <div className="flex-1 min-w-0 flex items-center">
+                <span className="md:hidden text-2xl leading-snug bg-gradient-primary bg-clip-text text-transparent">
+                  KI-Lösungen für mein Unternehmen
+                </span>
                 <Typewriter
                   text="KI-Lösungen für mein Unternehmen"
                   speed={35}
                   startDelay={300}
-                  className="text-2xl md:text-4xl leading-none bg-gradient-primary bg-clip-text text-transparent"
+                  className="hidden md:inline text-4xl leading-tight bg-gradient-primary bg-clip-text text-transparent"
                 />
               </div>
             </div>
