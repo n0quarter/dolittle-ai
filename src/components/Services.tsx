@@ -73,14 +73,6 @@ const Services = () => {
           </p>
         </div>
 
-        {/* LLM logo strip */}
-        <aside aria-label="Unterstützte LLMs" className="mb-12">
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-90">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI Logo" loading="lazy" className="h-8 md:h-10 w-auto" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg" alt="Anthropic Logo" loading="lazy" className="h-8 md:h-10 w-auto" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Google Gemini Logo" loading="lazy" className="h-8 md:h-10 w-auto" />
-          </div>
-        </aside>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
@@ -93,16 +85,6 @@ const Services = () => {
                   <CardTitle className="text-2xl">{service.title}</CardTitle>
                 </div>
               </CardHeader>
-              <div className="px-6 -mt-2">
-                <AspectRatio ratio={16 / 9}>
-                  <img
-                    src={service.imageSrc}
-                    alt={service.imageAlt}
-                    loading="lazy"
-                    className="w-full h-full object-cover rounded-md"
-                  />
-                </AspectRatio>
-              </div>
               <CardContent>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
