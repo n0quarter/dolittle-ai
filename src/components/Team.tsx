@@ -43,24 +43,24 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300">
               <CardContent className="p-8">
-                <div className="flex items-start gap-6 mb-6">
+                <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-6">
                   <div className="flex-shrink-0">
                     <img
                       src={member.photo}
                       alt={`${member.name} - ${member.role}`}
-                      className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover shadow-medium"
+                      className="w-28 h-28 sm:w-32 sm:h-32 md:w-44 md:h-44 rounded-full object-cover shadow-medium"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">{member.name}</h3>
-                    <p className="text-primary font-semibold text-lg">{member.role}</p>
+                    <h3 className="text-2xl font-bold text-foreground mb-2 break-words">{member.name}</h3>
+                    <p className="text-primary font-semibold text-lg break-words">{member.role}</p>
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <p className="text-muted-foreground leading-relaxed">{member.experience}</p>
+                  <p className="text-muted-foreground leading-relaxed break-words">{member.experience}</p>
                 </div>
 
                 <div className="mb-6">

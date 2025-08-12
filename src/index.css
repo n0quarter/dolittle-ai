@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 */
 
@@ -33,7 +33,7 @@ All colors MUST be HSL.
     /* AI Tech Gradient */
     --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(262 83% 58%));
     --gradient-secondary: linear-gradient(135deg, hsl(210 40% 96%), hsl(0 0% 100%));
-    
+
     /* Professional shadows */
     --shadow-soft: 0 2px 8px -2px hsl(221 83% 53% / 0.1);
     --shadow-medium: 0 8px 25px -5px hsl(221 83% 53% / 0.15);
@@ -98,11 +98,19 @@ All colors MUST be HSL.
 }
 
 @layer base {
+  html {
+    @apply w-full overflow-x-hidden;
+  }
+
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden w-full;
+  }
+
+  #root {
+    @apply w-full overflow-x-hidden;
   }
 }

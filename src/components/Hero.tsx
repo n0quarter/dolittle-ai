@@ -4,7 +4,7 @@ import CountUp from "@/components/ui/count-up";
 import Typewriter from "@/components/ui/typewriter";
 import { Search } from "lucide-react";
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24 md:pt-28">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
       backgroundImage: `url(${heroImage})`
@@ -15,14 +15,14 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
           <div className="mx-auto max-w-2xl animate-enter">
-            <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-full border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-nowrap overflow-x-auto">
+            <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-xl border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-normal md:whitespace-nowrap w-full max-w-full">
               <Search className="h-5 w-5 text-muted-foreground shrink-0" />
               <div className="flex-1 min-w-0 flex items-center">
                 <Typewriter
                   text="KI-Lösungen für mein Unternehmen"
                   speed={35}
                   startDelay={300}
-                  className="text-2xl md:text-4xl leading-none bg-gradient-primary bg-clip-text text-transparent"
+                  className="text-2xl md:text-3xl leading-tight break-words md:break-normal bg-gradient-primary bg-clip-text text-transparent"
                 />
               </div>
             </div>
@@ -39,7 +39,7 @@ const Hero = () => {
             <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Termin vereinbaren</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-2">
-            <a href="/#services">Unsere Services</a>
+            <a href="/#services">Unsere Leistungen</a>
           </Button>
         </div>
 

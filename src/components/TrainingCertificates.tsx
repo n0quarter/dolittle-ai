@@ -34,7 +34,7 @@ const TrainingCertificates = () => {
     <section id="datenschutzschulungen" className="py-16 sm:py-20">
       <div className="container mx-auto px-4">
         <header className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 break-words leading-tight">
             Unsere <span className="bg-gradient-primary bg-clip-text text-transparent">Datenschutzschulungen</span>
           </h2>
           <p className="mt-3 text-muted-foreground">
