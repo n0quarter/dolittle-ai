@@ -18,9 +18,6 @@ const Hero = () => {
             <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-xl border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-normal md:whitespace-nowrap w-full max-w-full">
               <Search className="h-5 w-5 text-muted-foreground shrink-0" />
               <div className="flex-1 min-w-0 flex items-center">
-                <span className="md:hidden text-2xl leading-snug bg-gradient-primary bg-clip-text text-transparent">
-                  KI-Lösungen für mein Unternehmen
-                </span>
                 <Typewriter
                   text="KI-Lösungen für mein Unternehmen"
                   speed={35}
