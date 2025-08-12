@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Brain, Cog, Users, BookOpen } from "lucide-react";
 
 const Services = () => {
@@ -6,27 +7,58 @@ const Services = () => {
     {
       icon: Brain,
       title: "KI-Strategieberatung",
-      description: "Entwicklung maßgeschneiderter KI-Lösungen für Ihr Unternehmen. Wir analysieren Ihre Prozesse und identifizieren KI-Potentiale.",
-      features: ["Prozessanalyse", "ROI-Bewertung", "Roadmap-Entwicklung", "Technologie-Auswahl"]
+      description:
+        "Entwicklung maßgeschneiderter KI-Lösungen für Ihr Unternehmen. Wir analysieren Ihre Prozesse und identifizieren KI-Potentiale.",
+      features: ["Prozessanalyse", "ROI-Bewertung", "Roadmap-Entwicklung", "Technologie-Auswahl"],
+      imageSrc:
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: KI-Strategieberatung – Analyse und Roadmap"
     },
     {
       icon: Cog,
       title: "KI-Framework Entwicklung",
-      description: "Implementierung und Entwicklung von KI-Frameworks, die perfekt auf Ihre Unternehmensanforderungen zugeschnitten sind.",
-      features: ["Custom AI-Lösungen", "Integration bestehender Systeme", "Skalierbare Architekturen", "DSGVO-Compliance"]
+      description:
+        "Implementierung und Entwicklung von KI-Frameworks, die perfekt auf Ihre Unternehmensanforderungen zugeschnitten sind.",
+      features: [
+        "Custom AI-Lösungen",
+        "Integration bestehender Systeme",
+        "Skalierbare Architekturen",
+        "DSGVO-Compliance",
+      ],
+      imageSrc:
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: KI-Frameworks – skalierbare Architekturen"
     },
     {
       icon: Users,
       title: "Agenten & Workflows",
-      description: "Intelligente Automatisierung durch KI-Agenten und optimierte Workflows für maximale Effizienzsteigerung.",
-      features: ["Intelligente Automatisierung", "Workflow-Optimierung", "24/7 KI-Assistenten", "Prozesskosten-Reduktion"]
+      description:
+        "Intelligente Automatisierung durch KI-Agenten und optimierte Workflows für maximale Effizienzsteigerung.",
+      features: [
+        "Intelligente Automatisierung",
+        "Workflow-Optimierung",
+        "24/7 KI-Assistenten",
+        "Prozesskosten-Reduktion",
+      ],
+      imageSrc:
+        "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: KI-Agenten & Workflows – Automatisierung"
     },
     {
       icon: BookOpen,
       title: "Workshops & Training",
-      description: "Schulungen und Workshops für Ihr Team, um KI-Technologien erfolgreich im Unternehmen einzusetzen.",
-      features: ["Mitarbeiter-Schulungen", "Hands-on Workshops", "Change Management", "Kontinuierlicher Support"]
-    }
+      description:
+        "Schulungen und Workshops für Ihr Team, um KI-Technologien erfolgreich im Unternehmen einzusetzen.",
+      features: [
+        "Mitarbeiter-Schulungen",
+        "Hands-on Workshops",
+        "Change Management",
+        "Kontinuierlicher Support",
+      ],
+      imageSrc:
+        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: Workshops & Training – Team Schulung"
+    },
   ];
 
   return (
@@ -61,10 +93,33 @@ const Services = () => {
                   <CardTitle className="text-2xl">{service.title}</CardTitle>
                 </div>
               </CardHeader>
+              <div className="px-6 -mt-2">
+                <AspectRatio ratio={16 / 9}>
+                  <img
+                    src={service.imageSrc}
+                    alt={service.imageAlt}
+                    loading="lazy"
+                    className="w-full h-full object-cover rounded-md"
+                  />
+                </AspectRatio>
+              </div>
               <CardContent>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
                 </p>
+                {service.title === "Agenten & Workflows" && (
+                  <aside aria-label="Unterstützte Modelle" className="mb-6">
+                    <div className="flex flex-wrap items-center gap-6 opacity-90">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg" alt="Anthropic Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Google Gemini Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Meta_Platforms_Inc._logo.svg" alt="Meta (Llama) Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mistral_AI_logo_%282025%E2%80%93%29.svg" alt="Mistral AI Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/DeepSeek_logo.svg" alt="DeepSeek Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Perplexity_AI_logo.svg" alt="Perplexity Logo" loading="lazy" className="h-6 md:h-8 w-auto" />
+                    </div>
+                  </aside>
+                )}
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm">
