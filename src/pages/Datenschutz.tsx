@@ -22,7 +22,7 @@ const Datenschutz = () => {
               <div className="ml-4">
                 <p className="font-semibold">DocDolittle GbR.</p>
                 <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor.</p>
-                <p>docdolittle@email.de</p>
+                <p>andreas@dolittle-ai.de</p>
               </div>
             </section>
 
