@@ -18,9 +18,9 @@ const Impressum = () => {
 
             <div className="mb-8">
               <h3 className="text-xl font-semibold mb-4">Geschäftsführer:</h3>
+              <p>Viktor Shcherban</p>
               <p>Andreas Reichert</p>
               <p>USt-idNr: DE411483986</p>
-              <p>Viktor Shcherban</p>
             </div>
 
             <div className="mb-8">
