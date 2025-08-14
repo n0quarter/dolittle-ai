@@ -13,7 +13,7 @@ const Impressum = () => {
             <div className="mb-8">
               <p className="text-lg font-semibold">DocDolittle GbR.</p>
               <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor.</p>
-              <p>docdolittle@email.de</p>
+              <p>andreas@dolittle-ai.de</p>
             </div>
 
             <div className="mb-8">
