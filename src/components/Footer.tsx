@@ -21,7 +21,7 @@ const Footer = () => {
               Von der Strategieentwicklung bis zur Implementierung.
             </p>
             <div className="text-muted-foreground">
-              <p>E-Mail: andreas.reichert@docdolittle.io</p>
+              <p>E-Mail: andrea@dolittle-ai.de</p>
             </div>
           </div>
 
