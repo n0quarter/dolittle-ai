@@ -64,10 +64,10 @@ const Services = () => {
 
   // Background images for each service
   const backgroundImages = [
-    'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=70', // Strategy/Brain
-    'https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1600&q=70', // Framework/Cog
-    'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=70', // Agents/Users
-    'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70'  // Training/BookOpen
+    'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=70', // Strategy/Brain - Business meeting
+    'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=70', // Framework/Cog - Code development
+    'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=70', // Agents/Users - Team collaboration
+    'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70'  // Training/BookOpen - Learning environment
   ];
 
   return (
@@ -95,22 +95,24 @@ const Services = () => {
         <div className="relative max-w-6xl mx-auto">
           {/* Enhanced Connecting Lines - Hidden on mobile */}
           <div className="hidden md:block absolute inset-0 pointer-events-none z-0">
-            {/* Horizontal line between top two cards */}
-            <div className="absolute top-1/4 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60"></div>
+            {/* Horizontal lines connecting all four cards */}
+            <div className="absolute top-1/4 left-[12.5%] right-[12.5%] h-1 bg-gradient-to-r from-primary/40 via-primary/80 to-primary/40 rounded-full"></div>
+            <div className="absolute bottom-1/4 left-[12.5%] right-[12.5%] h-1 bg-gradient-to-r from-primary/40 via-primary/80 to-primary/40 rounded-full"></div>
             
-            {/* Vertical line in center */}
-            <div className="absolute top-1/4 bottom-1/4 left-1/2 w-0.5 bg-gradient-to-b from-primary/60 via-primary to-primary/60 transform -translate-x-1/2"></div>
+            {/* Vertical line in center connecting top and bottom */}
+            <div className="absolute top-1/4 bottom-1/4 left-1/2 w-1 bg-gradient-to-b from-primary/40 via-primary/80 to-primary/40 transform -translate-x-1/2 rounded-full"></div>
             
-            {/* Horizontal line between bottom two cards */}
-            <div className="absolute bottom-1/4 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60"></div>
+            {/* Cross connections for network effect */}
+            <div className="absolute top-1/4 bottom-1/4 left-[25%] w-0.5 bg-gradient-to-b from-transparent via-primary/30 to-transparent transform -translate-x-1/2"></div>
+            <div className="absolute top-1/4 bottom-1/4 right-[25%] w-0.5 bg-gradient-to-b from-transparent via-primary/30 to-transparent transform translate-x-1/2"></div>
             
-            {/* Animated connection dots */}
-            <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
-            <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-primary rounded-full transform translate-x-1/2 -translate-y-1/2 animate-pulse delay-500"></div>
-            <div className="absolute bottom-1/4 left-1/4 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 translate-y-1/2 animate-pulse delay-1000"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary rounded-full transform translate-x-1/2 translate-y-1/2 animate-pulse delay-1500"></div>
-            <div className="absolute top-1/4 left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-300"></div>
-            <div className="absolute bottom-1/4 left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 translate-y-1/2 animate-pulse delay-800"></div>
+            {/* Animated connection dots at intersections */}
+            <div className="absolute top-1/4 left-[25%] w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse shadow-glow"></div>
+            <div className="absolute top-1/4 right-[25%] w-4 h-4 bg-primary rounded-full transform translate-x-1/2 -translate-y-1/2 animate-pulse delay-500 shadow-glow"></div>
+            <div className="absolute bottom-1/4 left-[25%] w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 translate-y-1/2 animate-pulse delay-1000 shadow-glow"></div>
+            <div className="absolute bottom-1/4 right-[25%] w-4 h-4 bg-primary rounded-full transform translate-x-1/2 translate-y-1/2 animate-pulse delay-1500 shadow-glow"></div>
+            <div className="absolute top-1/4 left-1/2 w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-300 shadow-glow"></div>
+            <div className="absolute bottom-1/4 left-1/2 w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 translate-y-1/2 animate-pulse delay-800 shadow-glow"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
