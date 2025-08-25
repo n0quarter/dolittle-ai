@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Lightbulb, Users, Target, Trophy } from "lucide-react";
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
 import workshopImage2 from "@/assets/workshop-speaker-2.jpg";
+import aiNetworkingBg from "@/assets/ai-networking-background.jpg";
 import Testimonials from "@/components/Testimonials";
 const Workshops = () => {
   const philosophyPoints = [{
@@ -87,7 +88,7 @@ const Workshops = () => {
 
           {/* Trainer Profiles */}
           <section className="py-20 relative overflow-hidden" style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${workshopImage1})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${aiNetworkingBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
