@@ -64,10 +64,13 @@ const Workshops = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   Unsere <span className="text-primary">Workshophilosophie</span>
                 </h2>
-                <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-6">
                   Viele Geschäftsführer reden das Thema KI tot, obwohl sie große Potentiale heben könnten. 
                   Ganz einfach, weil sie davon ausgehen, dass Abteilungen oder einzelne Mitarbeiter das Thema nicht umsetzen oder es sogar blockieren.
                   Aus diesem Grund nehmen wir bei unseren Workshops das Team bei der Lösungsfindung mit.
+                </p>
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+                  Ihr Team identifiziert Probleme im Arbeitsalltag und wir bewerten gemeinsam unter unserer professionellen Begleitung welche Tätigkeiten künftig besser mit Hilfe von KI gelöst werden können.
                 </p>
               </div>
 
