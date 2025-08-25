@@ -124,7 +124,7 @@ const Services = () => {
               <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 group bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/20 relative overflow-hidden">
                 {/* Background Image */}
                 <div 
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-8 group-hover:opacity-12 transition-opacity duration-300"
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-3 group-hover:opacity-5 transition-opacity duration-300"
                   style={{
                     backgroundImage: `url(${backgroundImages[index]})`
                   }}
