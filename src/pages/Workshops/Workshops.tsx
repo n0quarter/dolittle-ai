@@ -51,8 +51,8 @@ const Workshops = () => {
                 Workshops mit hohem Interaktionsgrad, die KI als Chance etablieren 
                 und praktische Lösungen für Ihr Unternehmen entwickeln.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Workshop anfragen
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop anfragen</a>
               </Button>
             </div>
           </section>
@@ -200,8 +200,8 @@ const Workshops = () => {
                   </div>
                 </div>
               </div>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Workshop-Beratung vereinbaren
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop-Beratung vereinbaren</a>
               </Button>
             </div>
           </section>

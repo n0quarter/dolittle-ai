@@ -396,9 +396,9 @@ const UseCases = () => {
                   Lassen Sie uns gemeinsam herausfinden, welche KI-Anwendungsfälle 
                   das größte Potential für Ihr Unternehmen bieten.
                 </p>
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
-                  Kostenlose Beratung vereinbaren
-                </Button>
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Kostenlose Beratung vereinbaren</a>
+              </Button>
               </div>
             </div>
           </section>
