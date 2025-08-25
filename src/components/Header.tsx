@@ -29,20 +29,9 @@ const Header = () => {
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Über uns</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px]">
-                    <ListItem href="/ueber-uns#services" title="Services">
-                      KI-Strategieberatung und Framework Entwicklung
-                    </ListItem>
-                    <ListItem href="/ueber-uns#team" title="Team">
-                      Lernen Sie unser Expertenteam kennen
-                    </ListItem>
-                    <ListItem href="/ueber-uns#projekte" title="Projekte">
-                      Unsere erfolgreich umgesetzten KI-Projekte
-                    </ListItem>
-                  </ul>
-                </NavigationMenuContent>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/ueber-uns">
+                  Über uns
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Workshops & Training</NavigationMenuTrigger>
