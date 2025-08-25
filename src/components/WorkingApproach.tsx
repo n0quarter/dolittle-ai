@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, DollarSign } from "lucide-react";
+import { CheckCircle, Euro } from "lucide-react";
 
 const WorkingApproach = () => {
   const methods = [{
@@ -7,7 +7,7 @@ const WorkingApproach = () => {
     title: "Pragmatisch & Lösungsorientiert",
     description: "Wir wollen mit Ihnen funktionierende Lösungen schaffen und sie nicht mit Powerpoint langweilen. Unser Fokus liegt darauf, die Probleme unserer Kunden zu lösen - wir beraten nicht nur, wir setzen um."
   }, {
-    icon: DollarSign,
+    icon: Euro,
     title: "Kosteneffizient",
     description: "Bevor wir etwas Neues entwickeln, prüfen wir immer erst, ob es für Ihr Problem bereits bewährte und fertige Lösungen gibt. So sparen wir Zeit und Kosten."
   }];
