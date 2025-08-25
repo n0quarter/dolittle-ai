@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-secondary text-foreground py-12">
@@ -29,10 +31,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#services" className="hover:text-foreground transition-colors">KI-Strategieberatung</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Framework Entwicklung</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Agenten & Workflows</a></li>
-              <li><a href="#services" className="hover:text-foreground transition-colors">Workshops & Training</a></li>
+              <li><Link to="/#services" className="hover:text-foreground transition-colors">KI-Strategieberatung</Link></li>
+              <li><Link to="/#services" className="hover:text-foreground transition-colors">Framework Entwicklung</Link></li>
+              <li><Link to="/#services" className="hover:text-foreground transition-colors">Agenten & Workflows</Link></li>
+              <li><Link to="/workshops/workshops" className="hover:text-foreground transition-colors">Workshops & Training</Link></li>
             </ul>
           </div>
 
@@ -40,10 +42,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Unternehmen</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#team" className="hover:text-foreground transition-colors">Über uns</a></li>
-              <li><a href="#team" className="hover:text-foreground transition-colors">Team</a></li>
-
-              <li><a href="#" className="hover:text-foreground transition-colors">Kontakt</a></li>
+              <li><Link to="/ueber-uns" className="hover:text-foreground transition-colors">Über uns</Link></li>
+              <li><Link to="/ueber-uns#team" className="hover:text-foreground transition-colors">Team</Link></li>
+              <li><a href="mailto:andreas@dolittle-ai.de" className="hover:text-foreground transition-colors">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -51,8 +52,8 @@ const Footer = () => {
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
           <p>&copy; 2025 Dolittle AI</p>
           <div className="flex justify-center space-x-6 mt-4">
-            <a href="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</a>
-            <a href="/impressum" className="hover:text-foreground transition-colors">Impressum</a>
+            <Link to="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</Link>
+            <Link to="/impressum" className="hover:text-foreground transition-colors">Impressum</Link>
 
           </div>
         </div>
