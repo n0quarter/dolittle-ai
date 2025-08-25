@@ -5,7 +5,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Andreas Reichert",
-      role: "Gründer & Geschäftsführer",
+      role: "Gründer & CEO",
       photo: "/lovable-uploads/3edae817-71ad-494d-9af9-798fed02a2af.png",
       experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Firmen, Geschäftsmodelle & Produkte für Konzerne und Mittelständler",
       highlights: [
