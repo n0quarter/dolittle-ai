@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Lightbulb, Users, Target, Trophy } from "lucide-react";
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
 import workshopImage2 from "@/assets/workshop-speaker-2.jpg";
+import Testimonials from "@/components/Testimonials";
 const Workshops = () => {
   const philosophyPoints = [{
     icon: Lightbulb,
@@ -155,6 +156,9 @@ const Workshops = () => {
               </div>
             </div>
           </section>
+
+          {/* Testimonials */}
+          <Testimonials />
 
           {/* Approach */}
           <section className="py-20 bg-secondary/10">

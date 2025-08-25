@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Users, Clock, Target, CheckCircle } from "lucide-react";
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
+import Testimonials from "@/components/Testimonials";
 
 const KiMitarbeiterschulung = () => {
   const benefits = [
@@ -152,6 +153,9 @@ const KiMitarbeiterschulung = () => {
               </div>
             </div>
           </section>
+
+          {/* Testimonials */}
+          <Testimonials />
         </main>
         <Footer />
       </div>

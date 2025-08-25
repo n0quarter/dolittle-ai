@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Testimonials = () => {
   const testimonials = [
@@ -34,34 +35,48 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 bg-card">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6 mb-6">
-                  <div className="flex-shrink-0">
-                    <img 
-                      src={testimonial.image} 
-                      alt={`${testimonial.name} - ${testimonial.title}`}
-                      className="w-16 h-16 rounded-full object-cover shadow-medium"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-1">{testimonial.name}</h3>
-                    <p className="text-primary font-semibold text-sm">{testimonial.title}</p>
-                  </div>
-                </div>
+        <div className="max-w-6xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <Card className="shadow-medium hover:shadow-strong transition-all duration-300 bg-card h-full">
+                    <CardContent className="p-8 h-full flex flex-col">
+                      <div className="flex items-start gap-6 mb-6">
+                        <div className="flex-shrink-0">
+                          <img 
+                            src={testimonial.image} 
+                            alt={`${testimonial.name} - ${testimonial.title}`}
+                            className="w-20 h-20 rounded-full object-cover shadow-medium"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-xl font-bold text-foreground mb-1">{testimonial.name}</h3>
+                          <p className="text-primary font-semibold">{testimonial.title}</p>
+                        </div>
+                      </div>
 
-                <div className="relative">
-                  <div className="text-4xl text-primary/20 absolute -top-2 -left-2">"</div>
-                  <blockquote className="text-muted-foreground leading-relaxed pl-6">
-                    {testimonial.text}
-                  </blockquote>
-                  <div className="text-4xl text-primary/20 absolute -bottom-2 right-0 rotate-180">"</div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                      <div className="relative flex-1">
+                        <div className="text-5xl text-primary/20 absolute -top-3 -left-3">"</div>
+                        <blockquote className="text-lg text-muted-foreground leading-relaxed pl-8 pr-4">
+                          {testimonial.text}
+                        </blockquote>
+                        <div className="text-5xl text-primary/20 absolute -bottom-3 right-0 rotate-180">"</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="-left-12" />
+            <CarouselNext className="-right-12" />
+          </Carousel>
         </div>
       </div>
     </section>
