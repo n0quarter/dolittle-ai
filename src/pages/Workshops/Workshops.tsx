@@ -169,10 +169,9 @@ const Workshops = () => {
           <section className="py-20 bg-secondary/10">
             <div className="container mx-auto px-6 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                Der Schlüssel zur <span className="text-primary">KI-Akzeptanz</span>
+                Beispiel <span className="text-primary">Workshop-Agenda</span>
               </h2>
               <div className="max-w-4xl mx-auto mb-12">
-                <h3 className="text-2xl font-bold mb-8 text-center">Beispiel Workshop-Agenda</h3>
                 <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
