@@ -6,7 +6,7 @@ const Team = () => {
     {
       name: "Andreas Reichert",
       role: "Gründer & Geschäftsführer",
-      photo: "/lovable-uploads/6298ffd0-3385-493f-85de-d3ab57902dc9.png",
+      photo: "/lovable-uploads/3edae817-71ad-494d-9af9-798fed02a2af.png",
       experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Firmen, Geschäftsmodelle & Produkte für Konzerne und Mittelständler",
       highlights: [
         "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Konzernpartnern",
@@ -48,9 +48,10 @@ const Team = () => {
                     <img
                       src={member.photo}
                       alt={`${member.name} - ${member.role}`}
-                      className="w-28 h-28 sm:w-32 sm:h-32 md:w-44 md:h-44 rounded-full object-cover shadow-medium"
+                      className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full object-cover object-top shadow-medium border-4 border-border"
                       loading="lazy"
                       decoding="async"
+                      style={{ objectPosition: "center 15%" }}
                     />
                   </div>
                   <div className="flex-1">
