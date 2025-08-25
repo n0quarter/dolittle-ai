@@ -2,9 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Brain, Cog, Users, BookOpen, ArrowRight } from "lucide-react";
 import servicesBackground from "@/assets/services-ai-human-collaboration.jpg";
-import strategyBackground from "@/assets/strategy-consulting-people.jpg";
-import frameworkBackground from "@/assets/framework-architecture.jpg";
-import agentsBackground from "@/assets/agents-workflows-diagram.jpg";
+import strategyBackground from "@/assets/strategy-consulting-harmonized.jpg";
+import frameworkBackground from "@/assets/framework-architecture-harmonized.jpg";
+import agentsBackground from "@/assets/agents-workflows-harmonized.jpg";
 
 const Services = () => {
   const services = [
