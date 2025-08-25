@@ -11,7 +11,7 @@ const Datenschutz = () => {
           
           <div className="prose prose-lg max-w-none text-foreground">
             <p className="mb-8 text-lg">
-              Wir freuen uns über Ihr Interesse an <strong>DocDolittle</strong>. Der Schutz Ihrer personenbezogenen 
+              Wir freuen uns über Ihr Interesse an <strong>Dolittle AI</strong>. Der Schutz Ihrer personenbezogenen 
               Daten ist uns ein wichtiges Anliegen. Auf dieser Seite informieren wir Sie darüber, wie wir Ihre 
               Daten beim Besuch unserer Webseite verarbeiten und welche Rechte Sie in Bezug auf den Datenschutz haben.
             </p>
