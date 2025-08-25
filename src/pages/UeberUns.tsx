@@ -41,7 +41,7 @@ const UeberUns = () => {
                     <Search className="h-5 w-5 text-muted-foreground shrink-0" />
                     <div className="flex-1 min-w-0 flex items-center">
                       <Typewriter
-                        text="KI-Lösungen"
+                        text="LI-Lösungen für mein Unternehmen"
                         speed={35}
                         startDelay={300}
                         className="text-2xl md:text-3xl leading-tight break-words md:break-normal bg-gradient-primary bg-clip-text text-transparent"
