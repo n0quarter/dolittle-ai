@@ -5,7 +5,7 @@ import servicesBackground from "@/assets/services-ai-human-collaboration.jpg";
 import strategyBackground from "@/assets/strategy-consulting-harmonized.jpg";
 import frameworkBackground from "@/assets/framework-architecture-harmonized.jpg";
 import agentsBackground from "@/assets/agents-workflows-harmonized.jpg";
-import workshopsBackground from "@/assets/workshops-training-blue.jpg";
+import workshopsBackground from "@/assets/workshops-fun-learning.jpg";
 
 const Services = () => {
   const services = [
@@ -71,7 +71,7 @@ const Services = () => {
     strategyBackground, // Strategy/Brain - People doing strategic consulting
     frameworkBackground, // Framework/Cog - Software architecture with circles and squares
     agentsBackground, // Agents/Users - Flow diagram with connected agents
-    workshopsBackground  // Training/BookOpen - Blue-toned learning environment
+    workshopsBackground  // Training/BookOpen - Fun, engaging learning environment
   ];
 
   return (
