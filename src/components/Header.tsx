@@ -9,6 +9,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { GraduationCap, Users } from "lucide-react";
 
 const Header = () => {
   return (
@@ -37,10 +38,10 @@ const Header = () => {
                 <NavigationMenuTrigger>Workshops & Training</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                    <ListItem href="/workshops/ki-mitarbeiterschulung" title="KI-Mitarbeiterschulung">
+                    <ListItem href="/workshops/ki-mitarbeiterschulung" title="KI-Mitarbeiterschulung" icon={<GraduationCap className="h-4 w-4" />}>
                       Schulungen für Teams ohne technischen Hintergrund
                     </ListItem>
-                    <ListItem href="/workshops/workshops" title="Workshops">
+                    <ListItem href="/workshops/workshops" title="Workshops" icon={<Users className="h-4 w-4" />}>
                       Interaktive Workshops zur KI-Implementation
                     </ListItem>
                   </ul>
@@ -59,11 +60,12 @@ const Header = () => {
   );
 };
 
-const ListItem = ({ className, title, children, ...props }: {
+const ListItem = ({ className, title, children, icon, ...props }: {
   className?: string;
   title: string;
   children: React.ReactNode;
   href: string;
+  icon?: React.ReactNode;
 }) => {
   return (
     <li>
@@ -75,7 +77,10 @@ const ListItem = ({ className, title, children, ...props }: {
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="flex items-center gap-2">
+            {icon}
+            <div className="text-sm font-medium leading-none">{title}</div>
+          </div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
