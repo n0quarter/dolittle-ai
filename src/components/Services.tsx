@@ -5,6 +5,7 @@ import servicesBackground from "@/assets/services-ai-human-collaboration.jpg";
 import strategyBackground from "@/assets/strategy-consulting-harmonized.jpg";
 import frameworkBackground from "@/assets/framework-architecture-harmonized.jpg";
 import agentsBackground from "@/assets/agents-workflows-harmonized.jpg";
+import workshopsBackground from "@/assets/workshops-training-blue.jpg";
 
 const Services = () => {
   const services = [
@@ -70,7 +71,7 @@ const Services = () => {
     strategyBackground, // Strategy/Brain - People doing strategic consulting
     frameworkBackground, // Framework/Cog - Software architecture with circles and squares
     agentsBackground, // Agents/Users - Flow diagram with connected agents
-    'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70'  // Training/BookOpen - Learning environment
+    workshopsBackground  // Training/BookOpen - Blue-toned learning environment
   ];
 
   return (
@@ -123,7 +124,7 @@ const Services = () => {
               <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 group bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/20 relative overflow-hidden">
                 {/* Background Image */}
                 <div 
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 group-hover:opacity-15 transition-opacity duration-300"
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-8 group-hover:opacity-12 transition-opacity duration-300"
                   style={{
                     backgroundImage: `url(${backgroundImages[index]})`
                   }}
