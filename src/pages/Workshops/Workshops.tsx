@@ -144,7 +144,7 @@ const Workshops = () => {
                   <div className="lg:w-1/2">
                     <Card className="bg-background/95 backdrop-blur-sm h-full">
                       <CardHeader>
-                        <CardTitle className="text-2xl">Viktor - Der KI-Entwickler-Trainer</CardTitle>
+                        <CardTitle className="text-2xl">Viktor - KI-Entwickler-Trainer</CardTitle>
                         <CardDescription className="text-lg">Informatiker, CTO und erfahrener Firmengründer</CardDescription>
                       </CardHeader>
                       <CardContent className="prose">
