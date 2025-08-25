@@ -77,7 +77,7 @@ const KiMitarbeiterschulung = () => {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
                 {targetGroups.map((group, index) => (
                   <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                     <CardContent className="pt-6">
