@@ -3,6 +3,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Brain, Cog, Users, BookOpen, ArrowRight } from "lucide-react";
 import servicesBackground from "@/assets/services-ai-human-collaboration.jpg";
 import strategyBackground from "@/assets/strategy-company-to-ai.jpg";
+import frameworkBackground from "@/assets/framework-architecture.jpg";
 import agentsBackground from "@/assets/agents-workflows-diagram.jpg";
 
 const Services = () => {
@@ -67,7 +68,7 @@ const Services = () => {
   // Background images for each service
   const backgroundImages = [
     strategyBackground, // Strategy/Brain - Company to AI planet path
-    'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=70', // Framework/Cog - Code development
+    frameworkBackground, // Framework/Cog - Software architecture with circles and squares
     agentsBackground, // Agents/Users - Flow diagram with connected agents
     'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70'  // Training/BookOpen - Learning environment
   ];
