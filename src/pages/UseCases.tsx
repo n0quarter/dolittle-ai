@@ -281,7 +281,7 @@ const UseCases = () => {
                       <h4 className="font-semibold mb-3 text-primary">⚙️ Agenten-Lösung:</h4>
                       <div className="space-y-4">
                         <div className="border-l-4 border-primary/30 pl-4">
-                          <h5 className="font-medium mb-1">1. Marktanalys-Agent</h5>
+                          <h5 className="font-medium mb-1">1. Marktanalyse-Agent</h5>
                           <p className="text-sm text-muted-foreground">
                             Durchsucht automatisch öffentliche Preisdatenbanken, Herstellerportale und B2B-Marktplätze. 
                             Sammelt aktuelle Preise, Verfügbarkeiten und Lieferzeiten für angefragte Produkte.
