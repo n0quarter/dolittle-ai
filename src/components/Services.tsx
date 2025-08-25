@@ -62,6 +62,14 @@ const Services = () => {
     },
   ];
 
+  // Background images for each service
+  const backgroundImages = [
+    'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=70', // Strategy/Brain
+    'https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1600&q=70', // Framework/Cog
+    'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=70', // Agents/Users
+    'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70'  // Training/BookOpen
+  ];
+
   return (
     <section id="services" className="py-20 relative overflow-hidden">
       {/* Background Image */}
@@ -83,55 +91,70 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Services with Connecting Lines */}
+        {/* Services with Enhanced Connecting Lines */}
         <div className="relative max-w-6xl mx-auto">
-          {/* Connecting Lines - Hidden on mobile */}
-          <div className="hidden md:block absolute inset-0 pointer-events-none">
+          {/* Enhanced Connecting Lines - Hidden on mobile */}
+          <div className="hidden md:block absolute inset-0 pointer-events-none z-0">
             {/* Horizontal line between top two cards */}
-            <div className="absolute top-1/4 left-1/2 w-8 h-0.5 bg-gradient-primary transform -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute top-1/4 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60"></div>
             
             {/* Vertical line in center */}
-            <div className="absolute top-1/4 bottom-1/4 left-1/2 w-0.5 bg-gradient-primary transform -translate-x-1/2"></div>
+            <div className="absolute top-1/4 bottom-1/4 left-1/2 w-0.5 bg-gradient-to-b from-primary/60 via-primary to-primary/60 transform -translate-x-1/2"></div>
             
             {/* Horizontal line between bottom two cards */}
-            <div className="absolute bottom-1/4 left-1/2 w-8 h-0.5 bg-gradient-primary transform -translate-x-1/2 translate-y-1/2"></div>
+            <div className="absolute bottom-1/4 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60"></div>
             
-            {/* Animated dots on lines */}
-            <div className="absolute top-1/4 left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
-            <div className="absolute bottom-1/4 left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 translate-y-1/2 animate-pulse delay-1000"></div>
+            {/* Animated connection dots */}
+            <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
+            <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-primary rounded-full transform translate-x-1/2 -translate-y-1/2 animate-pulse delay-500"></div>
+            <div className="absolute bottom-1/4 left-1/4 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 translate-y-1/2 animate-pulse delay-1000"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary rounded-full transform translate-x-1/2 translate-y-1/2 animate-pulse delay-1500"></div>
+            <div className="absolute top-1/4 left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-300"></div>
+            <div className="absolute bottom-1/4 left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 translate-y-1/2 animate-pulse delay-800"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
             {services.map((service, index) => (
-              <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 group bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/20">
-                <CardHeader>
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform shadow-glow">
-                      <service.icon className="w-6 h-6 text-white" />
+              <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 group bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/20 relative overflow-hidden">
+                {/* Background Image */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 group-hover:opacity-15 transition-opacity duration-300"
+                  style={{
+                    backgroundImage: `url(${backgroundImages[index]})`
+                  }}
+                ></div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  <CardHeader>
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform shadow-glow">
+                        <service.icon className="w-6 h-6 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl">{service.title}</CardTitle>
                     </div>
-                    <CardTitle className="text-2xl">{service.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm">
-                        <div className="w-2 h-2 bg-primary rounded-full mr-3 shadow-sm"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  {/* Connecting Arrow for visual flow */}
-                  {index < 3 && (
-                    <div className="flex justify-end mt-4 md:hidden">
-                      <ArrowRight className="w-5 h-5 text-primary animate-pulse" />
-                    </div>
-                  )}
-                </CardContent>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-center text-sm">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3 shadow-sm"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    {/* Connecting Arrow for visual flow */}
+                    {index < 3 && (
+                      <div className="flex justify-end mt-4 md:hidden">
+                        <ArrowRight className="w-5 h-5 text-primary animate-pulse" />
+                      </div>
+                    )}
+                  </CardContent>
+                </div>
               </Card>
             ))}
           </div>
