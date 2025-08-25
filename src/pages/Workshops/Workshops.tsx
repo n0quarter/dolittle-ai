@@ -171,29 +171,6 @@ const Workshops = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-8">
                 Der Schlüssel zur <span className="text-primary">KI-Akzeptanz</span>
               </h2>
-              
-              <div className="max-w-4xl mx-auto mb-12">
-                <h3 className="text-2xl font-bold mb-6 text-center">Aktuelle Herausforderung</h3>
-                <div className="prose prose-lg mx-auto text-muted-foreground mb-8">
-                  <p>
-                    Sei es aufgrund von Angst vor dem Verlust des Arbeitsplatzes oder aus Sicherheits- und Etikbedenken. Das ist schade, 
-                    denn meistens würden diese Bedenkenträger am meisten von mehr Automatisierung und Arbeitserleichterung bei 
-                    Routineaufgaben profitieren, die mit KI-Lösungen einhergehen und könnten mehr Zeit mit strategischere und kreativere 
-                    Aufgaben zu verbringen.
-                  </p>
-                  <p>
-                    Der Schlüssel zur KI-Akzeptanz im Unternehmen liegt dabei in einem Bottom-up-Ansatz. Mitarbeiter müssen selbst 
-                    erkennen, bei welchen Tätigkeiten unnötig Zeit verschwendet wird und bei welchen Tätigkeiten sie wenig Freude erleben. 
-                    Genau hier entsteht ein WIN-WIN-Ansatz!
-                  </p>
-                  <p>
-                    Statt ihnen von oben neue Prozesse und Tools aufzudrücken, sollten die Mitarbeiter aus Abteilungen mit hohem 
-                    Automatisierungspotential bereits bei der Ideenentwicklung miteinbezogen werden. Das hat zwei positive Effekte: Zum 
-                    einen kennen Mitarbeiter die Vor- und Nachteile vieler Unternehmensprozesse besser als die Geschäftsführung und zum 
-                    anderen begleiten Menschen eher einen Wandel, den sie selbst gestalten können.
-                  </p>
-                </div>
-              </div>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-12">
                 Aus diesem Grund gestalten wir unsere Workshops mit einem hohen Grad an Interaktion, um das 
                 Thema KI als Chance und nicht nur als Bedenken zu etablieren. Zudem sehen wir uns als 
