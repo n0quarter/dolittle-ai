@@ -116,60 +116,66 @@ const Workshops = () => {
                 Unsere <span className="text-primary">Trainer</span>
               </h2>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div className="flex flex-col lg:flex-row gap-6">
-                  <div className="lg:w-1/3">
+              <div className="space-y-16">
+                {/* Andreas - Image Left, Text Right */}
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  <div className="lg:w-1/2">
                     <img 
                       src="/lovable-uploads/e3deec03-d101-45c7-9eeb-d1a9071d6306.png" 
                       alt="Andreas während eines Workshops" 
-                      className="w-full h-64 lg:h-full object-cover rounded-lg shadow-lg"
+                      className="w-full h-auto object-cover rounded-lg shadow-lg"
                     />
                   </div>
-                  <Card className="bg-background/95 backdrop-blur-sm lg:w-2/3">
-                    <CardHeader>
-                      <CardTitle className="text-2xl">Andreas - Der Business KI Trainer</CardTitle>
-                      <CardDescription className="text-lg">Über 100 Technologie-Workshops und Vorträge</CardDescription>
-                    </CardHeader>
-                    <CardContent className="prose">
-                      <p>
-                        Andreas hat bereits über 100 Technologie-Workshops und Vorträge gehalten und dabei Konzerne und Mittelständler 
-                        zu neuen digitalen Geschäftsmodellen, Produkten und Patenten verholfen. Er zeichnet sich dadurch aus, 
-                        komplexe Sachverhalte durch greifbare Beispiele zu vermitteln.
-                      </p>
-                      <p>
-                        Zudem setzt er auf Interaktion und hat immer das Ziel mit unseren Teilnehmern zur Lösung zu kommen. 
-                        Er vermittelt Wissen an sämtliche Teams und Mitarbeiter, die oftmals nur wenig technisches Verständnis haben, 
-                        aber dennoch mit neuen Technologien im Unternehmen neue Werte schaffen sollen.
-                      </p>
-                    </CardContent>
-                  </Card>
+                  <div className="lg:w-1/2">
+                    <Card className="bg-background/95 backdrop-blur-sm h-full">
+                      <CardHeader>
+                        <CardTitle className="text-2xl">Andreas - Der Business KI Trainer</CardTitle>
+                        <CardDescription className="text-lg">Über 100 Technologie-Workshops und Vorträge</CardDescription>
+                      </CardHeader>
+                      <CardContent className="prose">
+                        <p>
+                          Andreas hat bereits über 100 Technologie-Workshops und Vorträge gehalten und dabei Konzerne und Mittelständler 
+                          zu neuen digitalen Geschäftsmodellen, Produkten und Patenten verholfen. Er zeichnet sich dadurch aus, 
+                          komplexe Sachverhalte durch greifbare Beispiele zu vermitteln.
+                        </p>
+                        <p>
+                          Zudem setzt er auf Interaktion und hat immer das Ziel mit unseren Teilnehmern zur Lösung zu kommen. 
+                          Er vermittelt Wissen an sämtliche Teams und Mitarbeiter, die oftmals nur wenig technisches Verständnis haben, 
+                          aber dennoch mit neuen Technologien im Unternehmen neue Werte schaffen sollen.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-6">
-                  <div className="lg:w-1/3">
+                {/* Viktor - Text Left, Image Right */}
+                <div className="flex flex-col lg:flex-row-reverse gap-8 items-center">
+                  <div className="lg:w-1/2">
                     <img 
                       src="/lovable-uploads/8a268a19-5761-424c-83b9-9cff0caf2149.png" 
                       alt="Viktor bei einer KI-Präsentation" 
-                      className="w-full h-64 lg:h-full object-cover rounded-lg shadow-lg brightness-110 contrast-110"
+                      className="w-full h-auto object-cover rounded-lg shadow-lg brightness-110 contrast-110"
                     />
                   </div>
-                  <Card className="bg-background/95 backdrop-blur-sm lg:w-2/3">
-                    <CardHeader>
-                      <CardTitle className="text-2xl">Viktor - Der KI-Entwickler-Trainer</CardTitle>
-                      <CardDescription className="text-lg">Informatiker, CTO und erfahrener Firmengründer</CardDescription>
-                    </CardHeader>
-                    <CardContent className="prose">
-                      <p>
-                        Als Lehrerkind hat Viktor immer schon sein eigenes Talent gespürt, wenn es um die Wissensvermittlung von KI geht. 
-                        Als Informatiker und erfahrener Firmengründer, CTO und KI-Entwickler hat er genau den richtigen Expertisemix, 
-                        um Entwicklern ein tieferes Verständnis von KI zu vermitteln.
-                      </p>
-                      <p>
-                        Sein inhaltlicher Fokus liegt dabei weniger auf den Tiefen des Machine Learnings als vielmehr auf der 
-                        Vermittlung der Fähigkeiten das Potential von Agentic AI zu vermitteln.
-                      </p>
-                    </CardContent>
-                  </Card>
+                  <div className="lg:w-1/2">
+                    <Card className="bg-background/95 backdrop-blur-sm h-full">
+                      <CardHeader>
+                        <CardTitle className="text-2xl">Viktor - Der KI-Entwickler-Trainer</CardTitle>
+                        <CardDescription className="text-lg">Informatiker, CTO und erfahrener Firmengründer</CardDescription>
+                      </CardHeader>
+                      <CardContent className="prose">
+                        <p>
+                          Als Lehrerkind hat Viktor immer schon sein eigenes Talent gespürt, wenn es um die Wissensvermittlung von KI geht. 
+                          Als Informatiker und erfahrener Firmengründer, CTO und KI-Entwickler hat er genau den richtigen Expertisemix, 
+                          um Entwicklern ein tieferes Verständnis von KI zu vermitteln.
+                        </p>
+                        <p>
+                          Sein inhaltlicher Fokus liegt dabei weniger auf den Tiefen des Machine Learnings als vielmehr auf der 
+                          Vermittlung der Fähigkeiten das Potential von Agentic AI zu vermitteln.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </div>
               </div>
             </div>
