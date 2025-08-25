@@ -43,7 +43,7 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Unternehmen</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li><Link to="/ueber-uns" className="hover:text-foreground transition-colors">Über uns</Link></li>
-              <li><Link to="/ueber-uns#team" className="hover:text-foreground transition-colors">Team</Link></li>
+              <li><Link to="/ueber-uns#team" className="hover:text-foreground transition-colors">Management</Link></li>
               <li><a href="mailto:andreas@dolittle-ai.de" className="hover:text-foreground transition-colors">Kontakt</a></li>
             </ul>
           </div>
