@@ -14,7 +14,9 @@ const KiMitarbeiterschulung = () => {
     "Praktische Anwendung in täglichen Arbeitsabläufen", 
     "Erhöhte Produktivität durch Automatisierung",
     "Besseres Verständnis für KI-Möglichkeiten und -Grenzen",
-    "Stärkung der digitalen Kompetenzen im Team"
+    "Stärkung der digitalen Kompetenzen im Team",
+    "Compliance mit AI Act Artikel 4 (gültig seit Februar 2025)",
+    "Zertifizierung der Mitarbeiter nach AI Act Anforderungen"
   ];
 
   const targetGroups = [
@@ -70,7 +72,8 @@ const KiMitarbeiterschulung = () => {
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                   Unsere KI-Schulungen richten sich an alle Mitarbeiter, die KI in ihrem Arbeitsalltag nutzen möchten, 
-                  auch ohne technischen Hintergrund.
+                  auch ohne technischen Hintergrund. Alle Schulungen entsprechen den Anforderungen des AI Act Artikel 4, 
+                  der seit Februar 2025 gilt.
                 </p>
               </div>
 
@@ -140,12 +143,24 @@ const KiMitarbeiterschulung = () => {
                     </div>
 
                     <div className="pt-4">
-                      <h4 className="font-semibold mb-3">Inhalte:</h4>
-                      <div className="flex flex-wrap gap-2">
+                      <h4 className="font-semibold mb-3">Inhalte & Formate:</h4>
+                      <div className="flex flex-wrap gap-2 mb-4">
                         <Badge variant="secondary">KI-Grundlagen</Badge>
                         <Badge variant="secondary">Praktische Tools</Badge>
                         <Badge variant="secondary">Use Cases</Badge>
                         <Badge variant="secondary">Hands-on Training</Badge>
+                        <Badge variant="secondary">AI Act Compliance</Badge>
+                      </div>
+                      <div className="bg-primary/10 rounded-lg p-4 mt-4">
+                        <h5 className="font-semibold text-primary mb-2">🎯 AI Act Compliance</h5>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          Unsere Schulungen entsprechen den Anforderungen des AI Act Artikel 4 (gültig seit Februar 2025)
+                        </p>
+                        <ul className="text-sm text-muted-foreground space-y-1">
+                          <li>• Online-Schulungen mit interaktiven Testaufgaben</li>
+                          <li>• Mitarbeiterzertifizierung nach AI Act Standards</li>
+                          <li>• Compliance-Dokumentation für Ihr Unternehmen</li>
+                        </ul>
                       </div>
                     </div>
                   </CardContent>
