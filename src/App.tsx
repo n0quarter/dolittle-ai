@@ -9,9 +9,6 @@ import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 import ScrollToHash from "@/components/ScrollToHash";
 import UeberUns from "./pages/UeberUns";
-import ServicesPage from "./pages/UeberUns/Services";
-import TeamPage from "./pages/UeberUns/Team";
-import ProjektePage from "./pages/UeberUns/Projekte";
 import KiMitarbeiterschulung from "./pages/Workshops/KiMitarbeiterschulung";
 import Workshops from "./pages/Workshops/Workshops";
 import UseCases from "./pages/UseCases";
@@ -28,9 +25,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<UeberUns />} />
-          <Route path="/ueber-uns/services" element={<ServicesPage />} />
-          <Route path="/ueber-uns/team" element={<TeamPage />} />
-          <Route path="/ueber-uns/projekte" element={<ProjektePage />} />
           <Route path="/workshops/ki-mitarbeiterschulung" element={<KiMitarbeiterschulung />} />
           <Route path="/workshops/workshops" element={<Workshops />} />
           <Route path="/use-cases" element={<UseCases />} />

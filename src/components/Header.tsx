@@ -47,13 +47,13 @@ const Header = () => {
                         </a>
                       </NavigationMenuLink>
                     </li>
-                    <ListItem href="/ueber-uns/services" title="Services">
+                    <ListItem href="/ueber-uns#services" title="Services">
                       KI-Strategieberatung und Framework Entwicklung
                     </ListItem>
-                    <ListItem href="/ueber-uns/team" title="Team">
+                    <ListItem href="/ueber-uns#team" title="Team">
                       Lernen Sie unser Expertenteam kennen
                     </ListItem>
-                    <ListItem href="/ueber-uns/projekte" title="Projekte">
+                    <ListItem href="/ueber-uns#projekte" title="Projekte">
                       Unsere erfolgreich umgesetzten KI-Projekte
                     </ListItem>
                   </ul>
