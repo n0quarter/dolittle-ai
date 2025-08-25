@@ -13,6 +13,12 @@ const Testimonials = () => {
       title: "CTO, Stepico",
       image: "https://ai.asdcode.com/tim.png",
       text: "The practical focus of this workshop was a game-changer for our development team. Instead of just discussing AI tools, our engineers actually learned how to implement them effectively in their day-to-day coding. The hands-on exercises and real-world applications delivered solid value that we're already seeing in our productivity metrics."
+    },
+    {
+      name: "Julio",
+      title: "Head of Engineering, Empion",
+      image: "https://ai.asdcode.com/julio.jpeg",
+      text: "The workshop was very insightful and gave us valuable hands-on experience. While the first day covered some familiar ground, we found the deep dive into Cursor, prompt techniques, and best practices especially useful. Day two was the highlight, with hands-on exercises that helped us explore Cursor in depth and apply what we've learned while building an app. Overall, it was an engaging and valuable experience. I'd recommend it if you're willing to know more about AI and how to use it more efficiently in our teams or daily workflows."
     }
   ];
 
@@ -28,7 +34,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 bg-card">
               <CardContent className="p-8">
