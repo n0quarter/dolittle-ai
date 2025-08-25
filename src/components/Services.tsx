@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Brain, Cog, Users, BookOpen, ArrowRight } from "lucide-react";
 import servicesBackground from "@/assets/services-ai-human-collaboration.jpg";
+import strategyBackground from "@/assets/strategy-company-to-ai.jpg";
+import agentsBackground from "@/assets/agents-workflows-diagram.jpg";
 
 const Services = () => {
   const services = [
@@ -64,9 +66,9 @@ const Services = () => {
 
   // Background images for each service
   const backgroundImages = [
-    'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=70', // Strategy/Brain - Business meeting
+    strategyBackground, // Strategy/Brain - Company to AI planet path
     'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=70', // Framework/Cog - Code development
-    'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=70', // Agents/Users - Team collaboration
+    agentsBackground, // Agents/Users - Flow diagram with connected agents
     'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=70'  // Training/BookOpen - Learning environment
   ];
 
