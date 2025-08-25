@@ -45,29 +45,29 @@ const Testimonials = () => {
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/1">
                   <Card className="shadow-medium hover:shadow-strong transition-all duration-300 bg-card h-full">
-                    <CardContent className="p-6 h-full flex flex-col">
-                      <div className="flex items-start gap-4 mb-4">
+                    <CardContent className="p-10 h-full flex flex-col">
+                      <div className="flex items-start gap-8 mb-8">
                         <div className="flex-shrink-0">
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.name} - ${testimonial.title}`}
-                            className="w-16 h-16 rounded-full object-cover shadow-medium"
+                            className="w-24 h-24 rounded-full object-cover shadow-medium"
                           />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-lg font-bold text-foreground mb-1">{testimonial.name}</h3>
-                          <p className="text-primary font-semibold text-sm">{testimonial.title}</p>
+                          <h3 className="text-2xl font-bold text-foreground mb-2">{testimonial.name}</h3>
+                          <p className="text-primary font-semibold text-lg">{testimonial.title}</p>
                         </div>
                       </div>
 
                       <div className="relative flex-1">
-                        <div className="text-4xl text-primary/20 absolute -top-2 -left-2">"</div>
-                        <blockquote className="text-base text-muted-foreground leading-relaxed pl-6 pr-2">
+                        <div className="text-6xl text-primary/20 absolute -top-4 -left-4">"</div>
+                        <blockquote className="text-xl text-muted-foreground leading-relaxed pl-10 pr-6">
                           {testimonial.text}
                         </blockquote>
-                        <div className="text-4xl text-primary/20 absolute -bottom-2 right-0 rotate-180">"</div>
+                        <div className="text-6xl text-primary/20 absolute -bottom-4 right-2 rotate-180">"</div>
                       </div>
                     </CardContent>
                   </Card>
