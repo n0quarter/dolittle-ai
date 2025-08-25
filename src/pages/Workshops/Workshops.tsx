@@ -65,6 +65,7 @@ const Workshops = () => {
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
                   Viele Geschäftsführer reden das Thema KI tot, obwohl sie große Potentiale heben könnten. 
                   Ganz einfach, weil sie davon ausgehen, dass Abteilungen oder einzelne Mitarbeiter das Thema nicht umsetzen oder es sogar blockieren.
+                  Aus diesem Grund nehmen wir bei unseren Workshops das Team bei der Lösungsfindung mit.
                 </p>
               </div>
 
