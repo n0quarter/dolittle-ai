@@ -43,26 +43,61 @@ const TrainingCertificates = () => {
           </p>
         </header>
 
-        <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {certificates.map((item) => (
-            <article key={item.title} className="h-full">
-              <Card className="h-full">
-                <CardHeader>
-                  <CardTitle className="text-xl">{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <AspectRatio ratio={16 / 9}>
-                    <img
-                      src={item.src}
-                      alt={item.alt}
-                      loading="lazy"
-                      className="h-full w-full object-cover rounded-md"
-                    />
-                  </AspectRatio>
-                </CardContent>
-              </Card>
-            </article>
-          ))}
+        {/* Fanned Certificate Stack */}
+        <div className="relative max-w-4xl mx-auto h-96 md:h-[500px] flex items-center justify-center">
+          {certificates.map((item, index) => {
+            // Calculate rotation and position for each certificate
+            const rotation = (index - 2) * 8; // Center certificate at 0°, others at ±8°, ±16°
+            const translateX = (index - 2) * 20; // Slight horizontal offset
+            const translateY = (index - 2) * 10; // Slight vertical offset
+            const zIndex = certificates.length - Math.abs(index - 2); // Center certificate on top
+            
+            return (
+              <div
+                key={item.title}
+                className="absolute transition-all duration-300 hover:z-50 hover:scale-110 cursor-pointer group"
+                style={{
+                  transform: `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotation}deg)`,
+                  zIndex: zIndex,
+                }}
+              >
+                <Card className="w-64 md:w-80 shadow-strong group-hover:shadow-glow transition-all duration-300 bg-card/95 backdrop-blur-sm">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-sm md:text-base text-center leading-tight">
+                      {item.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <AspectRatio ratio={16 / 11}>
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        loading="lazy"
+                        className="h-full w-full object-cover rounded-md"
+                      />
+                    </AspectRatio>
+                  </CardContent>
+                </Card>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Certificate Titles for better accessibility */}
+        <div className="mt-8 text-center">
+          <p className="text-sm text-muted-foreground mb-4">
+            Hover über die Zertifikate für eine bessere Ansicht
+          </p>
+          <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
+            {certificates.map((item, index) => (
+              <span
+                key={item.title}
+                className="px-3 py-1 bg-secondary/50 rounded-full text-xs text-muted-foreground"
+              >
+                {item.title}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
