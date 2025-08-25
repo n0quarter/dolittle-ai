@@ -113,7 +113,7 @@ const Workshops = () => {
                   <div className="lg:w-1/2">
                     <Card className="bg-background/95 backdrop-blur-sm h-full">
                       <CardHeader>
-                        <CardTitle className="text-2xl">Andreas - Der Business KI Trainer</CardTitle>
+                        <CardTitle className="text-2xl">Andreas - Business KI Trainer</CardTitle>
                         <CardDescription className="text-lg">Über 100 Technologie-Workshops und Vorträge</CardDescription>
                       </CardHeader>
                       <CardContent className="prose">
