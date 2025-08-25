@@ -6,33 +6,25 @@ import { Button } from "@/components/ui/button";
 import { Lightbulb, Users, Target, Trophy } from "lucide-react";
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
 import workshopImage2 from "@/assets/workshop-speaker-2.jpg";
-
 const Workshops = () => {
-  const philosophyPoints = [
-    {
-      icon: Lightbulb,
-      title: "Bottom-up Ansatz",
-      description: "Mitarbeiter entwickeln selbst Ideen für KI-Einsatz in ihrem Arbeitsbereich"
-    },
-    {
-      icon: Users,
-      title: "Hohe Interaktion",
-      description: "Aktive Teilnahme und Experimente statt passive Wissensvermittlung"
-    },
-    {
-      icon: Target,
-      title: "Praktische Beispiele",
-      description: "Greifbare Use Cases und reale Anwendungsszenarien"
-    },
-    {
-      icon: Trophy,
-      title: "WIN-WIN Ergebnis",
-      description: "Mehr Automatisierung bei Routinen, mehr Zeit für strategische Aufgaben"
-    }
-  ];
-
-  return (
-    <>
+  const philosophyPoints = [{
+    icon: Lightbulb,
+    title: "Bottom-up Ansatz",
+    description: "Mitarbeiter entwickeln selbst Ideen für KI-Einsatz in ihrem Arbeitsbereich"
+  }, {
+    icon: Users,
+    title: "Hohe Interaktion",
+    description: "Aktive Teilnahme und Experimente statt passive Wissensvermittlung"
+  }, {
+    icon: Target,
+    title: "Praktische Beispiele",
+    description: "Greifbare Use Cases und reale Anwendungsszenarien"
+  }, {
+    icon: Trophy,
+    title: "WIN-WIN Ergebnis",
+    description: "Mehr Automatisierung bei Routinen, mehr Zeit für strategische Aufgaben"
+  }];
+  return <>
       <Helmet>
         <title>Workshops - Dolittle AI | Interaktive KI-Workshops für Unternehmen</title>
         <meta name="description" content="Interaktive KI-Workshops mit Bottom-up Ansatz. Mitarbeiter entwickeln eigene KI-Lösungen. Über 100 gehaltene Workshops von erfahrenen Trainern." />
@@ -44,14 +36,11 @@ const Workshops = () => {
         <Header />
         <main className="pt-20">
           {/* Hero Section */}
-          <section 
-            className="py-32 bg-gradient-to-br from-background to-secondary/20 relative overflow-hidden"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${workshopImage2})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          >
+          <section className="py-32 bg-gradient-to-br from-background to-secondary/20 relative overflow-hidden" style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${workshopImage2})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
             <div className="container mx-auto px-6 text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
                 Interaktive KI-<span className="text-primary">Workshops</span>
@@ -80,8 +69,7 @@ const Workshops = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                {philosophyPoints.map((point, index) => (
-                  <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+                {philosophyPoints.map((point, index) => <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                     <CardHeader>
                       <point.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                       <CardTitle className="text-lg">{point.title}</CardTitle>
@@ -89,8 +77,7 @@ const Workshops = () => {
                     <CardContent>
                       <CardDescription>{point.description}</CardDescription>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
 
               <div className="bg-secondary/10 rounded-lg p-8">
@@ -117,14 +104,11 @@ const Workshops = () => {
           </section>
 
           {/* Trainer Profiles */}
-          <section 
-            className="py-20 relative overflow-hidden"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${workshopImage1})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          >
+          <section className="py-20 relative overflow-hidden" style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${workshopImage1})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
             <div className="container mx-auto px-6 relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-white">
                 Unsere <span className="text-primary">Trainer</span>
@@ -133,7 +117,7 @@ const Workshops = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <Card className="bg-background/95 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-2xl">Andreas - Der Geschichtenerzähler</CardTitle>
+                    <CardTitle className="text-2xl">Andreas - Der Business KI Trainer</CardTitle>
                     <CardDescription className="text-lg">Über 100 Technologie-Workshops und Vorträge</CardDescription>
                   </CardHeader>
                   <CardContent className="prose">
@@ -152,7 +136,7 @@ const Workshops = () => {
 
                 <Card className="bg-background/95 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-2xl">Viktor - Der KI-Entwickler</CardTitle>
+                    <CardTitle className="text-2xl">Viktor - Der KI-Entwickler-Trainer</CardTitle>
                     <CardDescription className="text-lg">Informatiker, CTO und erfahrener Firmengründer</CardDescription>
                   </CardHeader>
                   <CardContent className="prose">
@@ -190,8 +174,6 @@ const Workshops = () => {
         </main>
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default Workshops;
