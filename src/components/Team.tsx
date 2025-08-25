@@ -10,7 +10,8 @@ const Team = () => {
       experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Firmen, Geschäftsmodelle & Produkte für Konzerne und Mittelständler",
       highlights: [
         "Gründer und Geschäftsführer von MOBIKO, dem Marktführer für Mobilitätsbudget gegründet mit Konzernpartnern",
-        "Gründung DocDolittle, die smarte Inbox mit KI-Telefonassistenten für Ärzte"
+        "Gründung DocDolittle, die smarte Inbox mit KI-Telefonassistenten für Ärzte",
+        "Audibusiness Innovation GmbH und mantro GmbH"
       ],
       expertise: ["Digitale Geschäftsmodelle", "Strategieberatung", "Unternehmensgründung", "KI für Healthcare"]
     },
