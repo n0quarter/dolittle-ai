@@ -88,8 +88,8 @@ const UeberUns = () => {
             </div>
           </section>
 
-          <Team />
           <Services />
+          <Team />
           <WorkingApproach />
           <ExampleProjects />
           <Testimonials />
