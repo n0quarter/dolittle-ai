@@ -31,7 +31,7 @@ const Testimonials = () => {
             Was <span className="bg-gradient-primary bg-clip-text text-transparent">Kunden</span> über uns sagen
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Erfahrungen von Führungskräften, die bereits erfolgreich KI in ihren Unternehmen implementiert haben.
+            Erfahrungen von Führungskräften, die unsere Workshops in Auftrag gegeben haben.
           </p>
         </div>
 
