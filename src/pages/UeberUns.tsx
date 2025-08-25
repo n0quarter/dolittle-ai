@@ -7,6 +7,8 @@ import ExampleProjects from "@/components/ExampleProjects";
 import Testimonials from "@/components/Testimonials";
 import WorkingApproach from "@/components/WorkingApproach";
 import TrainingCertificates from "@/components/TrainingCertificates";
+import ProjectProcess from "@/components/ProjectProcess";
+import Benefits from "@/components/Benefits";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ai-consulting.jpg";
 import CountUp from "@/components/ui/count-up";
@@ -98,8 +100,10 @@ const UeberUns = () => {
           <div id="projekte">
             <ExampleProjects />
           </div>
+          <ProjectProcess />
           <Testimonials />
           <TrainingCertificates />
+          <Benefits />
         </main>
         <Footer />
       </div>
