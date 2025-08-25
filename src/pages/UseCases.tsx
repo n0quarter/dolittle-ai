@@ -240,85 +240,110 @@ const UseCases = () => {
                   </div>
                 </Card>
 
-                {/* Case 2: Intelligente Kundenanfragen-Bearbeitung */}
+                {/* Case 2: Automatisierte Lieferantenbewertung */}
                 <Card className="p-8 hover:shadow-xl transition-shadow">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="p-3 bg-primary/10 rounded-lg">
-                      <MessageSquare className="h-8 w-8 text-primary" />
+                      <ShoppingCart className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold mb-2">Intelligente Kundenanfragen-Bearbeitung</h3>
-                      <p className="text-muted-foreground">Automatisierte E-Mail-Klassifizierung mit Antwortvorschlägen</p>
+                      <h3 className="text-2xl font-bold mb-2">Automatisierte Lieferantenbewertung</h3>
+                      <p className="text-muted-foreground">Intelligente Beschaffungsoptimierung ohne Machine Learning</p>
                     </div>
                   </div>
 
                   <div className="space-y-6">
                     <div>
-                      <h4 className="font-semibold mb-3 text-primary">🎯 Zielsetzung:</h4>
+                      <h4 className="font-semibold mb-3 text-primary">🎯 Problemstellung:</h4>
                       <p className="text-muted-foreground">
-                        Automatische Kategorisierung eingehender Kundenanfragen und Generierung passender Antwortvorschläge. 
-                        Reduzierung der Bearbeitungszeit von 45 Minuten auf 5 Minuten pro Anfrage.
+                        Einkaufsabteilungen verbringen bis zu 60% ihrer Zeit mit manueller Lieferantenrecherche, 
+                        Angebotsvergleichen und Compliance-Prüfungen. Oft werden dabei günstigere oder bessere 
+                        Alternativen übersehen, da die Datenmenge zu groß ist.
                       </p>
                     </div>
 
                     <div>
-                      <h4 className="font-semibold mb-3 text-primary">⚙️ Lösungsansatz:</h4>
+                      <h4 className="font-semibold mb-3 text-primary">⚙️ Agenten-Lösung:</h4>
                       <div className="space-y-4">
                         <div className="border-l-4 border-primary/30 pl-4">
-                          <h5 className="font-medium mb-1">1. E-Mail-Analyse</h5>
+                          <h5 className="font-medium mb-1">1. Marktanalys-Agent</h5>
                           <p className="text-sm text-muted-foreground">
-                            Eingehende E-Mails werden automatisch analysiert und in Kategorien eingeteilt: 
-                            Beschwerde, Produktanfrage, Technischer Support, Rechnungsanfrage, etc.
+                            Durchsucht automatisch öffentliche Preisdatenbanken, Herstellerportale und B2B-Marktplätze. 
+                            Sammelt aktuelle Preise, Verfügbarkeiten und Lieferzeiten für angefragte Produkte.
                           </p>
                         </div>
                         <div className="border-l-4 border-primary/30 pl-4">
-                          <h5 className="font-medium mb-1">2. Kontext-Verständnis</h5>
+                          <h5 className="font-medium mb-1">2. Compliance-Prüf-Agent</h5>
                           <p className="text-sm text-muted-foreground">
-                            KI erkennt Dringlichkeit, Kundenstatus (Neukunde/Bestandskunde) und 
-                            relevante Vorgeschichte aus CRM-System und früheren Kommunikationen.
+                            Überprüft automatisch Zertifizierungen, Nachhaltigkeitsstandards und gesetzliche Anforderungen. 
+                            Gleicht Lieferantendaten mit internen Compliance-Regeln und Branchen-Blacklists ab.
                           </p>
                         </div>
                         <div className="border-l-4 border-primary/30 pl-4">
-                          <h5 className="font-medium mb-1">3. Antwort-Generierung</h5>
+                          <h5 className="font-medium mb-1">3. Bewertungs-Agent</h5>
                           <ul className="text-sm text-muted-foreground space-y-1">
-                            <li>• Automatische Erstellung passender Antwortvorschläge</li>
-                            <li>• Integration von Produktinformationen und FAQ-Inhalten</li>
-                            <li>• Anpassung an Unternehmens-Tonalität und Kundenhistorie</li>
+                            <li>• Erstellt automatisch Lieferanten-Scorings basierend auf definierten Kriterien</li>
+                            <li>• Berücksichtigt Preis, Qualität, Lieferzeit, Zahlungsbedingungen</li>
+                            <li>• Integriert historische Lieferperformance aus ERP-System</li>
                           </ul>
+                        </div>
+                        <div className="border-l-4 border-primary/30 pl-4">
+                          <h5 className="font-medium mb-1">4. Monitoring-Agent</h5>
+                          <p className="text-sm text-muted-foreground">
+                            Überwacht kontinuierlich Preisänderungen, Lieferengpässe und neue Marktakteure. 
+                            Sendet automatische Alerts bei kritischen Änderungen oder besseren Alternativen.
+                          </p>
                         </div>
                       </div>
                     </div>
 
                     <div>
-                      <h4 className="font-semibold mb-3 text-primary">🚀 Ergebnis:</h4>
+                      <h4 className="font-semibold mb-3 text-primary">🚀 Konkrete Umsetzung:</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></span>
-                          Automatische Priorisierung nach Dringlichkeit und Kundenwert
+                          Regelbasierte Logik statt kostenintensivem Machine Learning
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></span>
-                          Fertige Antwortvorschläge zur finalen Überprüfung
+                          API-Integration in bestehende ERP- und Beschaffungssysteme
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></span>
-                          Weiterleitung an spezialisierten Mitarbeiter bei komplexen Fällen
+                          Automatische Generierung von Ausschreibungsunterlagen
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></span>
+                          Dashboard mit Echtzeit-Marktanalysen und Empfehlungen
                         </li>
                       </ul>
                     </div>
 
                     <div className="bg-secondary/20 p-4 rounded-lg">
-                      <h4 className="font-semibold mb-2 text-primary">📊 Messbare Erfolge:</h4>
-                      <div className="grid grid-cols-2 gap-4 text-sm">
+                      <h4 className="font-semibold mb-2 text-primary">📊 Typische Einsparungen:</h4>
+                      <div className="grid grid-cols-3 gap-4 text-sm">
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-primary">89%</div>
+                          <div className="text-2xl font-bold text-primary">15-25%</div>
+                          <div className="text-muted-foreground">Kosteneinsparung</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-primary">70%</div>
                           <div className="text-muted-foreground">Zeitersparnis</div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-primary">24h</div>
-                          <div className="text-muted-foreground">Ø Antwortzeit</div>
+                          <div className="text-2xl font-bold text-primary">3 Tage</div>
+                          <div className="text-muted-foreground">Setup-Zeit</div>
                         </div>
                       </div>
+                    </div>
+
+                    <div className="border border-primary/20 bg-primary/5 p-4 rounded-lg">
+                      <h4 className="font-semibold mb-2 text-primary">💡 Warum ohne Machine Learning?</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Beschaffungsentscheidungen basieren oft auf klar definierbaren Regeln und Kriterien. 
+                        Durch regelbasierte Agenten erreichen wir 95% der Effizienz von ML-Lösungen bei nur 
+                        20% der Implementierungskosten und ohne lange Trainingsphasen.
+                      </p>
                     </div>
                   </div>
                 </Card>
