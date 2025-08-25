@@ -15,6 +15,9 @@ import {
   Shield,
   Zap
 } from "lucide-react";
+import useCasesHeroBg from "@/assets/use-cases-hero-bg.jpg";
+import pressAutomationBg from "@/assets/press-automation-bg.jpg";
+import supplierAutomationBg from "@/assets/supplier-automation-bg.jpg";
 
 const UseCases = () => {
   const useCases = [
@@ -93,12 +96,16 @@ const UseCases = () => {
         <Header />
         <main className="pt-20">
           {/* Hero Section */}
-          <section className="py-20 bg-gradient-to-br from-background to-secondary/20">
-            <div className="container mx-auto px-6 text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <section className="py-32 relative overflow-hidden" style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${useCasesHeroBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}>
+            <div className="container mx-auto px-6 text-center relative z-10">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
                 KI <span className="text-primary">Use Cases</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+              <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
                 Entdecken Sie praktische KI-Anwendungsfälle für Ihr Unternehmen. 
                 Von der Automatisierung bis zur intelligenten Datenanalyse.
               </p>
@@ -163,7 +170,11 @@ const UseCases = () => {
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
                 {/* Case 1: Automatisierte Presseartikel */}
-                <Card className="p-8 hover:shadow-xl transition-shadow">
+                <Card className="p-8 hover:shadow-xl transition-shadow relative overflow-hidden" style={{
+                  backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(${pressAutomationBg})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}>
                   <div className="flex items-center gap-4 mb-6">
                     <div className="p-3 bg-primary/10 rounded-lg">
                       <FileText className="h-8 w-8 text-primary" />
@@ -241,7 +252,11 @@ const UseCases = () => {
                 </Card>
 
                 {/* Case 2: Automatisierte Lieferantenbewertung */}
-                <Card className="p-8 hover:shadow-xl transition-shadow">
+                <Card className="p-8 hover:shadow-xl transition-shadow relative overflow-hidden" style={{
+                  backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(${supplierAutomationBg})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}>
                   <div className="flex items-center gap-4 mb-6">
                     <div className="p-3 bg-primary/10 rounded-lg">
                       <ShoppingCart className="h-8 w-8 text-primary" />
