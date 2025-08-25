@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
 import ExampleProjects from "@/components/ExampleProjects";
+import Testimonials from "@/components/Testimonials";
+import WorkingApproach from "@/components/WorkingApproach";
+import TrainingCertificates from "@/components/TrainingCertificates";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ai-consulting.jpg";
 import CountUp from "@/components/ui/count-up";
@@ -87,7 +90,10 @@ const UeberUns = () => {
 
           <Team />
           <Services />
+          <WorkingApproach />
           <ExampleProjects />
+          <Testimonials />
+          <TrainingCertificates />
         </main>
         <Footer />
       </div>
