@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const certificates = [
   {
@@ -30,6 +32,8 @@ const certificates = [
 ];
 
 const TrainingCertificates = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <section id="datenschutzschulungen" className="py-16 sm:py-20">
       <div className="container mx-auto px-4">
@@ -51,34 +55,59 @@ const TrainingCertificates = () => {
             const translateX = (index - 2) * 20; // Slight horizontal offset
             const translateY = (index - 2) * 10; // Slight vertical offset
             const zIndex = certificates.length - Math.abs(index - 2); // Center certificate on top
+            const isHovered = hoveredIndex === index;
+            const isOtherHovered = hoveredIndex !== null && hoveredIndex !== index;
             
             return (
-              <div
-                key={item.title}
-                className="absolute transition-all duration-300 hover:z-50 hover:scale-110 cursor-pointer group"
-                style={{
-                  transform: `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotation}deg)`,
-                  zIndex: zIndex,
-                }}
-              >
-                <Card className="w-64 md:w-80 shadow-strong group-hover:shadow-glow transition-all duration-300 bg-card/95 backdrop-blur-sm">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm md:text-base text-center leading-tight">
-                      {item.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <AspectRatio ratio={16 / 11}>
-                      <img
-                        src={item.src}
-                        alt={item.alt}
-                        loading="lazy"
-                        className="h-full w-full object-cover rounded-md"
-                      />
-                    </AspectRatio>
-                  </CardContent>
-                </Card>
-              </div>
+              <Dialog key={item.title}>
+                <DialogTrigger asChild>
+                  <div
+                    className="absolute transition-all duration-500 cursor-pointer group"
+                    style={{
+                      transform: isHovered 
+                        ? `translateX(${translateX * 2}px) translateY(${translateY}px) rotate(0deg) scale(1.1)`
+                        : isOtherHovered
+                        ? `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotation}deg) scale(0.9)`
+                        : `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotation}deg)`,
+                      zIndex: isHovered ? 100 : zIndex,
+                      opacity: isOtherHovered ? 0.6 : 1,
+                    }}
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                  >
+                    <Card className="w-64 md:w-80 shadow-strong hover:shadow-glow transition-all duration-500 bg-card/95 backdrop-blur-sm border-2 hover:border-primary/50">
+                      <CardHeader className="pb-2">
+                        <CardTitle className="text-sm md:text-base text-center leading-tight">
+                          {item.title}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <AspectRatio ratio={16 / 11}>
+                          <img
+                            src={item.src}
+                            alt={item.alt}
+                            loading="lazy"
+                            className="h-full w-full object-cover rounded-md"
+                          />
+                        </AspectRatio>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl w-full max-h-[90vh] overflow-hidden p-0">
+                  <div className="relative">
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="w-full h-auto object-contain max-h-[85vh]"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                      <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                      <p className="text-white/90 text-sm">Klicken Sie außerhalb des Bildes, um zu schließen</p>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
             );
           })}
         </div>
@@ -86,7 +115,7 @@ const TrainingCertificates = () => {
         {/* Certificate Titles for better accessibility */}
         <div className="mt-8 text-center">
           <p className="text-sm text-muted-foreground mb-4">
-            Hover über die Zertifikate für eine bessere Ansicht
+            Bewegen Sie die Maus über die Zertifikate und klicken Sie für eine vergrößerte Ansicht
           </p>
           <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
             {certificates.map((item, index) => (
