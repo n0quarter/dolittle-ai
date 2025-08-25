@@ -94,7 +94,7 @@ const Workshops = () => {
         }}>
             <div className="container mx-auto px-6 relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-white">
-                Unsere <span className="text-primary">Trainer</span>
+                Trainer aus der <span className="text-primary">Praxis</span>
               </h2>
 
               <div className="space-y-16">
