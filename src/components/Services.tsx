@@ -122,13 +122,8 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
             {services.map((service, index) => (
               <Card key={index} className="shadow-medium hover:shadow-strong transition-all duration-300 group bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/20 relative overflow-hidden">
-                {/* Background Image */}
-                <div 
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-1 group-hover:opacity-2 transition-opacity duration-300"
-                  style={{
-                    backgroundImage: `url(${backgroundImages[index]})`
-                  }}
-                ></div>
+                {/* Strong overlay for text readability */}
+                <div className="absolute inset-0 bg-card/95"></div>
                 
                 {/* Content */}
                 <div className="relative z-10">
