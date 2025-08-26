@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  Bot, 
-  FileText, 
-  MessageSquare, 
-  ShoppingCart, 
-  Users, 
+import {
+  Bot,
+  FileText,
+  MessageSquare,
+  ShoppingCart,
+  Users,
   TrendingUp,
   Clock,
   Shield,
@@ -37,7 +37,7 @@ const UseCases = () => {
     },
     {
       icon: MessageSquare,
-      title: "E-Mail Automatisierung", 
+      title: "E-Mail Automatisierung",
       description: "Intelligente E-Mail-Klassifizierung und Antwortvorschläge",
       benefits: ["Schnellere Bearbeitung", "Konsistente Antworten", "Entlastung"],
       industry: "Customer Service"
@@ -91,7 +91,7 @@ const UseCases = () => {
         <meta name="keywords" content="KI Use Cases, AI Anwendungen, Chatbots, Dokumentenanalyse, KI im Unternehmen" />
         <link rel="canonical" href="/use-cases" />
       </Helmet>
-      
+
       <div className="min-h-screen">
         <Header />
         <main className="pt-20">
@@ -106,7 +106,7 @@ const UseCases = () => {
                 KI <span className="text-primary">Use Cases</span>
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Entdecken Sie praktische KI-Anwendungsfälle für Ihr Unternehmen. 
+                Entdecken Sie praktische KI-Anwendungsfälle für Ihr Unternehmen.
                 Von der Automatisierung bis zur intelligenten Datenanalyse.
               </p>
             </div>
@@ -189,7 +189,7 @@ const UseCases = () => {
                     <div>
                       <h4 className="font-semibold mb-3 text-primary">🎯 Zielsetzung:</h4>
                       <p className="text-muted-foreground">
-                        Automatische Erstellung von Pressemitteilungen, die stilistisch zu bisherigen Veröffentlichungen passen 
+                        Automatische Erstellung von Pressemitteilungen, die stilistisch zu bisherigen Veröffentlichungen passen
                         und aktuelle Themen integrieren. Reduzierung des Aufwands von 4-6 Stunden auf 15 Minuten pro Artikel.
                       </p>
                     </div>
@@ -200,14 +200,14 @@ const UseCases = () => {
                         <div className="border-l-4 border-primary/30 pl-4">
                           <h5 className="font-medium mb-1">1. Trainingsphase</h5>
                           <p className="text-sm text-muted-foreground">
-                            Bestehende Pressemitteilungen werden DSGVO-konform in ein lokales Fine-Tuning-Modell eingespeist. 
+                            Bestehende Pressemitteilungen werden DSGVO-konform in ein lokales Fine-Tuning-Modell eingespeist.
                             Das Modell lernt Tonalität, Satzstruktur, bevorzugte Formulierungen und Stilregeln.
                           </p>
                         </div>
                         <div className="border-l-4 border-primary/30 pl-4">
                           <h5 className="font-medium mb-1">2. Themeneingabe</h5>
                           <p className="text-sm text-muted-foreground">
-                            Redaktionsteam gibt nur noch Thema oder Ereignis ein (z.B. "Neuer Produktlaunch Q4 2025"). 
+                            Redaktionsteam gibt nur noch Thema oder Ereignis ein (z.B. "Neuer Produktlaunch Q4 2025").
                             Optional: Aktuelle Themen-Feeds werden automatisch integriert.
                           </p>
                         </div>
@@ -243,7 +243,7 @@ const UseCases = () => {
                     <div className="bg-secondary/20 p-4 rounded-lg">
                       <h4 className="font-semibold mb-2 text-primary">💻 Technische Umsetzung:</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Lokale LLM-Nutzung (Llama 3.1, Mistral Large) oder Azure OpenAI EU-Endpunkte</li>
+                        <li>• Lokale LLM-Nutzung (Deepseek, Mistral) oder EU-Endpunkte (Azure OpenAI, GCP/Gemini)</li>
                         <li>• Datenspeicherung in interner Datenbank / EU-Cloud</li>
                         <li>• DSGVO-konforme Verarbeitung aller Unternehmensdaten</li>
                       </ul>
@@ -271,8 +271,8 @@ const UseCases = () => {
                     <div>
                       <h4 className="font-semibold mb-3 text-primary">🎯 Problemstellung:</h4>
                       <p className="text-muted-foreground">
-                        Einkaufsabteilungen verbringen bis zu 60% ihrer Zeit mit manueller Lieferantenrecherche, 
-                        Angebotsvergleichen und Compliance-Prüfungen. Oft werden dabei günstigere oder bessere 
+                        Einkaufsabteilungen verbringen bis zu 60% ihrer Zeit mit manueller Lieferantenrecherche,
+                        Angebotsvergleichen und Compliance-Prüfungen. Oft werden dabei günstigere oder bessere
                         Alternativen übersehen, da die Datenmenge zu groß ist.
                       </p>
                     </div>
@@ -283,14 +283,14 @@ const UseCases = () => {
                         <div className="border-l-4 border-primary/30 pl-4">
                           <h5 className="font-medium mb-1">1. Marktanalyse-Agent</h5>
                           <p className="text-sm text-muted-foreground">
-                            Durchsucht automatisch öffentliche Preisdatenbanken, Herstellerportale und B2B-Marktplätze. 
+                            Durchsucht automatisch öffentliche Preisdatenbanken, Herstellerportale und B2B-Marktplätze.
                             Sammelt aktuelle Preise, Verfügbarkeiten und Lieferzeiten für angefragte Produkte.
                           </p>
                         </div>
                         <div className="border-l-4 border-primary/30 pl-4">
                           <h5 className="font-medium mb-1">2. Compliance-Prüf-Agent</h5>
                           <p className="text-sm text-muted-foreground">
-                            Überprüft automatisch Zertifizierungen, Nachhaltigkeitsstandards und gesetzliche Anforderungen. 
+                            Überprüft automatisch Zertifizierungen, Nachhaltigkeitsstandards und gesetzliche Anforderungen.
                             Gleicht Lieferantendaten mit internen Compliance-Regeln und Branchen-Blacklists ab.
                           </p>
                         </div>
@@ -305,7 +305,7 @@ const UseCases = () => {
                         <div className="border-l-4 border-primary/30 pl-4">
                           <h5 className="font-medium mb-1">4. Monitoring-Agent</h5>
                           <p className="text-sm text-muted-foreground">
-                            Überwacht kontinuierlich Preisänderungen, Lieferengpässe und neue Marktakteure. 
+                            Überwacht kontinuierlich Preisänderungen, Lieferengpässe und neue Marktakteure.
                             Sendet automatische Alerts bei kritischen Änderungen oder besseren Alternativen.
                           </p>
                         </div>
@@ -355,8 +355,8 @@ const UseCases = () => {
                     <div className="border border-primary/20 bg-primary/5 p-4 rounded-lg">
                       <h4 className="font-semibold mb-2 text-primary">💡 Warum ohne Machine Learning?</h4>
                       <p className="text-sm text-muted-foreground">
-                        Beschaffungsentscheidungen basieren oft auf klar definierbaren Regeln und Kriterien. 
-                        Durch regelbasierte Agenten erreichen wir 95% der Effizienz von ML-Lösungen bei nur 
+                        Beschaffungsentscheidungen basieren oft auf klar definierbaren Regeln und Kriterien.
+                        Durch regelbasierte Agenten erreichen wir 95% der Effizienz von ML-Lösungen bei nur
                         20% der Implementierungskosten und ohne lange Trainingsphasen.
                       </p>
                     </div>
@@ -393,7 +393,7 @@ const UseCases = () => {
               <div className="text-center">
                 <h3 className="text-2xl font-bold mb-6">Bereit für Ihre KI-Lösung?</h3>
                 <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Lassen Sie uns gemeinsam herausfinden, welche KI-Anwendungsfälle 
+                  Lassen Sie uns gemeinsam herausfinden, welche KI-Anwendungsfälle
                   das größte Potential für Ihr Unternehmen bieten.
                 </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
