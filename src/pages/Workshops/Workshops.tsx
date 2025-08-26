@@ -33,7 +33,7 @@ const Workshops = () => {
         <meta name="keywords" content="KI Workshops, AI Training, Interactive Workshops, Bottom-up Ansatz, KI Implementation" />
         <link rel="canonical" href="/workshops/workshops" />
       </Helmet>
-      
+
       <div className="min-h-screen">
         <Header />
         <main className="pt-20">
@@ -48,7 +48,7 @@ const Workshops = () => {
                 Interaktive KI-<span className="text-primary">Workshops</span>
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Workshops mit hohem Interaktionsgrad, die KI als Chance etablieren 
+                Workshops mit hohem Interaktionsgrad, die KI als Chance etablieren
                 und praktische Lösungen für Ihr Unternehmen entwickeln.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
@@ -65,7 +65,7 @@ const Workshops = () => {
                   Unsere <span className="text-primary">Workshophilosophie</span>
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-6">
-                  Viele Geschäftsführer reden das Thema KI tot, obwohl sie große Potentiale heben könnten. 
+                  Viele Geschäftsführer reden das Thema KI tot, obwohl sie große Potentiale heben könnten.
                   Ganz einfach, weil sie davon ausgehen, dass Abteilungen oder einzelne Mitarbeiter das Thema nicht umsetzen oder es sogar blockieren.
                   Aus diesem Grund nehmen wir bei unseren Workshops das Team bei der Lösungsfindung mit.
                 </p>
@@ -104,9 +104,9 @@ const Workshops = () => {
                 {/* Andreas - Image Left, Text Right */}
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                   <div className="lg:w-1/2">
-                    <img 
-                      src="/lovable-uploads/e3deec03-d101-45c7-9eeb-d1a9071d6306.png" 
-                      alt="Andreas während eines Workshops" 
+                    <img
+                      src="/lovable-uploads/e3deec03-d101-45c7-9eeb-d1a9071d6306.png"
+                      alt="Andreas während eines Workshops"
                       className="w-full h-auto object-cover rounded-lg shadow-lg"
                     />
                   </div>
@@ -118,13 +118,13 @@ const Workshops = () => {
                       </CardHeader>
                       <CardContent className="prose">
                         <p>
-                          Andreas hat bereits über 100 Technologie-Workshops und Vorträge gehalten und dabei Konzerne und Mittelständler 
-                          zu neuen digitalen Geschäftsmodellen, Produkten und Patenten verholfen. Er zeichnet sich dadurch aus, 
+                          Andreas hat bereits über 100 Technologie-Workshops und Vorträge gehalten und dabei Konzerne und Mittelständler
+                          zu neuen digitalen Geschäftsmodellen, Produkten und Patenten verholfen. Er zeichnet sich dadurch aus,
                           komplexe Sachverhalte durch greifbare Beispiele zu vermitteln.
                         </p>
                         <p>
-                          Zudem setzt er auf Interaktion und hat immer das Ziel mit unseren Teilnehmern zur Lösung zu kommen. 
-                          Er vermittelt Wissen an sämtliche Teams und Mitarbeiter, die oftmals nur wenig technisches Verständnis haben, 
+                          Zudem setzt er auf Interaktion und hat immer das Ziel mit unseren Teilnehmern zur Lösung zu kommen.
+                          Er vermittelt Wissen an sämtliche Teams und Mitarbeiter, die oftmals nur wenig technisches Verständnis haben,
                           aber dennoch mit neuen Technologien im Unternehmen neue Werte schaffen sollen.
                         </p>
                       </CardContent>
@@ -135,9 +135,9 @@ const Workshops = () => {
                 {/* Viktor - Text Left, Image Right */}
                 <div className="flex flex-col lg:flex-row-reverse gap-8 items-center">
                   <div className="lg:w-1/2">
-                    <img 
-                      src="/lovable-uploads/8a268a19-5761-424c-83b9-9cff0caf2149.png" 
-                      alt="Viktor bei einer KI-Präsentation" 
+                    <img
+                      src="/lovable-uploads/8a268a19-5761-424c-83b9-9cff0caf2149.png"
+                      alt="Viktor bei einer KI-Präsentation"
                       className="w-full h-auto object-cover rounded-lg shadow-lg brightness-110 contrast-110"
                     />
                   </div>
@@ -149,13 +149,12 @@ const Workshops = () => {
                       </CardHeader>
                       <CardContent className="prose">
                         <p>
-                          Als Lehrerkind hat Viktor immer schon sein eigenes Talent gespürt, wenn es um die Wissensvermittlung von KI geht. 
-                          Als Informatiker und erfahrener Firmengründer, CTO und KI-Entwickler hat er genau den richtigen Expertisemix, 
+                          Als Lehrerkind hat Viktor immer schon sein eigenes Talent gespürt, wenn es um die Wissensvermittlung von KI geht.
+                          Als Informatiker und erfahrener Firmengründer, CTO und KI-Entwickler hat er genau den richtigen Expertisemix,
                           um Entwicklern ein tieferes Verständnis von KI zu vermitteln.
                         </p>
                         <p>
-                          Sein inhaltlicher Fokus liegt dabei weniger auf den Tiefen des Machine Learnings als vielmehr auf der 
-                          Vermittlung der Fähigkeiten das Potential von Agentic AI zu vermitteln.
+                          Seine Methodik konzentriert sich auf die praktische Erkundung von KI-Entwicklungstools in Kombination mit praxisnahen Programmieransätzen.
                         </p>
                       </CardContent>
                     </Card>
