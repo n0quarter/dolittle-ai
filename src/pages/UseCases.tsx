@@ -47,7 +47,7 @@ const UseCases = () => {
       title: "Marketing Automation",
       description: "Erstellung von Social Media Posts und Presseartikeln auf Basis von Workflows und Agenten",
       benefits: ["Höhere Conversion", "Bessere UX", "Umsatzsteigerung"],
-      industry: "E-Commerce, Retail"
+      industry: "Marketing"
     },
     {
       icon: Users,
