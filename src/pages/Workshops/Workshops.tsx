@@ -175,27 +175,18 @@ const Workshops = () => {
               </h2>
               <div className="max-w-4xl mx-auto mb-12">
                 <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                      <h4 className="text-lg font-semibold mb-4 text-primary">Tag 1: KI-Grundlagen & Potentiale</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li>• <strong>09:00-10:30:</strong> Begrüßung & KI-Mythen vs. Realität</li>
-                        <li>• <strong>10:45-12:00:</strong> Hands-on: Erste KI-Tools ausprobieren</li>
-                        <li>• <strong>13:00-14:30:</strong> Use-Case Workshop: Wo hilft KI in Ihrem Arbeitsbereich?</li>
-                        <li>• <strong>14:45-16:00:</strong> Erfolgsgeschichten aus der Praxis</li>
-                        <li>• <strong>16:00-16:30:</strong> Q&A und Diskussion</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold mb-4 text-primary">Tag 2: Implementierung & Umsetzung</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li>• <strong>09:00-10:30:</strong> Prompt Engineering Workshop</li>
-                        <li>• <strong>10:45-12:00:</strong> Team-Übung: KI-Lösungen entwickeln</li>
-                        <li>• <strong>13:00-14:30:</strong> Ethik & Datenschutz bei KI</li>
-                        <li>• <strong>14:45-15:30:</strong> Roadmap erstellen</li>
-                        <li>• <strong>15:30-16:00:</strong> Nächste Schritte & Abschluss</li>
-                      </ul>
-                    </div>
+                  <div className="text-center">
+                    <h4 className="text-xl font-semibold mb-6 text-primary">Eintägiger Intensiv-Workshop</h4>
+                    <ul className="space-y-4 text-muted-foreground text-left max-w-2xl mx-auto">
+                      <li>• Begrüßung & KI-Mythen vs. Realität</li>
+                      <li>• Hands-on: Erste KI-Tools ausprobieren</li>
+                      <li>• Use-Case Workshop: Wo hilft KI in Ihrem Arbeitsbereich?</li>
+                      <li>• Prompt Engineering Workshop</li>
+                      <li>• Team-Übung: KI-Lösungen entwickeln</li>
+                      <li>• Ethik & Datenschutz bei KI</li>
+                      <li>• Erfolgsgeschichten aus der Praxis</li>
+                      <li>• Roadmap erstellen & nächste Schritte</li>
+                    </ul>
                   </div>
                 </div>
               </div>
