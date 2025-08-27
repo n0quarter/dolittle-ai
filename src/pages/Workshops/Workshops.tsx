@@ -185,7 +185,7 @@ const Workshops = () => {
                       <li>• Prompt Engineering Workshop</li>
                       <li>• Team-Übung: KI-Lösungen entwickeln</li>
                       <li>• Ethik & Datenschutz bei KI</li>
-                      <li>• Roadmap erstellen & nächste Schritte</li>
+                      <li>• Anwendungsfälle im Unternehmen nach Nutzen und Aufwand bewerten</li>
                     </ul>
                   </div>
                 </div>
