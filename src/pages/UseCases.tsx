@@ -30,8 +30,8 @@ const UseCases = () => {
     },
     {
       icon: FileText,
-      title: "Dokumentenanalyse",
-      description: "Automatische Verarbeitung und Kategorisierung von Dokumenten",
+      title: "Internes Wissenstool",
+      description: "Das verschiedene Unternehmensinterne Systeme wie ERP CRM mit einem Chat bot verbindet",
       benefits: ["Zeit sparen", "Fehler reduzieren", "Compliance sichern"],
       industry: "Verwaltung, Recht"
     },
