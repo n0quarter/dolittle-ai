@@ -176,7 +176,7 @@ const Workshops = () => {
               <div className="max-w-4xl mx-auto mb-12">
                 <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
                   <div className="text-center">
-                    <h4 className="text-xl font-semibold mb-6 text-primary">Eintägiger Intensiv-Workshop</h4>
+                    <h4 className="text-xl font-semibold mb-6 text-primary">Eintägiger Intensiv-Workshop für Nicht Techies</h4>
                     <ul className="space-y-4 text-muted-foreground text-left max-w-2xl mx-auto">
                       <li>• Begrüßung & KI-Mythen vs. Realität</li>
                       <li>• Hands-on: Erste KI-Tools ausprobieren</li>
