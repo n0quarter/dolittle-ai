@@ -182,7 +182,7 @@ const Workshops = () => {
                       <li>• Hands-on: Erste KI-Tools ausprobieren</li>
                       <li>• Erfolgsgeschichten aus der Praxis</li>
                       <li>• Use-Case Workshop: Wo hilft KI in Ihrem Arbeitsbereich?</li>
-                      <li>• Prompt Engineering Workshop</li>
+                      <li>• Prompt Engineering - Wie geht das?</li>
                       <li>• Team-Übung: KI-Lösungen entwickeln</li>
                       <li>• Ethik & Datenschutz bei KI</li>
                       <li>• Anwendungsfälle im Unternehmen nach Nutzen und Aufwand bewerten</li>
