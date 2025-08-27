@@ -180,11 +180,11 @@ const Workshops = () => {
                     <ul className="space-y-4 text-muted-foreground text-left max-w-2xl mx-auto">
                       <li>• Begrüßung & KI-Mythen vs. Realität</li>
                       <li>• Hands-on: Erste KI-Tools ausprobieren</li>
+                      <li>• Erfolgsgeschichten aus der Praxis</li>
                       <li>• Use-Case Workshop: Wo hilft KI in Ihrem Arbeitsbereich?</li>
                       <li>• Prompt Engineering Workshop</li>
                       <li>• Team-Übung: KI-Lösungen entwickeln</li>
                       <li>• Ethik & Datenschutz bei KI</li>
-                      <li>• Erfolgsgeschichten aus der Praxis</li>
                       <li>• Roadmap erstellen & nächste Schritte</li>
                     </ul>
                   </div>
