@@ -328,7 +328,7 @@ const Workshops = () => {
               
               <div className="text-center">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                  <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop-Beratung vereinbaren</a>
+                  <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop anfragen</a>
                 </Button>
               </div>
             </div>
