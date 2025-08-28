@@ -178,91 +178,95 @@ const Workshops = () => {
                 <h3 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-8">Praxis-Workshop für Nicht-Techies</h3>
               </div>
 
-              <Accordion type="single" collapsible className="max-w-6xl mx-auto mb-16">
-                <AccordionItem value="workshop-details">
-                  <AccordionTrigger className="text-xl md:text-2xl font-semibold text-primary hover:no-underline">
-                    Workshop-Details anzeigen
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                      {/* Left Column */}
-                      <div className="space-y-8">
-                        <Card className="h-full">
-                          <CardHeader>
-                            <CardTitle className="text-2xl text-primary">Zielsetzung</CardTitle>
-                          </CardHeader>
-                          <CardContent>
-                            <p className="text-lg text-muted-foreground">
-                              Die Teilnehmer entwickeln ein fundiertes Verständnis für die rechtskonforme Anwendung von KI im Unternehmen und erarbeiten konkrete Anwendungsfälle für ihren Arbeitsbereich.
-                            </p>
-                          </CardContent>
-                        </Card>
+              <div className="max-w-6xl mx-auto mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                  {/* Zielsetzung */}
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Zielsetzung</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground">
+                        Die Teilnehmer entwickeln ein fundiertes Verständnis für die rechtskonforme Anwendung von KI im Unternehmen und erarbeiten konkrete Anwendungsfälle für ihren Arbeitsbereich.
+                      </p>
+                    </CardContent>
+                  </Card>
 
-                        <Card className="h-full">
-                          <CardHeader>
-                            <CardTitle className="text-2xl text-primary">Zielgruppe</CardTitle>
-                          </CardHeader>
-                          <CardContent>
-                            <p className="text-lg text-muted-foreground">
-                              Mitarbeiter im Unternehmen, die wenig technisches Verständnis haben, aber zukünftig oder bereits mit KI-Technologien im Unternehmen in Berührung kommen werden.
-                            </p>
-                          </CardContent>
-                        </Card>
+                  {/* Zielgruppe */}
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Zielgruppe</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground">
+                        Mitarbeiter im Unternehmen, die wenig technisches Verständnis haben, aber zukünftig oder bereits mit KI-Technologien im Unternehmen in Berührung kommen werden.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  {/* Methodik & Aufbau */}
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Methodik & Aufbau</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground">
+                        <strong>Erster Teil:</strong> Grundlagen der KI-Funktionsweise, Prompt Engineering und regulatorische Aspekte (DSGVO, NIS2, AI Act).
+                      </p>
+                      <p className="text-lg text-muted-foreground mt-4">
+                        <strong>Zweiter Teil:</strong> Praktische Entwicklung konkreter KI-Anwendungsfälle mit Bewertung nach Aufwand und Nutzen.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                {/* Results & Benefits */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Ergebnisse & Mehrwert für die Teilnehmer</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-4 text-lg text-muted-foreground">
+                        <div className="flex items-start space-x-3">
+                          <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Praktisches und theoretisches Verständnis über Einsatzmöglichkeiten von KI im Unternehmen</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Target className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Kenntnis der Limitationen und relevanten regulatorischen Rahmenwerke</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Trophy className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Deutliche Steigerung der Arbeitsproduktivität durch richtige KI-Anwendung</span>
+                        </div>
                       </div>
+                    </CardContent>
+                  </Card>
 
-                      {/* Right Column */}
-                      <div className="space-y-8">
-                        <Card className="h-full">
-                          <CardHeader>
-                            <CardTitle className="text-2xl text-primary">Methodik & Aufbau</CardTitle>
-                          </CardHeader>
-                          <CardContent>
-                            <p className="text-lg text-muted-foreground">
-                              <strong>Erster Teil:</strong> Grundlagen der KI-Funktionsweise, Prompt Engineering und regulatorische Aspekte (DSGVO, NIS2, AI Act).
-                            </p>
-                            <p className="text-lg text-muted-foreground mt-4">
-                              <strong>Zweiter Teil:</strong> Praktische Entwicklung konkreter KI-Anwendungsfälle mit Bewertung nach Aufwand und Nutzen.
-                            </p>
-                          </CardContent>
-                        </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Mehrwert für Ihr Unternehmen</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-4 text-lg text-muted-foreground">
+                        <div className="flex items-start space-x-3">
+                          <Lightbulb className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Mitarbeiter werden Teil der Lösung und unterstützen produktive KI-Implementierung</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Target className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Bewertungsmatrix zu Machbarkeit, Aufwand und Nutzen der erarbeiteten KI-Anwendungsfälle</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Trophy className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Strategische Grundlage für gewinnbringende KI-Anwendungsfälle</span>
+                        </div>
                       </div>
-                    </div>
-
-                    {/* Results & Benefits */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                      <Card>
-                        <CardHeader>
-                          <CardTitle className="text-2xl text-primary">Ergebnisse & Mehrwert für die Teilnehmer</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                          <ul className="space-y-3 text-lg text-muted-foreground">
-                            <li>• Praktisches und theoretisches Verständnis über Einsatzmöglichkeiten von KI im Unternehmen</li>
-                            <li>• Kenntnis der Limitationen und relevanten regulatorischen Rahmenwerke</li>
-                            <li>• Erfüllung der Schulungspflicht nach Artikel 4 AI Act</li>
-                            <li>• Deutliche Steigerung der Arbeitsproduktivität durch richtige KI-Anwendung</li>
-                            <li>• Reduzierung von Datenschutz- und Sicherheitsrisiken durch sachgemäße KI-Nutzung</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
-
-                      <Card>
-                        <CardHeader>
-                          <CardTitle className="text-2xl text-primary">Mehrwert für Ihr Unternehmen</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                          <ul className="space-y-3 text-lg text-muted-foreground">
-                            <li>• Mitarbeiter werden Teil der Lösung und unterstützen produktive KI-Implementierung</li>
-                            <li>• Geringeres Risiko von isolierten Leuchtturmprojekten ohne Teamunterstützung</li>
-                            <li>• Bewertungsmatrix zu Machbarkeit, Aufwand und Nutzen der erarbeiteten KI-Anwendungsfälle</li>
-                            <li>• Vollständige Dokumentation aller entwickelten Anwendungsfälle und Mitarbeiterideen für das Management</li>
-                            <li>• Strategische Grundlage für gewinnbringende KI-Anwendungsfälle</li>
-                          </ul>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
 
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold mb-8">
