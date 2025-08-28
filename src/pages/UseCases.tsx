@@ -30,8 +30,8 @@ const UseCases = () => {
     },
     {
       icon: FileText,
-      title: "Dokumentenanalyse",
-      description: "Automatische Verarbeitung und Kategorisierung von Dokumenten",
+      title: "Internes Wissenstool",
+      description: "Das verschiedene Unternehmensinterne Systeme wie ERP CRM mit einem Chat bot verbindet",
       benefits: ["Zeit sparen", "Fehler reduzieren", "Compliance sichern"],
       industry: "Verwaltung, Recht"
     },
@@ -44,10 +44,10 @@ const UseCases = () => {
     },
     {
       icon: ShoppingCart,
-      title: "Personalisierte Empfehlungen",
-      description: "KI-basierte Produktempfehlungen für Online-Shops",
+      title: "Marketing Automation",
+      description: "Erstellung von Social Media Posts und Presseartikeln auf Basis von Workflows und Agenten",
       benefits: ["Höhere Conversion", "Bessere UX", "Umsatzsteigerung"],
-      industry: "E-Commerce, Retail"
+      industry: "Marketing"
     },
     {
       icon: Users,
@@ -58,10 +58,10 @@ const UseCases = () => {
     },
     {
       icon: TrendingUp,
-      title: "Predictive Analytics",
-      description: "Vorhersage von Trends und Geschäftsentwicklungen",
-      benefits: ["Bessere Planung", "Risiken minimieren", "Chancen nutzen"],
-      industry: "Finance, Controlling"
+      title: "Automatisierte Lieferantenbewertung",
+      description: "KI-gestützte Bewertung und Überwachung von Lieferantenleistung",
+      benefits: ["Risiken minimieren", "Qualität sichern", "Kosten optimieren"],
+      industry: "Einkauf, Supply Chain"
     }
   ];
 

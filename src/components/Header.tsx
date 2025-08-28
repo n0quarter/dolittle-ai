@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -8,10 +9,17 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { GraduationCap, Users } from "lucide-react";
+import { GraduationCap, Users, Menu, X } from "lucide-react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-6 py-4">
@@ -27,6 +35,7 @@ const Header = () => {
             </span>
           </a>
 
+          {/* Desktop Navigation */}
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -54,6 +63,63 @@ const Header = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+
+          {/* Mobile Navigation */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="outline" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <div className="flex flex-col space-y-4 mt-8">
+                <a 
+                  href="/ueber-uns" 
+                  className="text-lg font-medium hover:text-primary transition-colors p-2 rounded-md hover:bg-accent"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Über uns
+                </a>
+                
+                <div className="space-y-2">
+                  <h3 className="text-lg font-medium text-primary p-2">Workshops & Training</h3>
+                  <div className="pl-4 space-y-2">
+                    <a 
+                      href="/workshops/ki-mitarbeiterschulung" 
+                      className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <GraduationCap className="h-4 w-4" />
+                      <div>
+                        <div className="font-medium">KI-Mitarbeiterschulung</div>
+                        <div className="text-sm text-muted-foreground">Schulungen für Teams ohne technischen Hintergrund</div>
+                      </div>
+                    </a>
+                    <a 
+                      href="/workshops/workshops" 
+                      className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Users className="h-4 w-4" />
+                      <div>
+                        <div className="font-medium">Workshops</div>
+                        <div className="text-sm text-muted-foreground">Interaktive Workshops zur KI-Implementation</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                <a 
+                  href="/use-cases" 
+                  className="text-lg font-medium hover:text-primary transition-colors p-2 rounded-md hover:bg-accent"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Use Cases
+                </a>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>

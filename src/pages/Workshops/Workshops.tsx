@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Lightbulb, Users, Target, Trophy } from "lucide-react";
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
@@ -62,13 +63,9 @@ const Workshops = () => {
             <div className="container mx-auto px-6">
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Unsere <span className="text-primary">Workshophilosophie</span>
+                  Unser <span className="text-primary">Ansatz</span>
                 </h2>
-                <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-6">
-                  Viele Geschäftsführer reden das Thema KI tot, obwohl sie große Potentiale heben könnten.
-                  Ganz einfach, weil sie davon ausgehen, dass Abteilungen oder einzelne Mitarbeiter das Thema nicht umsetzen oder es sogar blockieren.
-                  Aus diesem Grund nehmen wir bei unseren Workshops das Team bei der Lösungsfindung mit.
-                </p>
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-6">In vielen Unternehmen werden KI-Lösungen Top down eingeführt. Ganz einfach, weil sie davon ausgehen, dass Abteilungen oder einzelne Mitarbeiter das Thema nicht umsetzen oder es sogar blockieren. Doch das führt oft zu schlechten Ergebnissen und Frustration. Aus diesem Grund nehmen wir bei unseren Workshops das Team bei der Lösungsfindung mit.</p>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
                   Ihr Team identifiziert Probleme im Arbeitsalltag und wir bewerten gemeinsam unter unserer professionellen Begleitung welche Tätigkeiten künftig besser mit Hilfe von KI gelöst werden können.
                 </p>
@@ -104,11 +101,7 @@ const Workshops = () => {
                 {/* Andreas - Image Left, Text Right */}
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                   <div className="lg:w-1/2">
-                    <img
-                      src="/lovable-uploads/e3deec03-d101-45c7-9eeb-d1a9071d6306.png"
-                      alt="Andreas während eines Workshops"
-                      className="w-full h-auto object-cover rounded-lg shadow-lg"
-                    />
+                    <img src="/lovable-uploads/e3deec03-d101-45c7-9eeb-d1a9071d6306.png" alt="Andreas während eines Workshops" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                   </div>
                   <div className="lg:w-1/2">
                     <Card className="bg-background/95 backdrop-blur-sm h-full">
@@ -135,11 +128,7 @@ const Workshops = () => {
                 {/* Viktor - Text Left, Image Right */}
                 <div className="flex flex-col lg:flex-row-reverse gap-8 items-center">
                   <div className="lg:w-1/2">
-                    <img
-                      src="/lovable-uploads/8a268a19-5761-424c-83b9-9cff0caf2149.png"
-                      alt="Viktor bei einer KI-Präsentation"
-                      className="w-full h-auto object-cover rounded-lg shadow-lg brightness-110 contrast-110"
-                    />
+                    <img src="/lovable-uploads/8a268a19-5761-424c-83b9-9cff0caf2149.png" alt="Viktor bei einer KI-Präsentation" className="w-full h-auto object-cover rounded-lg shadow-lg brightness-110 contrast-110" />
                   </div>
                   <div className="lg:w-1/2">
                     <Card className="bg-background/95 backdrop-blur-sm h-full">
@@ -167,41 +156,181 @@ const Workshops = () => {
           {/* Testimonials */}
           <Testimonials />
 
-          {/* Approach */}
+          {/* Workshop Information */}
           <section className="py-20 bg-secondary/10">
-            <div className="container mx-auto px-6 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                Beispiel <span className="text-primary">Workshop-Agenda</span>
-              </h2>
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  KI verstehen und Anwendungsfälle fürs <span className="text-primary">Unternehmen entwickeln</span>
+                </h2>
+                <h3 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-8">Praxis-Workshop für Nicht-Techies</h3>
+              </div>
+
+              <div className="max-w-6xl mx-auto mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                  {/* Zielsetzung */}
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Zielsetzung</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground">
+                        Die Teilnehmer entwickeln ein fundiertes Verständnis für die rechtskonforme Anwendung von KI im Unternehmen und erarbeiten konkrete Anwendungsfälle für ihren Arbeitsbereich.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  {/* Zielgruppe */}
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Zielgruppe</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground">
+                        Mitarbeiter im Unternehmen, die wenig technisches Verständnis haben, aber zukünftig oder bereits mit KI-Technologien im Unternehmen in Berührung kommen werden.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  {/* Methodik & Aufbau */}
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Methodik & Aufbau</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground">
+                        <strong>Erster Teil:</strong> Grundlagen der KI-Funktionsweise, Prompt Engineering und regulatorische Aspekte (DSGVO, NIS2, AI Act).
+                      </p>
+                      <p className="text-lg text-muted-foreground mt-4">
+                        <strong>Zweiter Teil:</strong> Praktische Entwicklung konkreter KI-Anwendungsfälle mit Bewertung nach Aufwand und Nutzen.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                {/* Results & Benefits */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Ergebnisse</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-4 text-lg text-muted-foreground">
+                        <div className="flex items-start space-x-3">
+                          <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Praktisches und theoretisches Verständnis über Einsatzmöglichkeiten von KI im Unternehmen</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Target className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Kenntnis der Limitationen und relevanten regulatorischen Rahmenwerke</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Trophy className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Deutliche Steigerung der Arbeitsproduktivität durch richtige KI-Anwendung</span>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Mehrwert für Ihr Unternehmen</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-4 text-lg text-muted-foreground">
+                        <div className="flex items-start space-x-3">
+                          <Lightbulb className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Mitarbeiter werden Teil der Lösung und unterstützen produktive KI-Implementierung</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Target className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Bewertungsmatrix zu Machbarkeit, Aufwand und Nutzen der erarbeiteten KI-Anwendungsfälle</span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <Trophy className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Strategische Grundlage für gewinnbringende KI-Anwendungsfälle</span>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+
+              <div className="text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                  Workshop-<span className="text-primary">Agenda</span>
+                </h2>
+              </div>
+              
               <div className="max-w-4xl mx-auto mb-12">
                 <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                      <h4 className="text-lg font-semibold mb-4 text-primary">Tag 1: KI-Grundlagen & Potentiale</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li>• <strong>09:00-10:30:</strong> Begrüßung & KI-Mythen vs. Realität</li>
-                        <li>• <strong>10:45-12:00:</strong> Hands-on: Erste KI-Tools ausprobieren</li>
-                        <li>• <strong>13:00-14:30:</strong> Use-Case Workshop: Wo hilft KI in Ihrem Arbeitsbereich?</li>
-                        <li>• <strong>14:45-16:00:</strong> Erfolgsgeschichten aus der Praxis</li>
-                        <li>• <strong>16:00-16:30:</strong> Q&A und Diskussion</li>
-                      </ul>
+                  <div className="text-left">
+                    <div className="mb-8">
+                      <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK I: Verständnis über die Anwendung von KI im Unternehmen (4 Stunden)</h4>
+                      
+                      <div className="space-y-6">
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">1. Was ist künstliche Intelligenz? (~40 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Praktisches Beispiel mit Publikumsinteraktion</li>
+                            <li>• Abgrenzung ähnlicher Begriffe wie Algorithmen, Machine Learning, Data Science etc.</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">2. Richtiges "Prompten" der KI - Praktische Übung (~120 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Gute Prompts vs. schlechte Prompts</li>
+                            <li>• KI erhält zweimal denselben Auftrag, liefert aber unterschiedliche Ergebnisse</li>
+                            <li>• Verständnis darüber, wie KI gute und schlechte Ergebnisse liefern kann</li>
+                            <li>• Ungewollte Effekte wie Biases und Halluzinationen werden erlebt und verstanden</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">3. Grundzüge von Datenschutz & Sicherheit (~80 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Wichtige regulatorische Rahmen im Unternehmenskontext:</li>
+                            <li className="ml-4">- DSGVO</li>
+                            <li className="ml-4">- NIS 2</li>
+                            <li className="ml-4">- AI Act</li>
+                            <li className="ml-4">- Digital Markets & Services Act</li>
+                            <li>• Multiple-Choice-Verständnistest</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
+                    
                     <div>
-                      <h4 className="text-lg font-semibold mb-4 text-primary">Tag 2: Implementierung & Umsetzung</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li>• <strong>09:00-10:30:</strong> Prompt Engineering Workshop</li>
-                        <li>• <strong>10:45-12:00:</strong> Team-Übung: KI-Lösungen entwickeln</li>
-                        <li>• <strong>13:00-14:30:</strong> Ethik & Datenschutz bei KI</li>
-                        <li>• <strong>14:45-15:30:</strong> Roadmap erstellen</li>
-                        <li>• <strong>15:30-16:00:</strong> Nächste Schritte & Abschluss</li>
-                      </ul>
+                      <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK II: Anwendungsfälle für das Unternehmen erarbeiten (4 Stunden)</h4>
+                      
+                      <div className="space-y-6">
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">1. Anwendungsfälle identifizieren (~120 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Ideensammlung: Teilnehmer sammeln Prozesse, Aufgaben und Tätigkeiten, die als zeitraubend empfunden werden</li>
+                            <li>• Ideenbewertung: Ideen werden nach Datenverfügbarkeit und Nutzen für Akteure im und außerhalb des Unternehmens bewertet</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">2. Lösungsansatz (~120 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Top-Ideen werden in maximal 3 Gruppen ausgearbeitet</li>
+                            <li>• Bewertung des Umsetzungsaufwands</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop-Beratung vereinbaren</a>
-              </Button>
+              
+              <div className="text-center">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                  <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop anfragen</a>
+                </Button>
+              </div>
             </div>
           </section>
         </main>

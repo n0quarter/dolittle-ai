@@ -31,7 +31,7 @@ const Hero = () => {
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
           Entwickeln Sie DSGVO-konforme KI-Lösungen, die Ihre Prozesskosten senken und
-          Ihr Unternehmen zukunftsfähig machen.
+          Ihr Unternehmen zukunftsfähig machen. Wir reden nicht nur, wir setzen um.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
