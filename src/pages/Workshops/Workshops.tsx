@@ -167,12 +167,104 @@ const Workshops = () => {
           {/* Testimonials */}
           <Testimonials />
 
-          {/* Approach */}
+          {/* Workshop Information */}
           <section className="py-20 bg-secondary/10">
-            <div className="container mx-auto px-6 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                Beispiel <span className="text-primary">Workshop-Agenda</span>
-              </h2>
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  KI verstehen und Anwendungsfälle fürs <span className="text-primary">Unternehmen entwickeln</span>
+                </h2>
+                <h3 className="text-2xl font-semibold text-muted-foreground mb-8">Praxis-Workshop für Nicht-Techies</h3>
+              </div>
+
+              <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                {/* Left Column */}
+                <div className="space-y-8">
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary">Zielsetzung</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Die Teilnehmer entwickeln ein fundiertes Verständnis für die rechtskonforme Anwendung von KI im Unternehmen und erarbeiten konkrete Anwendungsfälle für ihren Arbeitsbereich.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary">Zielgruppe</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Mitarbeiter im Unternehmen, die wenig technisches Verständnis haben, aber zukünftig oder bereits mit KI-Technologien im Unternehmen in Berührung kommen werden.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                {/* Right Column */}
+                <div className="space-y-8">
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-xl text-primary">Methodik & Aufbau</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Erster Teil:</h4>
+                        <p className="text-muted-foreground text-sm">
+                          Die Teilnehmer erlernen grundlegende Funktionsweisen und Fallstricke von KI anhand praktischer Beispiele und eigener Übungen. Nach dem Verständnis wichtiger Begriffe wie Halluzinationen, Biases und Prompt Engineering werden zentrale regulatorische Aspekte vermittelt: Datenschutz (DSGVO), Cybersicherheitsrichtlinien (NIS2) und die Implikationen des AI Acts für den Einsatz von KI im Unternehmen.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Zweiter Teil (praktischer Fokus):</h4>
+                        <p className="text-muted-foreground text-sm">
+                          Entwicklung konkreter Anwendungsfälle im Unternehmen. Welche Prozesse können durch KI sinnvoll ersetzt oder unterstützt werden? Die Teilnehmer entwickeln Vorschläge, und die Top-Cases werden nach erwartetem Umsetzungsaufwand und Nutzen für das Unternehmen bewertet.
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+
+              {/* Results & Benefits */}
+              <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-xl text-primary">Ergebnisse & Mehrwert für die Teilnehmer</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• Praktisches und theoretisches Verständnis über Einsatzmöglichkeiten von KI im Unternehmen</li>
+                      <li>• Kenntnis der Limitationen und relevanten regulatorischen Rahmenwerke</li>
+                      <li>• Erfüllung der Schulungspflicht nach Artikel 4 AI Act</li>
+                      <li>• Deutliche Steigerung der Arbeitsproduktivität durch richtige KI-Anwendung</li>
+                      <li>• Reduzierung von Datenschutz- und Sicherheitsrisiken durch sachgemäße KI-Nutzung</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-xl text-primary">Mehrwert für Ihr Unternehmen</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• Mitarbeiter werden Teil der Lösung und unterstützen produktive KI-Implementierung</li>
+                      <li>• Geringeres Risiko von isolierten Leuchtturmprojekten ohne Teamunterstützung</li>
+                      <li>• Bewertungsmatrix zu Machbarkeit, Aufwand und Nutzen der erarbeiteten KI-Anwendungsfälle</li>
+                      <li>• Vollständige Dokumentation aller entwickelten Anwendungsfälle und Mitarbeiterideen für das Management</li>
+                      <li>• Strategische Grundlage für gewinnbringende KI-Anwendungsfälle</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                  Workshop-<span className="text-primary">Agenda</span>
+                </h2>
+              </div>
               <div className="max-w-4xl mx-auto mb-12">
                 <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
                   <div className="text-left">
