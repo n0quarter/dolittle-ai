@@ -175,18 +175,64 @@ const Workshops = () => {
               </h2>
               <div className="max-w-4xl mx-auto mb-12">
                 <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-                  <div className="text-center">
-                    <h4 className="text-xl font-semibold mb-6 text-primary">Eintägiger Intensiv-Workshop für Nicht Techies</h4>
-                    <ul className="space-y-4 text-muted-foreground text-left max-w-2xl mx-auto">
-                      <li>• Begrüßung & KI-Mythen vs. Realität</li>
-                      <li>• Hands-on: Erste KI-Tools ausprobieren</li>
-                      <li>• Erfolgsgeschichten aus der Praxis</li>
-                      <li>• Use-Case Workshop: Wo hilft KI in Ihrem Arbeitsbereich?</li>
-                      <li>• Prompt Engineering - Wie geht das?</li>
-                      <li>• Team-Übung: KI-Lösungen entwickeln</li>
-                      <li>• Ethik & Datenschutz bei KI</li>
-                      <li>• Anwendungsfälle im Unternehmen nach Nutzen und Aufwand bewerten</li>
-                    </ul>
+                  <div className="text-left">
+                    <div className="mb-8">
+                      <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK I: Verständnis über die Anwendung von KI im Unternehmen (4 Stunden)</h4>
+                      
+                      <div className="space-y-6">
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">1. Was ist künstliche Intelligenz? (~40 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Praktisches Beispiel mit Publikumsinteraktion</li>
+                            <li>• Abgrenzung ähnlicher Begriffe wie Algorithmen, Machine Learning, Data Science etc.</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">2. Richtiges "Prompten" der KI - Praktische Übung (~120 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Gute Prompts vs. schlechte Prompts</li>
+                            <li>• KI erhält zweimal denselben Auftrag, liefert aber unterschiedliche Ergebnisse</li>
+                            <li>• Verständnis darüber, wie KI gute und schlechte Ergebnisse liefern kann</li>
+                            <li>• Ungewollte Effekte wie Biases und Halluzinationen werden erlebt und verstanden</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">3. Grundzüge von Datenschutz & Sicherheit (~80 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Wichtige regulatorische Rahmen im Unternehmenskontext:</li>
+                            <li className="ml-4">- DSGVO</li>
+                            <li className="ml-4">- NIS 2</li>
+                            <li className="ml-4">- AI Act</li>
+                            <li className="ml-4">- Digital Markets & Services Act</li>
+                            <li>• Multiple-Choice-Verständnistest</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK II: Anwendungsfälle für das Unternehmen erarbeiten (4 Stunden)</h4>
+                      
+                      <div className="space-y-6">
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">1. Anwendungsfälle identifizieren (~120 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Ideensammlung: Teilnehmer sammeln Prozesse, Aufgaben und Tätigkeiten, die als zeitraubend empfunden werden</li>
+                            <li>• Ideenbewertung: Ideen werden nach Datenverfügbarkeit und Nutzen für Akteure im und außerhalb des Unternehmens bewertet</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h5 className="text-lg font-semibold text-foreground mb-2">2. Lösungsansatz (~120 Minuten)</h5>
+                          <ul className="text-muted-foreground ml-4 space-y-1">
+                            <li>• Top-Ideen werden in maximal 3 Gruppen ausgearbeitet</li>
+                            <li>• Bewertung des Umsetzungsaufwands</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
