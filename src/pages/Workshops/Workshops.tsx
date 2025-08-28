@@ -239,7 +239,7 @@ const Workshops = () => {
                     <CardHeader className="pb-6">
                       <div className="flex items-center space-x-3 mb-2">
                         <div className="w-4 h-4 rounded-full bg-gradient-to-r from-primary to-secondary"></div>
-                        <CardTitle className="text-2xl text-primary font-bold">Ergebnisse</CardTitle>
+                        <CardTitle className="text-2xl text-primary font-bold">Mehrwert für Ihr Team</CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent>
