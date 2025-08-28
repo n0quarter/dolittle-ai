@@ -7,19 +7,19 @@ const Testimonials = () => {
       name: "Jens Naie",
       title: "CTO, Doodle AG",
       image: "https://ai.asdcode.com/jens.png",
-      text: "Viktor's generative AI workshop was a resounding success! He skillfully brought our team, with varying levels of experience, to a shared understanding, addressing common AI anxieties with clarity and practical advice. The insights he provided on effective AI usage, and its limitations, were invaluable. The hands-on coding exercises with Cursor, coupled with his demonstration of TDD automated with AI, were incredibly impactful. He empowered us to see AI not as a threat, but as a powerful tool to enhance our development workflow. We left feeling inspired and equipped to integrate generative AI into our projects. Highly recommended!"
+      text: "Viktors generative KI-Workshop war ein durchschlagender Erfolg! Er brachte unser Team mit unterschiedlichen Erfahrungsebenen geschickt zu einem gemeinsamen Verständnis und ging auf häufige KI-Ängste mit Klarheit und praktischen Ratschlägen ein. Die Einblicke, die er zur effektiven KI-Nutzung und deren Grenzen vermittelte, waren von unschätzbarem Wert. Die praktischen Programmierübungen mit Cursor, gepaart mit seiner Demonstration von TDD automatisiert mit KI, waren unglaublich wirkungsvoll. Er befähigte uns, KI nicht als Bedrohung, sondern als mächtiges Werkzeug zur Verbesserung unseres Entwicklungsworkflows zu sehen. Wir gingen inspiriert und ausgerüstet heraus, um generative KI in unsere Projekte zu integrieren. Sehr empfehlenswert!"
     },
     {
       name: "Tim Yevgrashyn",
       title: "CTO, Stepico",
       image: "https://ai.asdcode.com/tim.png",
-      text: "The practical focus of this workshop was a game-changer for our development team. Instead of just discussing AI tools, our engineers actually learned how to implement them effectively in their day-to-day coding. The hands-on exercises and real-world applications delivered solid value that we're already seeing in our productivity metrics."
+      text: "Der praktische Fokus dieses Workshops war ein Wendepunkt für unser Entwicklungsteam. Anstatt nur über KI-Tools zu diskutieren, lernten unsere Ingenieure tatsächlich, wie sie diese effektiv in ihre tägliche Programmierarbeit implementieren können. Die praktischen Übungen und realen Anwendungen lieferten soliden Wert, den wir bereits in unseren Produktivitätskennzahlen sehen."
     },
     {
       name: "Julio",
       title: "Head of Engineering, Empion",
       image: "https://ai.asdcode.com/julio.jpeg",
-      text: "The workshop was very insightful and gave us valuable hands-on experience. While the first day covered some familiar ground, we found the deep dive into Cursor, prompt techniques, and best practices especially useful. Day two was the highlight, with hands-on exercises that helped us explore Cursor in depth and apply what we've learned while building an app. Overall, it was an engaging and valuable experience. I'd recommend it if you're willing to know more about AI and how to use it more efficiently in our teams or daily workflows."
+      text: "Der Workshop war sehr aufschlussreich und gab uns wertvolle praktische Erfahrungen. Während der erste Tag einige vertraute Themen abdeckte, fanden wir die Vertiefung in Cursor, Prompt-Techniken und bewährte Praktiken besonders nützlich. Der zweite Tag war das Highlight, mit praktischen Übungen, die uns halfen, Cursor tiefgehend zu erkunden und das Gelernte beim Erstellen einer App anzuwenden. Insgesamt war es eine ansprechende und wertvolle Erfahrung. Ich würde es empfehlen, wenn Sie mehr über KI erfahren und lernen möchten, wie Sie sie effizienter in unseren Teams oder täglichen Arbeitsabläufen einsetzen können."
     }
   ];
 
