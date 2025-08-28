@@ -224,7 +224,7 @@ const Workshops = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <Card>
                     <CardHeader>
-                      <CardTitle className="text-2xl text-primary">Ergebnisse & Mehrwert für die Teilnehmer</CardTitle>
+                      <CardTitle className="text-2xl text-primary">Ergebnisse</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-4 text-lg text-muted-foreground">
