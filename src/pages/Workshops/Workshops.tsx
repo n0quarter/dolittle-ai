@@ -65,11 +65,7 @@ const Workshops = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   Unsere <span className="text-primary">Workshophilosophie</span>
                 </h2>
-                <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-6">
-                  In vielen Unternehmen werden KI-Lösungen Top down eingeführt.
-                  Ganz einfach, weil sie davon ausgehen, dass Abteilungen oder einzelne Mitarbeiter das Thema nicht umsetzen oder es sogar blockieren.
-                  Aus diesem Grund nehmen wir bei unseren Workshops das Team bei der Lösungsfindung mit.
-                </p>
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-6">In vielen Unternehmen werden KI-Lösungen Top down eingeführt. Ganz einfach, weil sie davon ausgehen, dass Abteilungen oder einzelne Mitarbeiter das Thema nicht umsetzen oder es sogar blockieren. Doch das führt oft zu schlechten Ergebnissen und Frustration. Aus diesem Grund nehmen wir bei unseren Workshops das Team bei der Lösungsfindung mit.</p>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
                   Ihr Team identifiziert Probleme im Arbeitsalltag und wir bewerten gemeinsam unter unserer professionellen Begleitung welche Tätigkeiten künftig besser mit Hilfe von KI gelöst werden können.
                 </p>
@@ -105,11 +101,7 @@ const Workshops = () => {
                 {/* Andreas - Image Left, Text Right */}
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                   <div className="lg:w-1/2">
-                    <img
-                      src="/lovable-uploads/e3deec03-d101-45c7-9eeb-d1a9071d6306.png"
-                      alt="Andreas während eines Workshops"
-                      className="w-full h-auto object-cover rounded-lg shadow-lg"
-                    />
+                    <img src="/lovable-uploads/e3deec03-d101-45c7-9eeb-d1a9071d6306.png" alt="Andreas während eines Workshops" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                   </div>
                   <div className="lg:w-1/2">
                     <Card className="bg-background/95 backdrop-blur-sm h-full">
@@ -136,11 +128,7 @@ const Workshops = () => {
                 {/* Viktor - Text Left, Image Right */}
                 <div className="flex flex-col lg:flex-row-reverse gap-8 items-center">
                   <div className="lg:w-1/2">
-                    <img
-                      src="/lovable-uploads/8a268a19-5761-424c-83b9-9cff0caf2149.png"
-                      alt="Viktor bei einer KI-Präsentation"
-                      className="w-full h-auto object-cover rounded-lg shadow-lg brightness-110 contrast-110"
-                    />
+                    <img src="/lovable-uploads/8a268a19-5761-424c-83b9-9cff0caf2149.png" alt="Viktor bei einer KI-Präsentation" className="w-full h-auto object-cover rounded-lg shadow-lg brightness-110 contrast-110" />
                   </div>
                   <div className="lg:w-1/2">
                     <Card className="bg-background/95 backdrop-blur-sm h-full">
@@ -169,117 +157,98 @@ const Workshops = () => {
           <Testimonials />
 
           {/* Workshop Information */}
-          <section className="py-20 bg-gradient-to-br from-background via-secondary/5 to-primary/5 relative">
-            <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-            <div className="container mx-auto px-6 relative z-10">
-              <div className="text-center mb-20">
-                <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+          <section className="py-20 bg-secondary/10">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
                   KI verstehen und Anwendungsfälle fürs <span className="text-primary">Unternehmen entwickeln</span>
                 </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                <h3 className="text-2xl md:text-3xl font-medium text-muted-foreground">Praxis-Workshop für Nicht-Techies</h3>
+                <h3 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-8">Praxis-Workshop für Nicht-Techies</h3>
               </div>
 
-              <div className="max-w-7xl mx-auto mb-20">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+              <div className="max-w-6xl mx-auto mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
                   {/* Zielsetzung */}
-                  <Card className="h-full border-0 shadow-xl bg-gradient-to-br from-background to-secondary/10 hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                    <CardHeader className="pb-4">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <div className="w-3 h-3 rounded-full bg-primary"></div>
-                        <CardTitle className="text-2xl text-primary font-bold">Zielsetzung</CardTitle>
-                      </div>
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Zielsetzung</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
+                      <p className="text-lg text-muted-foreground">
                         Die Teilnehmer entwickeln ein fundiertes Verständnis für die rechtskonforme Anwendung von KI im Unternehmen und erarbeiten konkrete Anwendungsfälle für ihren Arbeitsbereich.
                       </p>
                     </CardContent>
                   </Card>
 
                   {/* Zielgruppe */}
-                  <Card className="h-full border-0 shadow-xl bg-gradient-to-br from-background to-secondary/10 hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                    <CardHeader className="pb-4">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <div className="w-3 h-3 rounded-full bg-primary"></div>
-                        <CardTitle className="text-2xl text-primary font-bold">Zielgruppe</CardTitle>
-                      </div>
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Zielgruppe</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
+                      <p className="text-lg text-muted-foreground">
                         Mitarbeiter im Unternehmen, die wenig technisches Verständnis haben, aber zukünftig oder bereits mit KI-Technologien im Unternehmen in Berührung kommen werden.
                       </p>
                     </CardContent>
                   </Card>
 
                   {/* Methodik & Aufbau */}
-                  <Card className="h-full border-0 shadow-xl bg-gradient-to-br from-background to-secondary/10 hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                    <CardHeader className="pb-4">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <div className="w-3 h-3 rounded-full bg-primary"></div>
-                        <CardTitle className="text-2xl text-primary font-bold">Methodik & Aufbau</CardTitle>
-                      </div>
+                  <Card className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Methodik & Aufbau</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <div className="space-y-4">
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                          <span className="font-semibold text-primary">Erster Teil:</span> Grundlagen der KI-Funktionsweise, Prompt Engineering und regulatorische Aspekte (DSGVO, NIS2, AI Act).
-                        </p>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                          <span className="font-semibold text-primary">Zweiter Teil:</span> Praktische Entwicklung konkreter KI-Anwendungsfälle mit Bewertung nach Aufwand und Nutzen.
-                        </p>
-                      </div>
+                      <p className="text-lg text-muted-foreground">
+                        <strong>Erster Teil:</strong> Grundlagen der KI-Funktionsweise, Prompt Engineering und regulatorische Aspekte (DSGVO, NIS2, AI Act).
+                      </p>
+                      <p className="text-lg text-muted-foreground mt-4">
+                        <strong>Zweiter Teil:</strong> Praktische Entwicklung konkreter KI-Anwendungsfälle mit Bewertung nach Aufwand und Nutzen.
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
 
                 {/* Results & Benefits */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  <Card className="border-0 shadow-xl bg-gradient-to-br from-primary/5 to-background hover:shadow-2xl transition-all duration-300">
-                    <CardHeader className="pb-6">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <div className="w-4 h-4 rounded-full bg-gradient-to-r from-primary to-secondary"></div>
-                        <CardTitle className="text-2xl text-primary font-bold">Mehrwert für Ihr Team</CardTitle>
-                      </div>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Ergebnisse</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <div className="space-y-6 text-lg text-muted-foreground">
-                        <div className="flex items-start space-x-4 p-4 rounded-lg bg-background/50 hover:bg-background/80 transition-colors">
-                          <Users className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                          <span className="leading-relaxed">Praktisches und theoretisches Verständnis über Einsatzmöglichkeiten von KI im Unternehmen</span>
+                      <div className="space-y-4 text-lg text-muted-foreground">
+                        <div className="flex items-start space-x-3">
+                          <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Praktisches und theoretisches Verständnis über Einsatzmöglichkeiten von KI im Unternehmen</span>
                         </div>
-                        <div className="flex items-start space-x-4 p-4 rounded-lg bg-background/50 hover:bg-background/80 transition-colors">
-                          <Target className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                          <span className="leading-relaxed">Kenntnis der Limitationen und relevanten regulatorischen Rahmenwerke</span>
+                        <div className="flex items-start space-x-3">
+                          <Target className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Kenntnis der Limitationen und relevanten regulatorischen Rahmenwerke</span>
                         </div>
-                        <div className="flex items-start space-x-4 p-4 rounded-lg bg-background/50 hover:bg-background/80 transition-colors">
-                          <Trophy className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                          <span className="leading-relaxed">Deutliche Steigerung der Arbeitsproduktivität durch richtige KI-Anwendung</span>
+                        <div className="flex items-start space-x-3">
+                          <Trophy className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Deutliche Steigerung der Arbeitsproduktivität durch richtige KI-Anwendung</span>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Card className="border-0 shadow-xl bg-gradient-to-br from-secondary/5 to-background hover:shadow-2xl transition-all duration-300">
-                    <CardHeader className="pb-6">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <div className="w-4 h-4 rounded-full bg-gradient-to-r from-secondary to-primary"></div>
-                        <CardTitle className="text-2xl text-primary font-bold">Mehrwert für Ihr Unternehmen</CardTitle>
-                      </div>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Mehrwert für Ihr Unternehmen</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <div className="space-y-6 text-lg text-muted-foreground">
-                        <div className="flex items-start space-x-4 p-4 rounded-lg bg-background/50 hover:bg-background/80 transition-colors">
-                          <Lightbulb className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                          <span className="leading-relaxed">Mitarbeiter werden Teil der Lösung und unterstützen produktive KI-Implementierung</span>
+                      <div className="space-y-4 text-lg text-muted-foreground">
+                        <div className="flex items-start space-x-3">
+                          <Lightbulb className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Mitarbeiter werden Teil der Lösung und unterstützen produktive KI-Implementierung</span>
                         </div>
-                        <div className="flex items-start space-x-4 p-4 rounded-lg bg-background/50 hover:bg-background/80 transition-colors">
-                          <Target className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                          <span className="leading-relaxed">Bewertungsmatrix zu Machbarkeit, Aufwand und Nutzen der erarbeiteten KI-Anwendungsfälle</span>
+                        <div className="flex items-start space-x-3">
+                          <Target className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Bewertungsmatrix zu Machbarkeit, Aufwand und Nutzen der erarbeiteten KI-Anwendungsfälle</span>
                         </div>
-                        <div className="flex items-start space-x-4 p-4 rounded-lg bg-background/50 hover:bg-background/80 transition-colors">
-                          <Trophy className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                          <span className="leading-relaxed">Strategische Grundlage für gewinnbringende KI-Anwendungsfälle</span>
+                        <div className="flex items-start space-x-3">
+                          <Trophy className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                          <span>Strategische Grundlage für gewinnbringende KI-Anwendungsfälle</span>
                         </div>
                       </div>
                     </CardContent>
