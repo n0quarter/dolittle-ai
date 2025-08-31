@@ -8,7 +8,6 @@ import { Lightbulb, Users, Target, Trophy } from "lucide-react";
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
 import workshopImage2 from "@/assets/workshop-speaker-2.jpg";
 import aiNetworkingBg from "@/assets/ai-networking-background.jpg";
-import Testimonials from "@/components/Testimonials";
 const Workshops = () => {
   const philosophyPoints = [{
     icon: Lightbulb,
@@ -153,15 +152,84 @@ const Workshops = () => {
             </div>
           </section>
 
-          {/* Testimonials */}
-          <Testimonials />
+          {/* Testimonials - Compact Version */}
+          <section className="py-16 bg-muted/30">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Was <span className="text-primary">Kunden</span> über uns sagen
+                </h2>
+              </div>
+
+              <div className="max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <Card className="h-full">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <img
+                          src="https://ai.asdcode.com/jens.png"
+                          alt="Jens Naie"
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                        <div>
+                          <h3 className="font-semibold">Jens Naie</h3>
+                          <p className="text-sm text-primary">CTO, Doodle AG</p>
+                        </div>
+                      </div>
+                      <blockquote className="text-sm text-muted-foreground leading-relaxed">
+                        "Viktors generative KI-Workshop war ein durchschlagender Erfolg! Er brachte unser Team mit unterschiedlichen Erfahrungsebenen geschickt zu einem gemeinsamen Verständnis und ging auf häufige KI-Ängste mit Klarheit und praktischen Ratschlägen ein. Die Einblicke, die er zur effektiven KI-Nutzung und deren Grenzen vermittelte, waren von unschätzbarem Wert. Die praktischen Programmierübungen mit Cursor, gepaart mit seiner Demonstration von TDD automatisiert mit KI, waren unglaublich wirkungsvoll. Er befähigte uns, KI nicht als Bedrohung, sondern als mächtiges Werkzeug zur Verbesserung unseres Entwicklungsworkflows zu sehen. Wir gingen inspiriert und ausgerüstet heraus, um generative KI in unsere Projekte zu integrieren. Sehr empfehlenswert!"
+                      </blockquote>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="h-full">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <img
+                          src="https://ai.asdcode.com/tim.png"
+                          alt="Tim Yevgrashyn"
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                        <div>
+                          <h3 className="font-semibold">Tim Yevgrashyn</h3>
+                          <p className="text-sm text-primary">CTO, Stepico</p>
+                        </div>
+                      </div>
+                      <blockquote className="text-sm text-muted-foreground leading-relaxed">
+                        "Der praktische Fokus dieses Workshops war ein Wendepunkt für unser Entwicklungsteam. Anstatt nur über KI-Tools zu diskutieren, lernten unsere Ingenieure tatsächlich, wie sie diese effektiv in ihre tägliche Programmierarbeit implementieren können. Die praktischen Übungen und realen Anwendungen lieferten soliden Wert, den wir bereits in unseren Produktivitätskennzahlen sehen."
+                      </blockquote>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="h-full">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <img
+                          src="https://ai.asdcode.com/julio.jpeg"
+                          alt="Julio"
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                        <div>
+                          <h3 className="font-semibold">Julio</h3>
+                          <p className="text-sm text-primary">Head of Engineering, Empion</p>
+                        </div>
+                      </div>
+                      <blockquote className="text-sm text-muted-foreground leading-relaxed">
+                        "Der Workshop war sehr aufschlussreich und gab uns wertvolle praktische Erfahrungen. Während der erste Tag einige vertraute Themen abdeckte, fanden wir die Vertiefung in Cursor, Prompt-Techniken und bewährte Praktiken besonders nützlich. Der zweite Tag war das Highlight, mit praktischen Übungen, die uns halfen, Cursor tiefgehend zu erkunden und das Gelernte beim Erstellen einer App anzuwenden. Insgesamt war es eine ansprechende und wertvolle Erfahrung. Ich würde es empfehlen, wenn Sie mehr über KI erfahren und lernen möchten, wie Sie sie effizienter in unseren Teams oder täglichen Arbeitsabläufen einsetzen können."
+                      </blockquote>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Workshop Information */}
           <section className="py-20 bg-secondary/10">
             <div className="container mx-auto px-6">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  KI verstehen und Anwendungsfälle fürs <span className="text-primary">Unternehmen entwickeln</span>
+                  Generative KI für <span className="text-primary">Business</span>
                 </h2>
                 <h3 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-8">Praxis-Workshop für Nicht-Techies</h3>
               </div>
@@ -261,13 +329,13 @@ const Workshops = () => {
                   Workshop-<span className="text-primary">Agenda</span>
                 </h2>
               </div>
-              
+
               <div className="max-w-4xl mx-auto mb-12">
                 <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
                   <div className="text-left">
                     <div className="mb-8">
                       <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK I: Verständnis über die Anwendung von KI im Unternehmen (4 Stunden)</h4>
-                      
+
                       <div className="space-y-6">
                         <div>
                           <h5 className="text-lg font-semibold text-foreground mb-2">1. Was ist künstliche Intelligenz? (~40 Minuten)</h5>
@@ -276,7 +344,7 @@ const Workshops = () => {
                             <li>• Abgrenzung ähnlicher Begriffe wie Algorithmen, Machine Learning, Data Science etc.</li>
                           </ul>
                         </div>
-                        
+
                         <div>
                           <h5 className="text-lg font-semibold text-foreground mb-2">2. Richtiges "Prompten" der KI - Praktische Übung (~120 Minuten)</h5>
                           <ul className="text-muted-foreground ml-4 space-y-1">
@@ -286,7 +354,7 @@ const Workshops = () => {
                             <li>• Ungewollte Effekte wie Biases und Halluzinationen werden erlebt und verstanden</li>
                           </ul>
                         </div>
-                        
+
                         <div>
                           <h5 className="text-lg font-semibold text-foreground mb-2">3. Grundzüge von Datenschutz & Sicherheit (~80 Minuten)</h5>
                           <ul className="text-muted-foreground ml-4 space-y-1">
@@ -300,10 +368,10 @@ const Workshops = () => {
                         </div>
                       </div>
                     </div>
-                    
+
                     <div>
                       <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK II: Anwendungsfälle für das Unternehmen erarbeiten (4 Stunden)</h4>
-                      
+
                       <div className="space-y-6">
                         <div>
                           <h5 className="text-lg font-semibold text-foreground mb-2">1. Anwendungsfälle identifizieren (~120 Minuten)</h5>
@@ -312,7 +380,7 @@ const Workshops = () => {
                             <li>• Ideenbewertung: Ideen werden nach Datenverfügbarkeit und Nutzen für Akteure im und außerhalb des Unternehmens bewertet</li>
                           </ul>
                         </div>
-                        
+
                         <div>
                           <h5 className="text-lg font-semibold text-foreground mb-2">2. Lösungsansatz (~120 Minuten)</h5>
                           <ul className="text-muted-foreground ml-4 space-y-1">
@@ -325,11 +393,155 @@ const Workshops = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="text-center">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                   <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop anfragen</a>
                 </Button>
+              </div>
+            </div>
+          </section>
+
+          {/* Viktor's Developer Workshop */}
+          <section className="py-20 bg-background">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  Generative AI für <span className="text-primary">Entwickler</span>
+                </h2>
+                                <h3 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-8">Meistern Sie KI-unterstützte Entwicklung mit erweiterten Cursor Rules, Claude Code und agentischen KI-Coding-Techniken</h3>
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+                  Lernen Sie, Claude Code Sub-Agents für Enterprise-Codebasen zu erstellen mit GitHub Copilot, ChatGPT und Gemini.
+                  Entdecken Sie fortgeschrittenes Prompting, IDE-Integrationen und Best Practices für KI-gestützte Entwicklungsworkflows.
+                </p>
+              </div>
+
+              <div className="max-w-6xl mx-auto mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                  {/* Was Sie lernen werden */}
+                  <Card className="h-full lg:col-span-3">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Was Sie lernen werden</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div>
+                          <h4 className="font-semibold mb-2">Fortgeschrittene Prompting-Techniken</h4>
+                          <p className="text-muted-foreground">Meistern Sie Chain-of-Thought, Tree-of-Thought und reflektionsbasierte Prompting-Strategien</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-2">Moderner KI-Entwicklungsstack</h4>
+                          <p className="text-muted-foreground">Tiefes Eintauchen in GitHub Copilot, Claude Code-Generierung, GPT-5, Gemini und modernste agentische KI-Coding-Tools</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-2">IDE-Beherrschung</h4>
+                          <p className="text-muted-foreground">Meistern Sie erweiterte Cursor Rules, KI-unterstützte Entwicklung in VSCode, JetBrains Suite mit benutzerdefinierten Tools und Integrationen</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-2">Best Practices & Anti-Patterns</h4>
+                          <p className="text-muted-foreground">Verstehen Sie Kontext-Optimierung, Fine-Tuning und wie Sie häufige KI-Entwicklungsfehler vermeiden</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-2">Entwicklung maßgeschneiderter Tools</h4>
+                          <p className="text-muted-foreground">Während des Workshops implementieren wir benutzerdefinierte KI-gestützte Entwicklungsworkflows für Ihr Team</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-2">Zukunftssichere Fähigkeiten</h4>
+                          <p className="text-muted-foreground">Bleiben Sie auf dem Laufenden mit entstehenden KI-Entwicklungsmustern und sich entwickelnden Best Practices für nachhaltige KI-erweiterte Workflows</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                {/* Workshop Structure */}
+                <div className="mb-12">
+                  <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+                    Workshop-<span className="text-primary">Struktur</span>
+                  </h2>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {/* Block 1 */}
+                    <Card className="h-fit">
+                      <CardHeader>
+                        <CardTitle className="text-2xl text-primary">Block 1: KI-Tools und Anwendungsentwicklung</CardTitle>
+                        <CardDescription className="text-lg">Moderne KI-Entwicklungstools meistern und grundlegende Konzepte durch praktische Übungen - 4 Stunden</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-6">
+                          <div>
+                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 1: Einführung und Grundlagen</h5>
+                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
+                            <ul className="text-muted-foreground ml-4 space-y-1">
+                              <li>• KI-Landschaft, Kernkonzepte und interaktive KI-Interviews</li>
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 2: Kernkonzepte</h5>
+                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
+                            <ul className="text-muted-foreground ml-4 space-y-1">
+                              <li>• Fortgeschrittene Prompting-Techniken und erweiterte Cursor-Rules-Konfiguration</li>
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 3: Praxis und Abschluss</h5>
+                            <p className="text-sm text-muted-foreground mb-2">60 Minuten</p>
+                            <ul className="text-muted-foreground ml-4 space-y-1">
+                              <li>• KI-unterstützte Entwicklungsworkflows und App-Entwicklung mit agentischen KI-Coding-Techniken</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    {/* Block 2 */}
+                    <Card className="h-fit">
+                      <CardHeader>
+                        <CardTitle className="text-2xl text-primary">Block 2: Fortgeschrittene Anwendungen und Lernen</CardTitle>
+                        <CardDescription className="text-lg">Implementierung ausgeklügelter KI-Techniken und Team-Kollaborationsmuster - 4 Stunden</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-6">
+                          <div>
+                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 1: Wiederholung und Coding mit Cursor</h5>
+                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
+                            <ul className="text-muted-foreground ml-4 space-y-1">
+                              <li>• Block 1 Wiederholung und erweiterte Cursor Rules/Claude Code Sub-Agents Erkundung</li>
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 2: Fortgeschrittene KI-unterstützte Entwicklung</h5>
+                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
+                            <ul className="text-muted-foreground ml-4 space-y-1">
+                              <li>• Entwicklung von Enterprise-Apps mit Cursor Agentischer KI und Erkundung der KI-Coding-Tools-Landschaft</li>
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 3: Praxis und Patterns</h5>
+                            <p className="text-sm text-muted-foreground mb-2">60 Minuten</p>
+                            <ul className="text-muted-foreground ml-4 space-y-1">
+                              <li>• TDD-Praxis, Projekt-Iteration, Patterns und Anti-Patterns Diskussion</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
+
+
+
+
+
+                <div className="text-center">
+                  <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                    <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Developer Workshop anfragen</a>
+                  </Button>
+                </div>
               </div>
             </div>
           </section>
