@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Lightbulb, Users, Target, Trophy } from "lucide-react";
+import { Lightbulb, Users, Target, Trophy, Brain, Code, Wrench } from "lucide-react";
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
 import workshopImage2 from "@/assets/workshop-speaker-2.jpg";
 import aiNetworkingBg from "@/assets/ai-networking-background.jpg";
@@ -326,71 +326,121 @@ const Workshops = () => {
 
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                  Workshop-<span className="text-primary">Agenda</span>
+                  Workshop-<span className="text-primary">Struktur</span>
                 </h2>
               </div>
 
-              <div className="max-w-4xl mx-auto mb-12">
-                <div className="bg-background/90 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-                  <div className="text-left">
-                    <div className="mb-8">
-                      <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK I: Verständnis über die Anwendung von KI im Unternehmen (4 Stunden)</h4>
-
+              <div className="max-w-6xl mx-auto mb-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {/* Block I */}
+                  <Card className="h-fit">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">BLOCK I: Verständnis über die Anwendung von KI im Unternehmen</CardTitle>
+                      <CardDescription className="text-lg">4 Stunden</CardDescription>
+                    </CardHeader>
+                    <CardContent>
                       <div className="space-y-6">
-                        <div>
-                          <h5 className="text-lg font-semibold text-foreground mb-2">1. Was ist künstliche Intelligenz? (~40 Minuten)</h5>
-                          <ul className="text-muted-foreground ml-4 space-y-1">
-                            <li>• Praktisches Beispiel mit Publikumsinteraktion</li>
-                            <li>• Abgrenzung ähnlicher Begriffe wie Algorithmen, Machine Learning, Data Science etc.</li>
-                          </ul>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                              <Brain className="w-5 h-5 text-primary" />
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h5 className="text-lg font-semibold text-foreground mb-2">1. Was ist künstliche Intelligenz?</h5>
+                            <p className="text-sm text-primary font-medium mb-2">~40 Minuten</p>
+                            <div className="text-muted-foreground space-y-1">
+                              <p>• Praktisches Beispiel mit Publikumsinteraktion</p>
+                              <p>• Abgrenzung ähnlicher Begriffe wie Algorithmen, Machine Learning, Data Science etc.</p>
+                            </div>
+                          </div>
                         </div>
 
-                        <div>
-                          <h5 className="text-lg font-semibold text-foreground mb-2">2. Richtiges "Prompten" der KI - Praktische Übung (~120 Minuten)</h5>
-                          <ul className="text-muted-foreground ml-4 space-y-1">
-                            <li>• Gute Prompts vs. schlechte Prompts</li>
-                            <li>• KI erhält zweimal denselben Auftrag, liefert aber unterschiedliche Ergebnisse</li>
-                            <li>• Verständnis darüber, wie KI gute und schlechte Ergebnisse liefern kann</li>
-                            <li>• Ungewollte Effekte wie Biases und Halluzinationen werden erlebt und verstanden</li>
-                          </ul>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                              <Code className="w-5 h-5 text-primary" />
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h5 className="text-lg font-semibold text-foreground mb-2">2. Richtiges "Prompten" der KI - Praktische Übung</h5>
+                            <p className="text-sm text-primary font-medium mb-2">~120 Minuten</p>
+                            <div className="text-muted-foreground space-y-1">
+                              <p>• Gute Prompts vs. schlechte Prompts</p>
+                              <p>• KI erhält zweimal denselben Auftrag, liefert aber unterschiedliche Ergebnisse</p>
+                              <p>• Verständnis darüber, wie KI gute und schlechte Ergebnisse liefern kann</p>
+                              <p>• Ungewollte Effekte wie Biases und Halluzinationen werden erlebt und verstanden</p>
+                            </div>
+                          </div>
                         </div>
 
-                        <div>
-                          <h5 className="text-lg font-semibold text-foreground mb-2">3. Grundzüge von Datenschutz & Sicherheit (~80 Minuten)</h5>
-                          <ul className="text-muted-foreground ml-4 space-y-1">
-                            <li>• Wichtige regulatorische Rahmen im Unternehmenskontext:</li>
-                            <li className="ml-4">- DSGVO</li>
-                            <li className="ml-4">- NIS 2</li>
-                            <li className="ml-4">- AI Act</li>
-                            <li className="ml-4">- Digital Markets & Services Act</li>
-                            <li>• Multiple-Choice-Verständnistest</li>
-                          </ul>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                              <Target className="w-5 h-5 text-primary" />
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h5 className="text-lg font-semibold text-foreground mb-2">3. Grundzüge von Datenschutz & Sicherheit</h5>
+                            <p className="text-sm text-primary font-medium mb-2">~80 Minuten</p>
+                            <div className="text-muted-foreground space-y-1">
+                              <p>• Wichtige regulatorische Rahmen im Unternehmenskontext:</p>
+                              <div className="ml-4 space-y-1">
+                                <p>- DSGVO</p>
+                                <p>- NIS 2</p>
+                                <p>- AI Act</p>
+                                <p>- Digital Markets & Services Act</p>
+                              </div>
+                              <p>• Multiple-Choice-Verständnistest</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </CardContent>
+                  </Card>
 
-                    <div>
-                      <h4 className="text-2xl font-bold mb-6 text-primary">BLOCK II: Anwendungsfälle für das Unternehmen erarbeiten (4 Stunden)</h4>
-
+                  {/* Block II */}
+                  <Card className="h-fit">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">BLOCK II: Anwendungsfälle für das Unternehmen erarbeiten</CardTitle>
+                      <CardDescription className="text-lg">4 Stunden</CardDescription>
+                    </CardHeader>
+                    <CardContent>
                       <div className="space-y-6">
-                        <div>
-                          <h5 className="text-lg font-semibold text-foreground mb-2">1. Anwendungsfälle identifizieren (~120 Minuten)</h5>
-                          <ul className="text-muted-foreground ml-4 space-y-1">
-                            <li>• Ideensammlung: Teilnehmer sammeln Prozesse, Aufgaben und Tätigkeiten, die als zeitraubend empfunden werden</li>
-                            <li>• Ideenbewertung: Ideen werden nach Datenverfügbarkeit und Nutzen für Akteure im und außerhalb des Unternehmens bewertet</li>
-                          </ul>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                              <Lightbulb className="w-5 h-5 text-primary" />
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h5 className="text-lg font-semibold text-foreground mb-2">1. Anwendungsfälle identifizieren</h5>
+                            <p className="text-sm text-primary font-medium mb-2">~120 Minuten</p>
+                            <div className="text-muted-foreground space-y-1">
+                              <p>• Ideensammlung: Teilnehmer sammeln Prozesse, Aufgaben und Tätigkeiten, die als zeitraubend empfunden werden</p>
+                              <p>• Ideenbewertung: Ideen werden nach Datenverfügbarkeit und Nutzen für Akteure im und außerhalb des Unternehmens bewertet</p>
+                            </div>
+                          </div>
                         </div>
 
-                        <div>
-                          <h5 className="text-lg font-semibold text-foreground mb-2">2. Lösungsansatz (~120 Minuten)</h5>
-                          <ul className="text-muted-foreground ml-4 space-y-1">
-                            <li>• Top-Ideen werden in maximal 3 Gruppen ausgearbeitet</li>
-                            <li>• Bewertung des Umsetzungsaufwands</li>
-                          </ul>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                              <Trophy className="w-5 h-5 text-primary" />
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h5 className="text-lg font-semibold text-foreground mb-2">2. Lösungsansatz</h5>
+                            <p className="text-sm text-primary font-medium mb-2">~120 Minuten</p>
+                            <div className="text-muted-foreground space-y-1">
+                              <p>• Top-Ideen werden in maximal 3 Gruppen ausgearbeitet</p>
+                              <p>• Bewertung des Umsetzungsaufwands</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
 
@@ -469,28 +519,43 @@ const Workshops = () => {
                       </CardHeader>
                       <CardContent>
                         <div className="space-y-6">
-                          <div>
-                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 1: Einführung und Grundlagen</h5>
-                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
-                            <ul className="text-muted-foreground ml-4 space-y-1">
-                              <li>• KI-Landschaft, Kernkonzepte und interaktive KI-Interviews</li>
-                            </ul>
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <Brain className="w-5 h-5 text-primary" />
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-lg font-semibold text-foreground mb-2">Teil 1: Einführung und Grundlagen</h5>
+                              <p className="text-sm text-primary font-medium mb-2">80 Minuten</p>
+                              <p className="text-muted-foreground">KI-Landschaft, Kernkonzepte und interaktive KI-Interviews</p>
+                            </div>
                           </div>
 
-                          <div>
-                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 2: Kernkonzepte</h5>
-                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
-                            <ul className="text-muted-foreground ml-4 space-y-1">
-                              <li>• Fortgeschrittene Prompting-Techniken und erweiterte Cursor-Rules-Konfiguration</li>
-                            </ul>
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <Code className="w-5 h-5 text-primary" />
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-lg font-semibold text-foreground mb-2">Teil 2: Kernkonzepte</h5>
+                              <p className="text-sm text-primary font-medium mb-2">80 Minuten</p>
+                              <p className="text-muted-foreground">Fortgeschrittene Prompting-Techniken und erweiterte Cursor-Rules-Konfiguration</p>
+                            </div>
                           </div>
 
-                          <div>
-                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 3: Praxis und Abschluss</h5>
-                            <p className="text-sm text-muted-foreground mb-2">60 Minuten</p>
-                            <ul className="text-muted-foreground ml-4 space-y-1">
-                              <li>• KI-unterstützte Entwicklungsworkflows und App-Entwicklung mit agentischen KI-Coding-Techniken</li>
-                            </ul>
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <Wrench className="w-5 h-5 text-primary" />
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-lg font-semibold text-foreground mb-2">Teil 3: Praxis und Abschluss</h5>
+                              <p className="text-sm text-primary font-medium mb-2">60 Minuten</p>
+                              <p className="text-muted-foreground">KI-unterstützte Entwicklungsworkflows und App-Entwicklung mit agentischen KI-Coding-Techniken</p>
+                            </div>
                           </div>
                         </div>
                       </CardContent>
@@ -504,28 +569,43 @@ const Workshops = () => {
                       </CardHeader>
                       <CardContent>
                         <div className="space-y-6">
-                          <div>
-                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 1: Wiederholung und Coding mit Cursor</h5>
-                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
-                            <ul className="text-muted-foreground ml-4 space-y-1">
-                              <li>• Block 1 Wiederholung und erweiterte Cursor Rules/Claude Code Sub-Agents Erkundung</li>
-                            </ul>
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <Brain className="w-5 h-5 text-primary" />
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-lg font-semibold text-foreground mb-2">Teil 1: Wiederholung und Coding mit Cursor</h5>
+                              <p className="text-sm text-primary font-medium mb-2">80 Minuten</p>
+                              <p className="text-muted-foreground">Block 1 Wiederholung und erweiterte Cursor Rules/Claude Code Sub-Agents Erkundung</p>
+                            </div>
                           </div>
 
-                          <div>
-                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 2: Fortgeschrittene KI-unterstützte Entwicklung</h5>
-                            <p className="text-sm text-muted-foreground mb-2">80 Minuten</p>
-                            <ul className="text-muted-foreground ml-4 space-y-1">
-                              <li>• Entwicklung von Enterprise-Apps mit Cursor Agentischer KI und Erkundung der KI-Coding-Tools-Landschaft</li>
-                            </ul>
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <Code className="w-5 h-5 text-primary" />
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-lg font-semibold text-foreground mb-2">Teil 2: Fortgeschrittene KI-unterstützte Entwicklung</h5>
+                              <p className="text-sm text-primary font-medium mb-2">80 Minuten</p>
+                              <p className="text-muted-foreground">Entwicklung von Enterprise-Apps mit Cursor Agentischer KI und Erkundung der KI-Coding-Tools-Landschaft</p>
+                            </div>
                           </div>
 
-                          <div>
-                            <h5 className="text-lg font-semibold text-foreground mb-2">Teil 3: Praxis und Patterns</h5>
-                            <p className="text-sm text-muted-foreground mb-2">60 Minuten</p>
-                            <ul className="text-muted-foreground ml-4 space-y-1">
-                              <li>• TDD-Praxis, Projekt-Iteration, Patterns und Anti-Patterns Diskussion</li>
-                            </ul>
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <Users className="w-5 h-5 text-primary" />
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-lg font-semibold text-foreground mb-2">Teil 3: Praxis und Patterns</h5>
+                              <p className="text-sm text-primary font-medium mb-2">60 Minuten</p>
+                              <p className="text-muted-foreground">TDD-Praxis, Projekt-Iteration, Patterns und Anti-Patterns Diskussion</p>
+                            </div>
                           </div>
                         </div>
                       </CardContent>
