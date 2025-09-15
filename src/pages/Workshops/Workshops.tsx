@@ -457,7 +457,7 @@ const Workshops = () => {
             <div className="container mx-auto px-6">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Generative AI für <span className="text-primary">Entwickler</span>
+                  Generative KI für <span className="text-primary">Entwickler</span>
                 </h2>
                                 <h3 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-8">Meistern Sie KI-unterstützte Entwicklung mit erweiterten Cursor Rules, Claude Code und agentischen KI-Coding-Techniken</h3>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
