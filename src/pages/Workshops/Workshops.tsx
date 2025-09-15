@@ -381,7 +381,7 @@ const Workshops = () => {
                             </div>
                           </div>
                           <div className="flex-1">
-                            <h5 className="text-lg font-semibold text-foreground mb-2">3. Datenschutz und Sicherheit</h5>
+                            <h5 className="text-lg font-semibold text-foreground mb-2">3. Grundzüge von Datenschutz & Sicherheit</h5>
                             <p className="text-sm text-primary font-medium mb-2">~80 Minuten</p>
                             <div className="text-muted-foreground space-y-1">
                               <p>• Wichtige regulatorische Rahmen im Unternehmenskontext:</p>
@@ -390,24 +390,6 @@ const Workshops = () => {
                                 <p>- NIS 2</p>
                                 <p>- AI Act</p>
                                 <p>- Digital Markets & Services Act</p>
-                              </div>
-                              <p>• Datenschutz Schulungen:</p>
-                              <div className="ml-4 space-y-1">
-                                <p>- Sichere KI-Nutzung durch Datenpseudonymisierung</p>
-                                <p>- Schutz sensibler Unternehmensdaten bei KI-Anwendungen</p>
-                                <p>- DSGVO-konforme KI-Implementierung</p>
-                                <p>- Transparenz und Nachvollziehbarkeit bei KI-Entscheidungen</p>
-                              </div>
-                              <div className="mt-4 p-4 bg-muted/50 rounded-lg">
-                                <h6 className="font-semibold mb-2">Praktisches Beispiel: Datenpseudonymisierung</h6>
-                                <p className="text-sm">Sie möchten eine E-Mail verfassen, in der Sie sich bei einem Geschäftspartner über eine problematische Transaktion erkundigen. Statt echter Namen und Daten verwenden Sie Platzhalter:</p>
-                                <div className="mt-2 text-sm font-mono bg-background p-2 rounded">
-                                  <p>• Max Mustermann → [PERSON_A]</p>
-                                  <p>• TechCorp GmbH → [UNTERNEHMEN_B]</p>
-                                  <p>• Berlin → [STANDORT_C]</p>
-                                  <p>• 12345678 → [REFERENZ_D]</p>
-                                </div>
-                                <p className="text-sm mt-2">So schützen Sie sensible Informationen und ermöglichen gleichzeitig DSGVO-konforme KI-Nutzung mit vollständiger Nachvollziehbarkeit aller Interaktionen.</p>
                               </div>
                               <p>• Multiple-Choice-Verständnistest</p>
                             </div>
