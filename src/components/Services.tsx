@@ -51,7 +51,7 @@ const Services = () => {
     },
     {
       icon: BookOpen,
-      title: "Workshops & Training",
+      title: "& Joint Venture Management",
       description:
         "Schulungen und Workshops für Ihr Team, um KI-Technologien erfolgreich im Unternehmen einzusetzen.",
       features: [
@@ -140,7 +140,7 @@ const Services = () => {
                       <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform shadow-glow">
                         <service.icon className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-2xl">& Joint Venture Management</CardTitle>
+                      <CardTitle className="text-2xl">{service.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
