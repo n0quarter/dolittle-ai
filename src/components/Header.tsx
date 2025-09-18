@@ -15,7 +15,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { GraduationCap, Users, Menu, X } from "lucide-react";
+import { GraduationCap, Users, Menu, X, Phone, Stethoscope, Truck } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +42,19 @@ const Header = () => {
                 <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/ueber-uns">
                   Über uns
                 </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Conversational AI</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                    <ListItem href="/conversational-ai/aerzte" title="KI Telefonassistent | Ärzte" icon={<Stethoscope className="h-4 w-4" />}>
+                      Intelligente Telefonassistenz für Arztpraxen
+                    </ListItem>
+                    <ListItem href="/conversational-ai/fuhrpark" title="KI Telefonassistent | Fuhrpark" icon={<Truck className="h-4 w-4" />}>
+                      Automatisierte Kommunikation im Fuhrparkmanagement
+                    </ListItem>
+                  </ul>
+                </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Workshops & Training</NavigationMenuTrigger>
@@ -81,6 +94,34 @@ const Header = () => {
                 >
                   Über uns
                 </a>
+                
+                <div className="space-y-2">
+                  <h3 className="text-lg font-medium text-primary p-2">Conversational AI</h3>
+                  <div className="pl-4 space-y-2">
+                    <a 
+                      href="/conversational-ai/aerzte" 
+                      className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Stethoscope className="h-4 w-4" />
+                      <div>
+                        <div className="font-medium">KI Telefonassistent | Ärzte</div>
+                        <div className="text-sm text-muted-foreground">Intelligente Telefonassistenz für Arztpraxen</div>
+                      </div>
+                    </a>
+                    <a 
+                      href="/conversational-ai/fuhrpark" 
+                      className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Truck className="h-4 w-4" />
+                      <div>
+                        <div className="font-medium">KI Telefonassistent | Fuhrpark</div>
+                        <div className="text-sm text-muted-foreground">Automatisierte Kommunikation im Fuhrparkmanagement</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
                 
                 <div className="space-y-2">
                   <h3 className="text-lg font-medium text-primary p-2">Workshops & Training</h3>

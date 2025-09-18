@@ -12,6 +12,8 @@ import UeberUns from "./pages/UeberUns";
 import KiMitarbeiterschulung from "./pages/Workshops/KiMitarbeiterschulung";
 import Workshops from "./pages/Workshops/Workshops";
 import UseCases from "./pages/UseCases";
+import Aerzte from "./pages/ConversationalAI/Aerzte";
+import Fuhrpark from "./pages/ConversationalAI/Fuhrpark";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +27,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/ueber-uns" element={<UeberUns />} />
+          <Route path="/conversational-ai/aerzte" element={<Aerzte />} />
+          <Route path="/conversational-ai/fuhrpark" element={<Fuhrpark />} />
           <Route path="/workshops/ki-mitarbeiterschulung" element={<KiMitarbeiterschulung />} />
           <Route path="/workshops/workshops" element={<Workshops />} />
           <Route path="/use-cases" element={<UseCases />} />
