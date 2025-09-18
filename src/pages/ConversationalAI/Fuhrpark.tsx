@@ -275,7 +275,7 @@ const Fuhrpark = () => {
                   Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
                   Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
                 </p>
-                <div className="bg-white rounded-lg shadow-lg p-4 max-w-2xl mx-auto">
+                <div className="bg-white rounded-lg shadow-lg p-4 max-w-lg mx-auto">
                   <img 
                     src={followUpImage} 
                     alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
