@@ -177,14 +177,14 @@ const Fuhrpark = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                So funktioniert's: In 8 einfachen Schritten
+                So funktioniert's: In 6 einfachen Schritten
               </h2>
               <p className="text-xl text-muted-foreground">
                 Von der Analyse bis zum Live-Betrieb
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   step: "1",
@@ -210,16 +210,6 @@ const Fuhrpark = () => {
                   step: "5",
                   title: "Live-Gang",
                   description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig"
-                },
-                {
-                  step: "6",
-                  title: "Verschlagwortung",
-                  description: "Sie vergeben relevante Tags, um Anliegen schnell filtern zu können"
-                },
-                {
-                  step: "7",
-                  title: "Smart Inbox",
-                  description: "Überblick über gelöste und offene Anliegen - nur bei Bedarf eingreifen"
                 },
                 {
                   step: "8",
