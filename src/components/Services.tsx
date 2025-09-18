@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Brain, Cog, Users, BookOpen, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import servicesBackground from "@/assets/services-ai-human-collaboration.jpg";
 import strategyBackground from "@/assets/strategy-consulting-harmonized.jpg";
 import frameworkBackground from "@/assets/framework-architecture-harmonized.jpg";
@@ -155,6 +156,19 @@ const Services = () => {
                         </li>
                       ))}
                     </ul>
+                    
+                    {/* Link to workshops page for Workshops & Training service */}
+                    {service.title === "Workshops & Training" && (
+                      <div className="mt-6">
+                        <Link 
+                          to="/workshops/workshops"
+                          className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                        >
+                          Zu den Workshops
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Link>
+                      </div>
+                    )}
                     
                     {/* Connecting Arrow for visual flow */}
                     {index < 3 && (
