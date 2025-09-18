@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Brain, Cog, Users, BookOpen, ArrowRight } from "lucide-react";
+import { Brain, Cog, Users, BookOpen, Phone, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import servicesBackground from "@/assets/services-ai-human-collaboration.jpg";
 import strategyBackground from "@/assets/strategy-consulting-harmonized.jpg";
@@ -22,33 +22,37 @@ const Services = () => {
     },
     {
       icon: Cog,
-      title: "KI-Framework Entwicklung",
+      title: "KI-Framework & Agenten-Entwicklung",
       description:
-        "Implementierung und Entwicklung von KI-Frameworks, die perfekt auf Ihre Unternehmensanforderungen zugeschnitten sind.",
+        "Implementierung und Entwicklung von KI-Frameworks sowie intelligenten Agenten und Workflows, die perfekt auf Ihre Unternehmensanforderungen zugeschnitten sind. Von der technischen Architektur bis zur intelligenten Automatisierung.",
       features: [
         "Custom AI-Lösungen",
-        "Integration bestehender Systeme",
+        "Intelligente Automatisierung", 
         "Skalierbare Architekturen",
+        "24/7 KI-Assistenten",
+        "Integration bestehender Systeme",
         "DSGVO-Compliance",
       ],
       imageSrc:
         "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=70",
-      imageAlt: "Illustration: KI-Frameworks – skalierbare Architekturen"
+      imageAlt: "Illustration: KI-Frameworks & Agenten – skalierbare Architekturen"
     },
     {
-      icon: Users,
-      title: "Agenten & Workflows",
+      icon: Phone,
+      title: "KI-Telefonassistenten",
       description:
-        "Intelligente Automatisierung durch KI-Agenten und optimierte Workflows für maximale Effizienzsteigerung.",
+        "Intelligente Telefonassistenzsysteme für Bereiche mit hohem Kommunikationsvolumen. Unsere KI-Lösungen entlasten Ihr Team bei Terminvereinbarungen, Anfragen und Kundenbetreuung - rund um die Uhr verfügbar.",
       features: [
-        "Intelligente Automatisierung",
-        "Workflow-Optimierung",
-        "24/7 KI-Assistenten",
-        "Prozesskosten-Reduktion",
+        "Arztpraxen & Kliniken",
+        "Fuhrparkmanagement",
+        "Hausverwaltungen",
+        "Automatische Terminvereinbarung",
+        "24/7 Erreichbarkeit",
+        "Mehrsprachige Unterstützung",
       ],
       imageSrc:
-        "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1600&q=70",
-      imageAlt: "Illustration: KI-Agenten & Workflows – Automatisierung"
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=70",
+      imageAlt: "Illustration: KI-Telefonassistenten – Kundenbetreuung"
     },
     {
       icon: BookOpen,
@@ -70,8 +74,8 @@ const Services = () => {
   // Background images for each service
   const backgroundImages = [
     strategyBackground, // Strategy/Brain - People doing strategic consulting
-    frameworkBackground, // Framework/Cog - Software architecture with circles and squares
-    agentsBackground, // Agents/Users - Flow diagram with connected agents
+    frameworkBackground, // Framework & Agents/Cog - Software architecture with circles and squares  
+    agentsBackground, // Phone Assistants/Phone - Communication and workflow diagrams
     workshopsBackground  // Training/BookOpen - Fun, engaging learning environment
   ];
 
