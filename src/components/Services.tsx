@@ -11,7 +11,7 @@ const Services = () => {
   const services = [
     {
       icon: Brain,
-      title: "KI-Strategieberatung",
+      title: "KI-Strategieberatung & Joint Venture Management",
       description:
         "Entwicklung maßgeschneiderter KI-Lösungen für Ihr Unternehmen. Wir analysieren Ihre Prozesse und identifizieren KI-Potentiale.",
       features: ["Prozessanalyse", "ROI-Bewertung", "Roadmap-Entwicklung", "Technologie-Auswahl"],
@@ -51,7 +51,7 @@ const Services = () => {
     },
     {
       icon: BookOpen,
-      title: "& Joint Venture Management",
+      title: "Workshops & Training",
       description:
         "Schulungen und Workshops für Ihr Team, um KI-Technologien erfolgreich im Unternehmen einzusetzen.",
       features: [
