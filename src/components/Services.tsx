@@ -13,7 +13,7 @@ const Services = () => {
       icon: Brain,
       title: "KI-Strategieberatung & Joint Venture Management",
       description:
-        "Erst identifizieren und maßgeschneiderter KI-Lösungen für Ihr Geschäftsmodell. Dann bewerten wir die Datenlandschaft und technische Machbarkeit sowie Wirtschaftlichkeit der Umsetzung. In vielen Fällen entsehen hier Geschäftsmodelle, die nicht nur das eigene Kerngeschäft profitabler machen, sondern hinterher zu neuen Produkten und Geschäftsausgründungen führen. Wir sind für alle Stationen der richtige Partner.",
+        "Erst identifizieren wir Potentiale und entwickeln maßgeschneiderte KI-Lösungen für Ihr Geschäftsmodell. Dann bewerten wir die Datenlandschaft sowie technische Machbarkeit und Wirtschaftlichkeit der Umsetzung. In vielen Fällen entstehen hier Geschäftsmodelle, die nicht nur das eigene Kerngeschäft profitabler machen, sondern später zu neuen Produkten und Geschäftsausgründungen führen. Wir sind für alle Stationen der richtige Partner.",
       features: ["Prozessanalyse", "ROI-Bewertung", "Roadmap-Entwicklung", "Technologie-Auswahl"],
       imageSrc:
         "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=70",
