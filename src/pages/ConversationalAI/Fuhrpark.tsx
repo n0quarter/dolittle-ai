@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import smartInboxImage from "@/assets/fuhrpark-smart-inbox.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung.png";
+import followUpImage from "@/assets/fuhrpark-follow-up.png";
 
 const Fuhrpark = () => {
   return (
@@ -260,6 +261,24 @@ const Fuhrpark = () => {
                   <img 
                     src={smartInboxImage} 
                     alt="Screenshot der Smart Inbox mit Anrufliste und farbkodierten Tags im Fuhrpark KI-System"
+                    className="w-full h-auto rounded-md"
+                  />
+                </div>
+              </div>
+
+              {/* Follow-up Screenshot */}
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Schritt 8: Follow-up & SMS-Kommunikation
+                </h3>
+                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                  Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
+                  Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
+                </p>
+                <div className="bg-white rounded-lg shadow-lg p-4 max-w-4xl mx-auto">
+                  <img 
+                    src={followUpImage} 
+                    alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
                     className="w-full h-auto rounded-md"
                   />
                 </div>
