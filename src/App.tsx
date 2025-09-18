@@ -12,6 +12,8 @@ import UeberUns from "./pages/UeberUns";
 import KiMitarbeiterschulung from "./pages/Workshops/KiMitarbeiterschulung";
 import Workshops from "./pages/Workshops/Workshops";
 import UseCases from "./pages/UseCases";
+
+// Import ConversationalAI pages
 import Aerzte from "./pages/ConversationalAI/Aerzte";
 import Fuhrpark from "./pages/ConversationalAI/Fuhrpark";
 
