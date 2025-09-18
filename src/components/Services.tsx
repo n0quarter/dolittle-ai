@@ -39,7 +39,7 @@ const Services = () => {
     },
     {
       icon: Phone,
-      title: "KI-Telefonassistenten",
+      title: "KI-Telefonassistent mit smarter Inbox",
       description:
         "Intelligente Telefonassistenzsysteme für Bereiche mit hohem Kommunikationsvolumen. Unsere KI-Lösungen entlasten Ihr Team bei Terminvereinbarungen, Anfragen und Kundenbetreuung - rund um die Uhr verfügbar.",
       features: [
