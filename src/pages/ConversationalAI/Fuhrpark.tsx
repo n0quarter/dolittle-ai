@@ -197,7 +197,7 @@ const Fuhrpark = () => {
                 Die <span className="bg-gradient-primary bg-clip-text text-transparent">Dolittle</span> Lösung
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Schlauer durch Anpassung auf Ihre Kundenanfragen - mit Zugriff auf alle relevanten Systeme
+                Schlauer durch Anpassung auf Ihre Kundenanfragen - mit Zugriff auf alle relevanten Daten
               </p>
             </div>
 
