@@ -107,12 +107,16 @@ const Fuhrpark = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="px-8 py-4 text-lg">
-                <Phone className="w-5 h-5 mr-2" />
-                Demo anfragen
+              <Button asChild size="lg" className="px-8 py-4 text-lg">
+                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Demo anfragen
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
-                Mehr erfahren
+              <Button asChild variant="outline" size="lg" className="px-8 py-4 text-lg">
+                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">
+                  Beratungstermin buchen
+                </a>
               </Button>
             </div>
           </div>
@@ -409,8 +413,10 @@ const Fuhrpark = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Mehr Zeit für strategische Fuhrparksführung statt administrativer Tätigkeiten
             </p>
-            <Button size="lg" className="px-8 py-4 text-lg">
-              Kostenlose Beratung für Ihr Fuhrparkmanagement
+            <Button asChild size="lg" className="px-8 py-4 text-lg">
+              <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">
+                Kostenlose Beratung für Ihr Fuhrparkmanagement
+              </a>
             </Button>
           </div>
         </div>
