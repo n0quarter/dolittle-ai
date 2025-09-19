@@ -297,7 +297,7 @@ const Fuhrpark = () => {
                 {
                   step: "5",
                   title: "Live-Gang",
-                  description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig"
+                  description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig. Weiterleitung wird eingerichtet und neue Nebenstelle bereitgestellt"
                 }
               ].map((item, index) => (
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow text-center">
