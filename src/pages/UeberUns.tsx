@@ -54,9 +54,7 @@ const UeberUns = () => {
               </h1>
 
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                Wir sind Ihr Partner für DSGVO-konforme KI-Lösungen. 
-                Von der Strategieentwicklung bis zur Implementierung begleiten wir Sie auf Ihrem Weg zur erfolgreichen KI-Integration.
-                Dabei suchen wir pragmatisch den kosteneffizientesten Weg für Sie.
+                95 % der Piloten ihre Unternehmen scheitern. Wir sagen dafür, dass sie anderen 5 % gehören. Wir losen nur Probleme, die auch wirklich welche sind und die mit K gelöst werden sollten.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
