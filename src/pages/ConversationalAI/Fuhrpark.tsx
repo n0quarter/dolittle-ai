@@ -113,11 +113,6 @@ const Fuhrpark = () => {
                   Demo anfragen
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="px-8 py-4 text-lg">
-                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">
-                  Beratungstermin buchen
-                </a>
-              </Button>
             </div>
           </div>
         </div>
