@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, ArrowRight, Play, Pause } from "lucide-react";
+import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, ArrowRight, Play, Pause, Target, BarChart3, Plug, TestTube, Radio } from "lucide-react";
 import { useState, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -272,40 +272,67 @@ const Fuhrpark = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="max-w-3xl mx-auto space-y-6">
               {[
                 {
                   step: "1",
                   title: "Anliegen definieren",
-                  description: "Wir definieren gemeinsam, welche Anliegen der Dolittle Assistent direkt erledigen soll"
+                  description: "Wir definieren gemeinsam, welche Anliegen der Dolittle Assistent direkt erledigen soll",
+                  icon: Target
                 },
                 {
                   step: "2", 
                   title: "Datenanalyse",
-                  description: "Wir prüfen, welche Daten für zufriedenstellende Antworten benötigt werden"
+                  description: "Wir prüfen, welche Daten für zufriedenstellende Antworten benötigt werden",
+                  icon: BarChart3
                 },
                 {
                   step: "3",
                   title: "Integration planen", 
-                  description: "Identifikation der kosteneffizientesten und DSGVO-konformen Datenbereitstellung"
+                  description: "Identifikation der kosteneffizientesten und DSGVO-konformen Datenbereitstellung",
+                  icon: Plug
                 },
                 {
                   step: "4",
                   title: "Testbetrieb",
-                  description: "Nach Datenanbindung prüfen wir die Qualität der automatisierten Antworten"
+                  description: "Nach Datenanbindung prüfen wir die Qualität der automatisierten Antworten",
+                  icon: TestTube
                 },
                 {
                   step: "5",
                   title: "Live-Gang",
-                  description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig. Weiterleitung wird eingerichtet und neue Nebenstelle bereitgestellt"
+                  description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig. Weiterleitung wird eingerichtet und neue Nebenstelle bereitgestellt",
+                  icon: Radio
                 }
               ].map((item, index) => (
-                <Card key={index} className="p-6 hover:shadow-lg transition-shadow text-center">
-                  <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                    {item.step}
+                <Card key={index} className="p-8 hover:shadow-strong hover:scale-105 transition-all duration-300 group bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/40 relative overflow-hidden cursor-pointer">
+                  {/* Gradient background on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  <div className="relative z-10 flex items-start space-x-6">
+                    {/* Step Icon */}
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white text-xl font-bold shadow-glow group-hover:scale-110 transition-transform duration-300">
+                        {item.step}
+                      </div>
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="flex items-center space-x-3 mb-4">
+                        <item.icon className="w-6 h-6 text-primary group-hover:text-primary/80 transition-colors duration-300" />
+                        <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">{item.title}</h3>
+                      </div>
+                      <p className="text-muted-foreground text-lg leading-relaxed group-hover:text-foreground transition-colors duration-300">{item.description}</p>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                  
+                  {/* Arrow indicator */}
+                  {index < 4 && (
+                    <div className="flex justify-center mt-6">
+                      <ArrowRight className="w-6 h-6 text-primary/40 group-hover:text-primary rotate-90 transition-all duration-300" />
+                    </div>
+                  )}
                 </Card>
               ))}
             </div>
