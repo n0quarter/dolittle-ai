@@ -31,9 +31,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link to="/#services" className="hover:text-foreground transition-colors">KI-Strategieberatung</Link></li>
-              <li><Link to="/#services" className="hover:text-foreground transition-colors">Framework Entwicklung</Link></li>
-              <li><Link to="/#services" className="hover:text-foreground transition-colors">Agenten & Workflows</Link></li>
+              <li><Link to="/#services" className="hover:text-foreground transition-colors">KI-Strategieberatung & Joint Venture Management</Link></li>
+              <li><Link to="/#services" className="hover:text-foreground transition-colors">KI-Framework & Agenten-Entwicklung</Link></li>
+              <li><Link to="/#services" className="hover:text-foreground transition-colors">KI-Telefonassistent mit smarter Inbox</Link></li>
               <li><Link to="/workshops/workshops" className="hover:text-foreground transition-colors">Workshops & Training</Link></li>
             </ul>
           </div>
