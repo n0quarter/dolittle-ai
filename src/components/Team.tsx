@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Peter Müller",
+      name: "Andreas Reichert",
       role: "Gründer & CEO",
       photo: "/lovable-uploads/3edae817-71ad-494d-9af9-798fed02a2af.png",
       experience: "12 Jahre Erfahrung im Aufbau und Beratung digitaler Firmen, Geschäftsmodelle & Produkte für Konzerne und Mittelständler wie Audi Business Innovation GmbH, mantro GmbH, Baloise und Startup Family Office GmbH",
