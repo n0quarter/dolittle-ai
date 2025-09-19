@@ -14,10 +14,8 @@ import heroImage from "@/assets/hero-ai-consulting.jpg";
 import CountUp from "@/components/ui/count-up";
 import Typewriter from "@/components/ui/typewriter";
 import { Search } from "lucide-react";
-
 const UeberUns = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Über uns - Dolittle AI | Ihr KI-Experten Team</title>
         <meta name="description" content="Lernen Sie das Dolittle AI Team kennen. Experten für KI-Strategieberatung, Framework Entwicklung und DSGVO-konforme AI-Lösungen." />
@@ -31,8 +29,8 @@ const UeberUns = () => {
           <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24 md:pt-28">
             {/* Background Image */}
             <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
-              backgroundImage: `url(/src/assets/hero-ai-consulting.jpg)`
-            }}>
+            backgroundImage: `url(/src/assets/hero-ai-consulting.jpg)`
+          }}>
             </div>
 
             {/* Content */}
@@ -42,20 +40,13 @@ const UeberUns = () => {
                   <div className="flex items-center gap-3 bg-card/80 backdrop-blur-sm rounded-xl border border-border px-4 py-3 md:px-6 md:py-4 shadow-medium whitespace-normal md:whitespace-nowrap w-full max-w-full">
                     <Search className="h-5 w-5 text-muted-foreground shrink-0" />
                     <div className="flex-1 min-w-0 flex items-center">
-                      <Typewriter
-                        text="KI-Lösungen für mein Unternehmen"
-                        speed={35}
-                        startDelay={300}
-                        className="text-2xl md:text-3xl leading-tight break-words md:break-normal bg-gradient-primary bg-clip-text text-transparent"
-                      />
+                      <Typewriter text="KI-Lösungen für mein Unternehmen" speed={35} startDelay={300} className="text-2xl md:text-3xl leading-tight break-words md:break-normal bg-gradient-primary bg-clip-text text-transparent" />
                     </div>
                   </div>
                 </div>
               </h1>
 
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                95 % der Piloten ihre Unternehmen scheitern. Wir sagen dafür, dass sie anderen 5 % gehören. Wir losen nur Probleme, die auch wirklich welche sind und die mit K gelöst werden sollten.
-              </p>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">95 % der KI-Piloten in Unternehmen scheitern. Wir sorgen dafür, dass sie zu den anderen 5 % gehören. Wir lösen nur Probleme, die auch wirklich Ihre Probleme sind und die mit KI gelöst werden können.</p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button asChild size="lg" className="shadow-strong text-lg px-8 py-6">
@@ -105,8 +96,6 @@ const UeberUns = () => {
         </main>
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default UeberUns;
