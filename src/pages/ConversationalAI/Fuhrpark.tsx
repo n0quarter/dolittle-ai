@@ -286,11 +286,6 @@ const Fuhrpark = () => {
                   step: "5",
                   title: "Live-Gang",
                   description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig"
-                },
-                {
-                  step: "8",
-                  title: "Follow-up",
-                  description: "Rückfragen können schnell per SMS oder anderen Kanälen beantwortet werden"
                 }
               ].map((item, index) => (
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow text-center">
