@@ -149,7 +149,7 @@ const Fuhrpark = () => {
                     </div>
                     <div className="flex items-start">
                       <Truck className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>"Welche Car Policy gilt für mein Fahrzeug?"</span>
+                      <span>"Ich habe meine Tankkarte verloren, wie bekomme ich eine Neue?"</span>
                     </div>
                   </div>
                 </Card>
