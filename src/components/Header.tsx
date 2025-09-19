@@ -47,7 +47,7 @@ const Header = () => {
                 <NavigationMenuTrigger>KI Telefonassistent</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                    <ListItem href="/conversational-ai/aerzte" title="KI Telefonassistent | Ärzte" icon={<Stethoscope className="h-4 w-4" />}>
+                    <ListItem href="https://docdolittle.io/" title="KI Telefonassistent | Ärzte" icon={<Stethoscope className="h-4 w-4" />}>
                       Intelligente Telefonassistenz für Arztpraxen
                     </ListItem>
                     <ListItem href="/conversational-ai/fuhrpark" title="KI Telefonassistent | Fuhrpark" icon={<Truck className="h-4 w-4" />}>
@@ -99,9 +99,11 @@ const Header = () => {
                   <h3 className="text-lg font-medium text-primary p-2">KI Telefonassistent</h3>
                   <div className="pl-4 space-y-2">
                     <a 
-                      href="/conversational-ai/aerzte" 
+                      href="https://docdolittle.io/" 
                       className="flex items-center space-x-2 p-2 rounded-md hover:bg-accent hover:text-primary transition-colors"
                       onClick={() => setIsOpen(false)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Stethoscope className="h-4 w-4" />
                       <div>
@@ -167,13 +169,15 @@ const Header = () => {
   );
 };
 
-const ListItem = ({ className, title, children, icon, ...props }: {
+const ListItem = ({ className, title, children, icon, href, ...props }: {
   className?: string;
   title: string;
   children: React.ReactNode;
   href: string;
   icon?: React.ReactNode;
 }) => {
+  const isExternal = href.startsWith('http');
+  
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -182,6 +186,9 @@ const ListItem = ({ className, title, children, icon, ...props }: {
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
+          href={href}
+          target={isExternal ? "_blank" : undefined}
+          rel={isExternal ? "noopener noreferrer" : undefined}
           {...props}
         >
           <div className="flex items-center gap-2">
