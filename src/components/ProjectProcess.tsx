@@ -16,7 +16,7 @@ const ProjectProcess = () => {
   }, {
     phase: "4",
     title: "Hypercare",
-    description: "Lifebetrieb überwachen und aufgrund der Ergebnisse weiter optimieren"
+    description: "Wir etablieren in der Regel Multi Agentensysteme, die sich gegenseitig überprüfen und zudem implementieren wir Monitoringsysteme, die Halluzinationen oder Biases wie man sie von gängigen Chatbots kennt, minimieren. Dennoch überwachen wir mit Human in the Loop mit Ihnen die Ergebnisse kontinuierlich und bessern nach, wenn notwendig."
   }];
 
   return (
