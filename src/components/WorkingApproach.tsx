@@ -20,7 +20,7 @@ const WorkingApproach = () => {
             Unsere <span className="bg-gradient-primary bg-clip-text text-transparent">Arbeitsweise</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Unser Ansatz ist klar definiert: effizient, praxisorientiert und ergebnisorientiert.
+            KI ist für uns kein Buzzword oder Selbstzweck, sondern es muss Probleme lösen. Unser Ansatz ist klar definiert: effizient, praxisorientiert und ergebnisorientiert.
           </p>
         </div>
 
