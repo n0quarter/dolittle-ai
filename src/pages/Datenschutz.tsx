@@ -143,7 +143,7 @@ const Datenschutz = () => {
                 <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
               </ul>
               <p>
-                Zur Ausübung dieser Rechte genügt eine formlose Mitteilung an: <strong>docdolittle@email.de</strong>
+                Zur Ausübung dieser Rechte genügt eine formlose Mitteilung an: <strong>andreas@dolittle-ai.de</strong>
               </p>
             </section>
 
