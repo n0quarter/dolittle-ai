@@ -7,7 +7,7 @@ const Datenschutz = () => {
       <Header />
       <main className="container mx-auto px-6 py-16">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-8 text-foreground">Datenschutz</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Datenschutz</h1>
           
           <div className="prose prose-lg max-w-none text-foreground">
             <p className="mb-8 text-lg">
