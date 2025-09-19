@@ -298,62 +298,6 @@ const Fuhrpark = () => {
               ))}
             </div>
 
-            {/* Screenshots for Verschlagwortung and Smart Inbox */}
-            <div className="mt-16 space-y-12">
-              {/* Verschlagwortung Screenshot */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Schritt 6: Verschlagwortung & Kategorisierung
-                </h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Definieren Sie individuelle Tags und Kategorien für verschiedene Anliegen. 
-                  So können Sie Anfragen schnell filtern und priorisieren.
-                </p>
-                <div className="bg-white rounded-lg shadow-lg p-4 max-w-4xl mx-auto">
-                  <img 
-                    src={verschlagwortungImage} 
-                    alt="Screenshot der Verschlagwortung und Kategorisierung im Fuhrpark KI-System"
-                    className="w-full h-auto rounded-md"
-                  />
-                </div>
-              </div>
-
-              {/* Smart Inbox Screenshot */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Schritt 7: Smart Inbox - Übersichtliche Anrufverwaltung
-                </h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Alle Anrufe werden strukturiert aufgelistet mit Anrufer, Grund, Dauer und Status. 
-                  Farbkodierte Tags ermöglichen schnelles Erfassen und Bearbeiten.
-                </p>
-                <div className="bg-white rounded-lg shadow-lg p-4 max-w-4xl mx-auto">
-                  <img 
-                    src={smartInboxImage} 
-                    alt="Screenshot der Smart Inbox mit Anrufliste und farbkodierten Tags im Fuhrpark KI-System"
-                    className="w-full h-auto rounded-md"
-                  />
-                </div>
-              </div>
-
-              {/* Follow-up Screenshot */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Schritt 8: Follow-up & SMS-Kommunikation
-                </h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
-                  Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
-                </p>
-                <div className="bg-white rounded-lg shadow-lg p-4 max-w-lg mx-auto">
-                  <img 
-                    src={followUpImage} 
-                    alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
-                    className="w-full h-auto rounded-md"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
