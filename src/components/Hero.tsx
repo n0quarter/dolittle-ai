@@ -30,7 +30,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-          95 % aller KI Piloten in Unternehmen scheitern. Wir sorgen dafür, dass sie zu den anderen 5 % gehören, indem wir nur die Lösung bauen, die Ihr Problem löst und nur die Probleme lösen, die mit KI gelöst werden können.
+          95 % aller KI Piloten in Unternehmen scheitern. Wir sorgen dafür, dass Sie zu den anderen 5 % gehören. Wir bauen nur Lösungen, die Ihr Problem lösen. Wir lösen nur Probleme, die mit KI gelöst werden können.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
