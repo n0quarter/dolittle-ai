@@ -44,7 +44,7 @@ const Header = () => {
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Conversational AI</NavigationMenuTrigger>
+                <NavigationMenuTrigger>KI Telefonassistent</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                     <ListItem href="/conversational-ai/aerzte" title="KI Telefonassistent | Ärzte" icon={<Stethoscope className="h-4 w-4" />}>
@@ -96,7 +96,7 @@ const Header = () => {
                 </a>
                 
                 <div className="space-y-2">
-                  <h3 className="text-lg font-medium text-primary p-2">Conversational AI</h3>
+                  <h3 className="text-lg font-medium text-primary p-2">KI Telefonassistent</h3>
                   <div className="pl-4 space-y-2">
                     <a 
                       href="/conversational-ai/aerzte" 
