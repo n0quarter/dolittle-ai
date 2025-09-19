@@ -366,8 +366,8 @@ const Fuhrpark = () => {
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious className="left-4" />
-                <CarouselNext className="right-4" />
+                <CarouselPrevious className="-left-12 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="-right-12 top-1/2 -translate-y-1/2" />
               </Carousel>
             </div>
           </div>
