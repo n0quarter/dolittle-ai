@@ -11,6 +11,7 @@ import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
 import followUpImage from "@/assets/fuhrpark-follow-up.png";
 import smsInterfaceImage from "@/assets/fuhrpark-sms-left.png";
 import callHistoryImage from "@/assets/fuhrpark-calls-final.png";
+import fuhrparkHeroImage from "@/assets/fuhrpark-hero-telephony.jpg";
 
 const Fuhrpark = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -36,8 +37,17 @@ const Fuhrpark = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-background via-background/95 to-secondary/20">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-background via-background/95 to-secondary/20 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={fuhrparkHeroImage} 
+            alt="Fuhrparkmanagement mit KI-Telefonassistent" 
+            className="w-full h-full object-cover opacity-10"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/95 to-secondary/30"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-primary/10 text-primary hover:bg-primary/20">
               KI-Telefonassistent für Fuhrparkmanagement
