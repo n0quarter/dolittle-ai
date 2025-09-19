@@ -338,7 +338,7 @@ const Fuhrpark = () => {
             </div>
 
             {/* Screenshots Carousel */}
-            <div className="mt-12 mb-4">
+            <div className="mt-20 mb-4">
               <h3 className="text-3xl font-bold text-center text-foreground mb-8">
                 Funktionen im Detail
               </h3>
