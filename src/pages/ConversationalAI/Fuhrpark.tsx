@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import smartInboxImage from "@/assets/fuhrpark-smart-inbox-correct.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
 import followUpImage from "@/assets/fuhrpark-follow-up.png";
-import smsInterfaceImage from "@/assets/fuhrpark-sms-interface-compact.png";
+import smsInterfaceImage from "@/assets/fuhrpark-sms-interface-aligned.png";
 import callHistoryImage from "@/assets/fuhrpark-call-history-compact.png";
 
 const Fuhrpark = () => {
