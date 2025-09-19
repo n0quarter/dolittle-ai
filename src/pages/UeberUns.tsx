@@ -54,7 +54,7 @@ const UeberUns = () => {
               </h1>
 
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                KI Piloten in Unternehmen
+                95 % der Piloten ihre Unternehmen scheitern. Wir sagen dafür, dass sie anderen 5 % gehören. Wir losen nur Probleme, die auch wirklich welche sind und die mit K gelöst werden sollten.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
