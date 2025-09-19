@@ -255,7 +255,7 @@ const Fuhrpark = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                So funktioniert's: In 6 einfachen Schritten
+                So funktioniert's: In 5 einfachen Schritten
               </h2>
               <p className="text-xl text-muted-foreground">
                 Von der Analyse bis zum Live-Betrieb
