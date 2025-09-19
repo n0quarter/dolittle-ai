@@ -1,18 +1,9 @@
-import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const Datenschutz = () => {
   return (
-    <>
-      <Helmet>
-        <title>Datenschutz - Dolittle AI | DSGVO-konforme KI-Lösungen</title>
-        <meta name="description" content="Datenschutzerklärung von Dolittle AI. Erfahren Sie, wie wir Ihre Daten verarbeiten und schützen. DSGVO-konforme KI-Lösungen." />
-        <meta name="keywords" content="Datenschutz, DSGVO, KI-Datenschutz, AI Privacy, Dolittle AI" />
-        <link rel="canonical" href="/datenschutz" />
-      </Helmet>
-      
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Header />
       <main className="container mx-auto px-6 py-16">
         <div className="max-w-4xl mx-auto">
@@ -29,8 +20,8 @@ const Datenschutz = () => {
               <h2 className="text-2xl font-semibold mb-4">Verantwortlicher</h2>
               <p className="mb-2">Verantwortlich für die Datenverarbeitung im Rahmen dieser Website ist:</p>
               <div className="ml-4">
-                <p className="font-semibold">Dolittle AI GbR</p>
-                <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor</p>
+                <p className="font-semibold">DocDolittle GbR.</p>
+                <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor.</p>
                 <p>andreas@dolittle-ai.de</p>
               </div>
             </section>
@@ -96,8 +87,8 @@ const Datenschutz = () => {
               <div className="mb-6">
                 <h3 className="text-xl font-medium mb-3">Kontaktformular</h3>
                 <p className="mb-3">
-                  Wenn Sie uns über das Kontaktformular kontaktieren, verarbeiten wir die von Ihnen eingegebenen Daten 
-                  (z. B. Name, E-Mail, Nachricht), um Ihre Anfrage zu beantworten.
+                  Wenn du uns über das Kontaktformular kontaktierst, verarbeiten wir die von dir eingegebenen Daten 
+                  (z. B. Name, E-Mail, Nachricht), um deine Anfrage zu beantworten.
                 </p>
                 <p>
                   Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahme)
@@ -124,7 +115,7 @@ const Datenschutz = () => {
                   <li>Für Marketing (z. B. Newsletter): Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</li>
                 </ul>
                 <p className="italic">
-                  Hinweis: Wenn Sie nicht möchten, dass Ihre Daten in HubSpot verarbeitet werden, nutzen Sie bitte einen 
+                  Hinweis: Wenn du nicht möchtest, dass deine Daten in HubSpot verarbeitet werden, nutze bitte einen 
                   anderen Weg zur Kontaktaufnahme (z. B. E-Mail).
                 </p>
               </div>
@@ -152,7 +143,7 @@ const Datenschutz = () => {
                 <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
               </ul>
               <p>
-                Zur Ausübung dieser Rechte genügt eine formlose Mitteilung an: <strong>andreas@dolittle-ai.de</strong>
+                Zur Ausübung dieser Rechte genügt eine formlose Mitteilung an: <strong>docdolittle@email.de</strong>
               </p>
             </section>
 
@@ -176,8 +167,7 @@ const Datenschutz = () => {
         </div>
       </main>
       <Footer />
-      </div>
-    </>
+    </div>
   );
 };
 
