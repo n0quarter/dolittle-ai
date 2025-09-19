@@ -9,8 +9,8 @@ import Footer from "@/components/Footer";
 import smartInboxImage from "@/assets/fuhrpark-smart-inbox-correct.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
 import followUpImage from "@/assets/fuhrpark-follow-up.png";
-import smsInterfaceImage from "@/assets/fuhrpark-sms-interface.png";
-import callHistoryImage from "@/assets/fuhrpark-call-history.png";
+import smsInterfaceImage from "@/assets/fuhrpark-sms-interface-compact.png";
+import callHistoryImage from "@/assets/fuhrpark-call-history-compact.png";
 
 const Fuhrpark = () => {
   const [isPlaying, setIsPlaying] = useState(false);
