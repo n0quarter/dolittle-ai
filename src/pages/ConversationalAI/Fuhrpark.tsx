@@ -134,7 +134,7 @@ const Fuhrpark = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                Typische Herausforderungen in der <span className="bg-gradient-primary bg-clip-text text-transparent">Fuhrparkverwaltung</span>
+                Herausforderungen in der <span className="bg-gradient-primary bg-clip-text text-transparent">Fuhrparkverwaltung</span>
               </h2>
             </div>
             
