@@ -200,7 +200,7 @@ const Fuhrpark = () => {
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Integration mit CRM-System, Fuhrparkmanagementsoftware oder Excel-Sheets</span>
+                      <span>Flexible Datenanbindung: Systemintegration, PDF- oder CSV-Exporte</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
