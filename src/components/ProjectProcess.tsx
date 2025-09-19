@@ -4,7 +4,7 @@ const ProjectProcess = () => {
   const phases = [{
     phase: "1",
     title: "Discovery & Analyse",
-    description: "Stakeholder-Alignment, Use-Case-Validierung und Problemdefinition"
+    description: "Zunächst bewerten wir, welche Prozesse oder Produktideen überhaupt sinnvoll mit generativer KI gelöst werden können. Zudem werden notwendige Daten und die Dateninfrastruktur geprüft, um zu bestimmen, welche Lösungen in Ihrem Unternehmen auch zu einem gewünschten Return on Investment führen."
   }, {
     phase: "2",
     title: "Konzept & Prototyp",
@@ -27,7 +27,7 @@ const ProjectProcess = () => {
             Unser <span className="bg-gradient-primary bg-clip-text text-transparent">Projektablauf</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Zunächst bewerten wir, welche Prozesse oder Produktideen überhaupt sinnvoll mit generativer KI gelöst werden können. Zudem werden notwendige Daten und die Dateninfrastruktur geprüft, um zu bestimmen, welche Lösungen in Ihrem Unternehmen auch zu einem gewünschten Return on Investment führen.
+            In 4 strukturierten Phasen von der Idee zur erfolgreichen KI-Implementierung
           </p>
         </div>
 
