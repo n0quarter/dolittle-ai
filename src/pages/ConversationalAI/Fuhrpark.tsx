@@ -6,7 +6,7 @@ import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, Ar
 import { useState, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import smartInboxImage from "@/assets/fuhrpark-smart-inbox.png";
+import smartInboxImage from "@/assets/fuhrpark-smart-inbox-hq.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
 import followUpImage from "@/assets/fuhrpark-follow-up.png";
 
