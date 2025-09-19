@@ -10,7 +10,7 @@ import smartInboxImage from "@/assets/fuhrpark-smart-inbox-correct.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
 import followUpImage from "@/assets/fuhrpark-follow-up.png";
 import smsInterfaceImage from "@/assets/fuhrpark-sms-clean-final.png";
-import callHistoryImage from "@/assets/fuhrpark-anrufverlauf-clean-final.png";
+import callHistoryImage from "@/assets/fuhrpark-call-history.png";
 
 const Fuhrpark = () => {
   const [isPlaying, setIsPlaying] = useState(false);
