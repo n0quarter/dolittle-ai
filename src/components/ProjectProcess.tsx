@@ -12,7 +12,7 @@ const ProjectProcess = () => {
   }, {
     phase: "3",
     title: "Umsetzung & Rollout",
-    description: "Infrastruktur-Blueprint, Change Management und Business Case Finalisierung"
+    description: "Ist der Proof of Concept erfolgreich etabliert, führen wir eine Gap Analyse durch bezüglich Infrastruktur, involvierter Stakeholder, erreichbarer Kennzahlen und erstellen einen Infrastruktur Blueprint. Zudem müssen involvierte Stakeholder erneut einbezogen werden. Der Business Case wird finalisiert. Ist dieser immer noch positiv, wird die Implementierung durchgeführt. So sind unsere Kunden und Partner immer auf der sicheren Seite und setzen keine Lösung um, die nicht zu den gewünschten Ergebnissen führt."
   }, {
     phase: "4",
     title: "Hypercare",
