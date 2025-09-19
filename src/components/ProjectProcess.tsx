@@ -8,7 +8,7 @@ const ProjectProcess = () => {
   }, {
     phase: "2",
     title: "Konzept & Prototyp",
-    description: "Nachdem der Anwendungsfall oder die Anwendungsfälle definiert sind, wird der kürzeste Weg gesucht, um die Machbarkeit und Wirksamkeit zu testen. Wir können innerhalb eines Lösung, Designs und funktionierenden Proof of Concepts beispielsweise auf aufwändige Schnittstellen im ersten Schritt verzichtet werden, in dem über Exporte aus relevanten Systemen die relevanten Daten für die generative KI zusammengeführt werden."
+    description: "Nachdem der Anwendungsfall oder die Anwendungsfälle definiert sind, wird der kürzeste Weg gesucht, um die Machbarkeit und Wirksamkeit zu testen. Wir können innerhalb einer Lösung, eines Designs und funktionierenden Proof of Concepts beispielsweise auf aufwändige Schnittstellen im ersten Schritt verzichten, indem über Exporte aus relevanten Systemen die relevanten Daten für die generative KI zusammengeführt werden."
   }, {
     phase: "3",
     title: "Umsetzung & Rollout",
