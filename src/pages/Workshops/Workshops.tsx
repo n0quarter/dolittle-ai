@@ -8,6 +8,7 @@ import { Lightbulb, Users, Target, Trophy, Brain, Code, Wrench } from "lucide-re
 import workshopImage1 from "@/assets/workshop-speaker-1.jpg";
 import workshopImage2 from "@/assets/workshop-speaker-2.jpg";
 import aiNetworkingBg from "@/assets/ai-networking-background.jpg";
+import Testimonials from "@/components/Testimonials";
 const Workshops = () => {
   const philosophyPoints = [{
     icon: Lightbulb,
@@ -152,77 +153,8 @@ const Workshops = () => {
             </div>
           </section>
 
-          {/* Testimonials - Compact Version */}
-          <section className="py-16 bg-muted/30">
-            <div className="container mx-auto px-6">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Was <span className="text-primary">Kunden</span> über uns sagen
-                </h2>
-              </div>
-
-              <div className="max-w-5xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <Card className="h-full">
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <img
-                          src="https://ai.asdcode.com/jens.png"
-                          alt="Jens Naie"
-                          className="w-12 h-12 rounded-full object-cover"
-                        />
-                        <div>
-                          <h3 className="font-semibold">Jens Naie</h3>
-                          <p className="text-sm text-primary">CTO, Doodle AG</p>
-                        </div>
-                      </div>
-                      <blockquote className="text-sm text-muted-foreground leading-relaxed">
-                        "Viktors generative KI-Workshop war ein durchschlagender Erfolg! Er brachte unser Team mit unterschiedlichen Erfahrungsebenen geschickt zu einem gemeinsamen Verständnis und ging auf häufige KI-Ängste mit Klarheit und praktischen Ratschlägen ein. Die Einblicke, die er zur effektiven KI-Nutzung und deren Grenzen vermittelte, waren von unschätzbarem Wert. Die praktischen Programmierübungen mit Cursor, gepaart mit seiner Demonstration von TDD automatisiert mit KI, waren unglaublich wirkungsvoll. Er befähigte uns, KI nicht als Bedrohung, sondern als mächtiges Werkzeug zur Verbesserung unseres Entwicklungsworkflows zu sehen. Wir gingen inspiriert und ausgerüstet heraus, um generative KI in unsere Projekte zu integrieren. Sehr empfehlenswert!"
-                      </blockquote>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="h-full">
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <img
-                          src="https://ai.asdcode.com/tim.png"
-                          alt="Tim Yevgrashyn"
-                          className="w-12 h-12 rounded-full object-cover"
-                        />
-                        <div>
-                          <h3 className="font-semibold">Tim Yevgrashyn</h3>
-                          <p className="text-sm text-primary">CTO, Stepico</p>
-                        </div>
-                      </div>
-                      <blockquote className="text-sm text-muted-foreground leading-relaxed">
-                        "Der praktische Fokus dieses Workshops war ein Wendepunkt für unser Entwicklungsteam. Anstatt nur über KI-Tools zu diskutieren, lernten unsere Ingenieure tatsächlich, wie sie diese effektiv in ihre tägliche Programmierarbeit implementieren können. Die praktischen Übungen und realen Anwendungen lieferten soliden Wert, den wir bereits in unseren Produktivitätskennzahlen sehen."
-                      </blockquote>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="h-full">
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <img
-                          src="https://ai.asdcode.com/julio.jpeg"
-                          alt="Julio"
-                          className="w-12 h-12 rounded-full object-cover"
-                        />
-                        <div>
-                          <h3 className="font-semibold">Julio</h3>
-                          <p className="text-sm text-primary">Head of Engineering, Empion</p>
-                        </div>
-                      </div>
-                      <blockquote className="text-sm text-muted-foreground leading-relaxed">
-                        "Der Workshop war sehr aufschlussreich und gab uns wertvolle praktische Erfahrungen. Während der erste Tag einige vertraute Themen abdeckte, fanden wir die Vertiefung in Cursor, Prompt-Techniken und bewährte Praktiken besonders nützlich. Der zweite Tag war das Highlight, mit praktischen Übungen, die uns halfen, Cursor tiefgehend zu erkunden und das Gelernte beim Erstellen einer App anzuwenden. Insgesamt war es eine ansprechende und wertvolle Erfahrung. Ich würde es empfehlen, wenn Sie mehr über KI erfahren und lernen möchten, wie Sie sie effizienter in unseren Teams oder täglichen Arbeitsabläufen einsetzen können."
-                      </blockquote>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Testimonials */}
+          <Testimonials />
 
           {/* Workshop Information */}
           <section className="py-20 bg-secondary/10">
