@@ -43,9 +43,9 @@ const Fuhrpark = () => {
           <img 
             src={fuhrparkHeroImage} 
             alt="Fuhrparkmanagement mit KI-Telefonassistent" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/85 to-secondary/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-background/70 via-background/75 to-secondary/40"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
