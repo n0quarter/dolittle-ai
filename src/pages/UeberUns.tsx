@@ -21,7 +21,7 @@ const UeberUns = () => {
       <Helmet>
         <title>Über uns - Dolittle AI | Ihr KI-Experten Team</title>
         <meta name="description" content="Lernen Sie das Dolittle AI Team kennen. Experten für KI-Strategieberatung, Framework Entwicklung und DSGVO-konforme AI-Lösungen." />
-        <meta name="keywords" content="KI Team, AI Experten, KI Beratung, Andreas Dolittle, Viktor" />
+        <meta name="keywords" content="KI Team, AI Experten, KI Beratung, Andreas Reichert, Viktor" />
         <link rel="canonical" href="/ueber-uns" />
       </Helmet>
       
@@ -61,7 +61,7 @@ const UeberUns = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button asChild size="lg" className="shadow-strong text-lg px-8 py-6">
-                  <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Termin vereinbaren</a>
+                  <a href="https://meetings.hubspot.com/andreas-reichert" target="_blank" rel="noopener noreferrer">Termin vereinbaren</a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-2">
                   <a href="/#services">Unsere Services</a>
