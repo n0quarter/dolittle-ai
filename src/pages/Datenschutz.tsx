@@ -20,7 +20,7 @@ const Datenschutz = () => {
               <h2 className="text-2xl font-semibold mb-4">Verantwortlicher</h2>
               <p className="mb-2">Verantwortlich für die Datenverarbeitung im Rahmen dieser Website ist:</p>
               <div className="ml-4">
-                <p className="font-semibold">DocDolittle GbR.</p>
+                <p className="font-semibold">Dolittle AI GbR</p>
                 <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor.</p>
                 <p>andreas@dolittle-ai.de</p>
               </div>

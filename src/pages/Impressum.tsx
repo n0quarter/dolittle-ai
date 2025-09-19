@@ -18,11 +18,7 @@ const Impressum = () => {
 
             <div className="mb-8">
               <h3 className="text-xl font-semibold mb-4">Geschäftsführer:</h3>
-              <p>Viktor Shcherban</p>
-              <p>Peter Müller</p>
-              <p>Sarah Monk</p>
-              <p>Tobias Schmidt</p>
-              <p>Ralf Bainsky</p>
+              <p>Andreas Reichert</p>
               <p>USt-idNr: DE411483986</p>
             </div>
 
