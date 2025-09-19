@@ -49,16 +49,43 @@ const Fuhrpark = () => {
             </p>
             
             {/* Audio Player */}
-            <div className="mb-8">
-              <Button
-                onClick={toggleAudio}
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 py-6 border-2 bg-card/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                {isPlaying ? <Pause className="h-5 w-5 mr-2" /> : <Play className="h-5 w-5 mr-2" />}
-                So klingt Dolittle
-              </Button>
+            <div className="mb-8 flex justify-center">
+              <div className="relative">
+                {/* Sound Wave Animation */}
+                <div className={`absolute inset-0 rounded-full transition-all duration-300 ${isPlaying ? 'animate-pulse' : ''}`}>
+                  {/* Radiating lines */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    {Array.from({ length: 24 }, (_, i) => (
+                      <div
+                        key={i}
+                        className={`absolute w-0.5 bg-primary/40 origin-bottom transition-all duration-300 ${
+                          isPlaying ? 'animate-pulse' : ''
+                        }`}
+                        style={{
+                          height: isPlaying ? '80px' : '60px',
+                          transform: `rotate(${i * 15}deg) translateY(-50px)`,
+                          animationDelay: `${i * 50}ms`,
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Main Play Button */}
+                <Button
+                  onClick={toggleAudio}
+                  variant="default"
+                  size="lg"
+                  className="relative z-10 w-32 h-32 rounded-full bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-strong border-4 border-background"
+                >
+                  {isPlaying ? (
+                    <Pause className="h-12 w-12 text-white" />
+                  ) : (
+                    <Play className="h-12 w-12 text-white ml-1" />
+                  )}
+                </Button>
+              </div>
+              
               <audio
                 ref={audioRef}
                 onEnded={handleAudioEnded}
@@ -67,6 +94,13 @@ const Fuhrpark = () => {
                 <source src="/audio/fuhrpark-inspektion.m4a" type="audio/mp4" />
                 Ihr Browser unterstützt das Audio-Element nicht.
               </audio>
+            </div>
+            
+            {/* Audio Label */}
+            <div className="mb-8">
+              <p className="text-lg text-muted-foreground font-medium">
+                So klingt Dolittle
+              </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
