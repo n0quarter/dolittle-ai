@@ -301,7 +301,7 @@ const Fuhrpark = () => {
             </div>
 
             {/* Screenshots Carousel */}
-            <div className="mt-12 mb-8">
+            <div className="mt-12 mb-4">
               <h3 className="text-3xl font-bold text-center text-foreground mb-8">
                 Funktionen im Detail
               </h3>
@@ -357,21 +357,12 @@ const Fuhrpark = () => {
                         Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
                         Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
                       </p>
-                      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-                        <div className="bg-white rounded-lg shadow-xl p-4">
-                          <img 
-                            src={smsInterfaceImage} 
-                            alt="Screenshot der SMS-Interface im Fuhrpark KI-System"
-                            className="w-full h-auto rounded-md shadow-lg"
-                          />
-                        </div>
-                        <div className="bg-white rounded-lg shadow-xl p-4">
-                          <img 
-                            src={callHistoryImage} 
-                            alt="Screenshot des Anrufverlaufs mit farbkodierten Tags"
-                            className="w-full h-auto rounded-md shadow-lg"
-                          />
-                        </div>
+                      <div className="bg-white rounded-lg shadow-xl p-4 max-w-5xl mx-auto">
+                        <img 
+                          src={followUpImage} 
+                          alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
+                          className="w-full h-auto rounded-md shadow-lg"
+                        />
                       </div>
                     </div>
                   </CarouselItem>
@@ -385,7 +376,7 @@ const Fuhrpark = () => {
       </section>
 
       {/* ROI Section */}
-      <section className="py-12 bg-secondary/30">
+      <section className="py-8 bg-secondary/30">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-foreground mb-8">
