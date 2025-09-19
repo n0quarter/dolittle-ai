@@ -134,7 +134,7 @@ const Fuhrpark = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                Das Problem bei der Fuhrparkverwaltung
+                Das Problem bei der <span className="bg-gradient-primary bg-clip-text text-transparent">Fuhrparkverwaltung</span>
               </h2>
             </div>
             
@@ -265,7 +265,7 @@ const Fuhrpark = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                So funktioniert's: In 5 einfachen Schritten
+                So funktioniert's: In <span className="bg-gradient-primary bg-clip-text text-transparent">5 einfachen Schritten</span>
               </h2>
               <p className="text-xl text-muted-foreground">
                 Von der Analyse bis zum Live-Betrieb
@@ -340,7 +340,7 @@ const Fuhrpark = () => {
             {/* Screenshots Carousel */}
             <div className="mt-20 mb-4">
               <h3 className="text-3xl font-bold text-center text-foreground mb-8">
-                Funktionen im Detail
+                <span className="bg-gradient-primary bg-clip-text text-transparent">Funktionen</span> im Detail
               </h3>
               <Carousel className="w-full max-w-6xl mx-auto">
                 <CarouselContent className="-ml-2 md:-ml-4">
@@ -417,7 +417,7 @@ const Fuhrpark = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-foreground mb-8">
-              Messbare Ergebnisse für Ihr Fuhrparkmanagement
+              Messbare Ergebnisse für Ihr <span className="bg-gradient-primary bg-clip-text text-transparent">Fuhrparkmanagement</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
