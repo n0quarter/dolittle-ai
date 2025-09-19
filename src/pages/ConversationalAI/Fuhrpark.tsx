@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, ArrowRight, Play, Pause } from "lucide-react";
 import { useState, useRef } from "react";
 import Header from "@/components/Header";
@@ -298,61 +299,76 @@ const Fuhrpark = () => {
               ))}
             </div>
 
-            {/* Screenshots for Verschlagwortung and Smart Inbox */}
-            <div className="mt-16 space-y-12">
-              {/* Verschlagwortung Screenshot */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Verschlagwortung & Kategorisierung
-                </h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Definieren Sie individuelle Tags und Kategorien für verschiedene Anliegen. 
-                  So können Sie Anfragen schnell filtern und priorisieren.
-                </p>
-                <div className="bg-white rounded-lg shadow-lg p-4 max-w-4xl mx-auto">
-                  <img 
-                    src={verschlagwortungImage} 
-                    alt="Screenshot der Verschlagwortung und Kategorisierung im Fuhrpark KI-System"
-                    className="w-full h-auto rounded-md"
-                  />
-                </div>
-              </div>
+            {/* Screenshots Carousel */}
+            <div className="mt-16">
+              <h3 className="text-3xl font-bold text-center text-foreground mb-8">
+                Funktionen im Detail
+              </h3>
+              <Carousel className="w-full max-w-6xl mx-auto">
+                <CarouselContent className="-ml-2 md:-ml-4">
+                  {/* Verschlagwortung Screenshot */}
+                  <CarouselItem className="pl-2 md:pl-4">
+                    <div className="text-center">
+                      <h4 className="text-2xl font-bold text-foreground mb-4">
+                        Verschlagwortung & Kategorisierung
+                      </h4>
+                      <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                        Definieren Sie individuelle Tags und Kategorien für verschiedene Anliegen. 
+                        So können Sie Anfragen schnell filtern und priorisieren.
+                      </p>
+                      <div className="bg-white rounded-lg shadow-xl p-6 max-w-5xl mx-auto">
+                        <img 
+                          src={verschlagwortungImage} 
+                          alt="Screenshot der Verschlagwortung und Kategorisierung im Fuhrpark KI-System"
+                          className="w-full h-auto rounded-md shadow-lg"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
 
-              {/* Smart Inbox Screenshot */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Smart Inbox - Übersichtliche Anrufverwaltung
-                </h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Alle Anrufe werden strukturiert aufgelistet mit Anrufer, Grund, Dauer und Status. 
-                  Farbkodierte Tags ermöglichen schnelles Erfassen und Bearbeiten.
-                </p>
-                <div className="bg-white rounded-lg shadow-lg p-4 max-w-4xl mx-auto">
-                  <img 
-                    src={smartInboxImage} 
-                    alt="Screenshot der Smart Inbox mit Anrufliste und farbkodierten Tags im Fuhrpark KI-System"
-                    className="w-full h-auto rounded-md"
-                  />
-                </div>
-              </div>
+                  {/* Smart Inbox Screenshot */}
+                  <CarouselItem className="pl-2 md:pl-4">
+                    <div className="text-center">
+                      <h4 className="text-2xl font-bold text-foreground mb-4">
+                        Smart Inbox - Übersichtliche Anrufverwaltung
+                      </h4>
+                      <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                        Alle Anrufe werden strukturiert aufgelistet mit Anrufer, Grund, Dauer und Status. 
+                        Farbkodierte Tags ermöglichen schnelles Erfassen und Bearbeiten.
+                      </p>
+                      <div className="bg-white rounded-lg shadow-xl p-6 max-w-5xl mx-auto">
+                        <img 
+                          src={smartInboxImage} 
+                          alt="Screenshot der Smart Inbox mit Anrufliste und farbkodierten Tags im Fuhrpark KI-System"
+                          className="w-full h-auto rounded-md shadow-lg"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
 
-              {/* Follow-up Screenshot */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Follow-up & SMS-Kommunikation
-                </h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
-                  Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
-                </p>
-                <div className="bg-white rounded-lg shadow-lg p-4 max-w-lg mx-auto">
-                  <img 
-                    src={followUpImage} 
-                    alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
-                    className="w-full h-auto rounded-md"
-                  />
-                </div>
-              </div>
+                  {/* Follow-up Screenshot */}
+                  <CarouselItem className="pl-2 md:pl-4">
+                    <div className="text-center">
+                      <h4 className="text-2xl font-bold text-foreground mb-4">
+                        Follow-up & SMS-Kommunikation
+                      </h4>
+                      <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                        Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
+                        Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
+                      </p>
+                      <div className="bg-white rounded-lg shadow-xl p-6 max-w-3xl mx-auto">
+                        <img 
+                          src={followUpImage} 
+                          alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
+                          className="w-full h-auto rounded-md shadow-lg"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
             </div>
           </div>
         </div>
