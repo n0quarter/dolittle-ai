@@ -60,11 +60,11 @@ const TrainingCertificates = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Unser KI-System schützt sensible Daten durch mehrstufige Sicherheit: Als Proxy verschleiert 
-                    das System die Nutzeridentität und ersetzt mittels Named-Entity Recognition 
-                    schützenswerte Informationen durch fiktive Daten – für DSGVO-konforme KI-Nutzung.
-                  </p>
+                <p className="text-muted-foreground">
+                  Unsere KI-Lösungen schützen sensible Daten durch mehrstufige Sicherheit: Als Proxy verschleiert 
+                  das System die Nutzeridentität und ersetzt mittels Named-Entity Recognition 
+                  schützenswerte Informationen durch fiktive Daten – für DSGVO-konforme KI-Nutzung.
+                </p>
                   <p className="text-muted-foreground">
                     Gleichzeitig sorgt Transparenz durch lückenlose Protokollierung und der Legal-Hold-Mechanismus 
                     für unveränderbare Archivierung aller Interaktionen.
