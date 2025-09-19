@@ -8,7 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import smartInboxImage from "@/assets/fuhrpark-smart-inbox-hq.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
-import followUpImage from "@/assets/fuhrpark-follow-up.png";
+import followUpImage from "@/assets/fuhrpark-follow-up-hq.png";
 
 const Fuhrpark = () => {
   const [isPlaying, setIsPlaying] = useState(false);
