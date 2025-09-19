@@ -357,21 +357,12 @@ const Fuhrpark = () => {
                         Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
                         Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
                       </p>
-                      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-                        <div className="bg-white rounded-lg shadow-xl p-4">
-                          <img 
-                            src={smsInterfaceImage} 
-                            alt="Screenshot der SMS-Interface im Fuhrpark KI-System"
-                            className="w-full h-auto rounded-md shadow-lg"
-                          />
-                        </div>
-                        <div className="bg-white rounded-lg shadow-xl p-4">
-                          <img 
-                            src={callHistoryImage} 
-                            alt="Screenshot des Anrufverlaufs mit farbkodierten Tags"
-                            className="w-full h-auto rounded-md shadow-lg"
-                          />
-                        </div>
+                      <div className="bg-white rounded-lg shadow-xl p-4 max-w-4xl mx-auto">
+                        <img 
+                          src={followUpImage} 
+                          alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
+                          className="w-full h-auto rounded-md shadow-lg"
+                        />
                       </div>
                     </div>
                   </CarouselItem>
