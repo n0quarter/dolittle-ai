@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, ArrowRight } from "lucide-react";
+import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, ArrowRight, Play, Pause } from "lucide-react";
+import { useState, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import smartInboxImage from "@/assets/fuhrpark-smart-inbox.png";
@@ -9,6 +10,24 @@ import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung.png";
 import followUpImage from "@/assets/fuhrpark-follow-up.png";
 
 const Fuhrpark = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const toggleAudio = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        audioRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  const handleAudioEnded = () => {
+    setIsPlaying(false);
+  };
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -28,6 +47,28 @@ const Fuhrpark = () => {
               Automatisiert über 50% der Anrufe im Account Management und Customer Support. 
               Reduziert den Bearbeitungsaufwand für Kunden- und Nutzeranfragen auf ein Minimum.
             </p>
+            
+            {/* Audio Player */}
+            <div className="mb-8">
+              <Button
+                onClick={toggleAudio}
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-6 border-2 bg-card/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                {isPlaying ? <Pause className="h-5 w-5 mr-2" /> : <Play className="h-5 w-5 mr-2" />}
+                So klingt Dolittle
+              </Button>
+              <audio
+                ref={audioRef}
+                onEnded={handleAudioEnded}
+                preload="metadata"
+              >
+                <source src="/audio/fuhrpark-inspektion.m4a" type="audio/mp4" />
+                Ihr Browser unterstützt das Audio-Element nicht.
+              </audio>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="px-8 py-4 text-lg">
                 <Phone className="w-5 h-5 mr-2" />

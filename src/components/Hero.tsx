@@ -2,27 +2,8 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ai-consulting.jpg";
 import CountUp from "@/components/ui/count-up";
 import Typewriter from "@/components/ui/typewriter";
-import { Search, Play, Pause } from "lucide-react";
-import { useState, useRef } from "react";
+import { Search } from "lucide-react";
 const Hero = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
-
-  const toggleAudio = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        audioRef.current.play();
-        setIsPlaying(true);
-      }
-    }
-  };
-
-  const handleAudioEnded = () => {
-    setIsPlaying(false);
-  };
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24 md:pt-28">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{
@@ -51,27 +32,6 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
           95 % aller KI Piloten in Unternehmen scheitern. Wir sorgen dafür, dass sie zu den anderen 5 % gehören, indem wir nur die Lösung bauen, die Ihr Problem löst und nur die Probleme lösen, die mit KI gelöst werden können.
         </p>
-
-        {/* Audio Player */}
-        <div className="mb-8">
-          <Button
-            onClick={toggleAudio}
-            variant="outline"
-            size="lg"
-            className="text-lg px-8 py-6 border-2 bg-card/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors"
-          >
-            {isPlaying ? <Pause className="h-5 w-5 mr-2" /> : <Play className="h-5 w-5 mr-2" />}
-            So klingt Dolittle
-          </Button>
-          <audio
-            ref={audioRef}
-            onEnded={handleAudioEnded}
-            preload="metadata"
-          >
-            <source src="/audio/fuhrpark-inspektion.m4a" type="audio/mp4" />
-            Ihr Browser unterstützt das Audio-Element nicht.
-          </audio>
-        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button asChild size="lg" className="shadow-strong text-lg px-8 py-6">
