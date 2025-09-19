@@ -8,7 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import smartInboxImage from "@/assets/fuhrpark-smart-inbox-correct.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
-import followUpImage from "@/assets/fuhrpark-follow-up.png";
+import followUpImage from "@/assets/fuhrpark-follow-up-full.png";
 
 const Fuhrpark = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -356,7 +356,7 @@ const Fuhrpark = () => {
                         Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
                         Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
                       </p>
-                      <div className="bg-white rounded-lg shadow-xl p-6 max-w-3xl mx-auto">
+                      <div className="bg-white rounded-lg shadow-xl p-6 max-w-4xl mx-auto">
                         <img 
                           src={followUpImage} 
                           alt="Screenshot der SMS-Follow-up Funktion und des Anrufverlaufs im Fuhrpark KI-System"
