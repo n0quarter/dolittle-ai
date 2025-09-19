@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 max-w-5xl mx-auto">
           <div className="text-center">
             <CountUp end={5} suffix="+" className="text-4xl font-bold text-primary mb-2" startOnView duration={2} />
             <div className="text-muted-foreground">Jahre KI-Erfahrung</div>

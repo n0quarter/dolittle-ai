@@ -2,16 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, ArrowRight, Play, Pause, Target, BarChart3, Plug, TestTube, Radio } from "lucide-react";
+import { CheckCircle, Phone, Truck, MessageSquare, Calendar, Settings, Clock, ArrowRight, Play, Pause } from "lucide-react";
 import { useState, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import smartInboxImage from "@/assets/fuhrpark-smart-inbox-correct.png";
 import verschlagwortungImage from "@/assets/fuhrpark-verschlagwortung-hq.png";
 import followUpImage from "@/assets/fuhrpark-follow-up.png";
-import smsInterfaceImage from "@/assets/fuhrpark-sms-left.png";
-import callHistoryImage from "@/assets/fuhrpark-calls-final.png";
-import fuhrparkHeroImage from "@/assets/fuhrpark-hero-telephony.jpg";
+import smsInterfaceImage from "@/assets/fuhrpark-sms-clean-final.png";
+import callHistoryImage from "@/assets/fuhrpark-anrufverlauf-clean-final.png";
 
 const Fuhrpark = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -37,17 +36,8 @@ const Fuhrpark = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-background via-background/95 to-secondary/20 relative overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={fuhrparkHeroImage} 
-            alt="Fuhrparkmanagement mit KI-Telefonassistent" 
-            className="w-full h-full object-cover opacity-50"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-background/70 via-background/75 to-secondary/40"></div>
-        </div>
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-background via-background/95 to-secondary/20">
+        <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-primary/10 text-primary hover:bg-primary/20">
               KI-Telefonassistent für Fuhrparkmanagement
@@ -134,7 +124,7 @@ const Fuhrpark = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                Das Problem bei der <span className="bg-gradient-primary bg-clip-text text-transparent">Fuhrparkverwaltung</span>
+                Das Problem bei der Fuhrparkverwaltung
               </h2>
             </div>
             
@@ -159,7 +149,7 @@ const Fuhrpark = () => {
                     </div>
                     <div className="flex items-start">
                       <Truck className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>"Ich habe meine Tankkarte verloren, wie bekomme ich eine Neue?"</span>
+                      <span>"Welche Car Policy gilt für mein Fahrzeug?"</span>
                     </div>
                   </div>
                 </Card>
@@ -197,7 +187,7 @@ const Fuhrpark = () => {
                 Die <span className="bg-gradient-primary bg-clip-text text-transparent">Dolittle</span> Lösung
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Schlauer durch Anpassung auf Ihre Kundenanfragen - mit Zugriff auf alle relevanten Daten
+                Schlauer durch Anpassung auf Ihre Kundenanfragen - mit Zugriff auf alle relevanten Systeme
               </p>
             </div>
 
@@ -210,7 +200,7 @@ const Fuhrpark = () => {
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Flexible Datenanbindung: Systemintegration, PDF- oder CSV-Exporte</span>
+                      <span>Integration mit CRM-System, Fuhrparkmanagementsoftware oder Excel-Sheets</span>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
@@ -265,82 +255,55 @@ const Fuhrpark = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                So funktioniert's: In <span className="bg-gradient-primary bg-clip-text text-transparent">5 einfachen Schritten</span>
+                So funktioniert's: In 6 einfachen Schritten
               </h2>
               <p className="text-xl text-muted-foreground">
                 Von der Analyse bis zum Live-Betrieb
               </p>
             </div>
 
-            <div className="max-w-3xl mx-auto space-y-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   step: "1",
                   title: "Anliegen definieren",
-                  description: "Wir definieren gemeinsam, welche Anliegen der Dolittle Assistent direkt erledigen soll",
-                  icon: Target
+                  description: "Wir definieren gemeinsam, welche Anliegen der Dolittle Assistent direkt erledigen soll"
                 },
                 {
                   step: "2", 
                   title: "Datenanalyse",
-                  description: "Wir prüfen, welche Daten für zufriedenstellende Antworten benötigt werden",
-                  icon: BarChart3
+                  description: "Wir prüfen, welche Daten für zufriedenstellende Antworten benötigt werden"
                 },
                 {
                   step: "3",
                   title: "Integration planen", 
-                  description: "Identifikation der kosteneffizientesten und DSGVO-konformen Datenbereitstellung",
-                  icon: Plug
+                  description: "Identifikation der kosteneffizientesten und DSGVO-konformen Datenbereitstellung"
                 },
                 {
                   step: "4",
                   title: "Testbetrieb",
-                  description: "Nach Datenanbindung prüfen wir die Qualität der automatisierten Antworten",
-                  icon: TestTube
+                  description: "Nach Datenanbindung prüfen wir die Qualität der automatisierten Antworten"
                 },
                 {
                   step: "5",
                   title: "Live-Gang",
-                  description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig. Weiterleitung wird eingerichtet und neue Nebenstelle bereitgestellt",
-                  icon: Radio
+                  description: "Dolittle nimmt Ihre Anrufe entgegen, fasst sie zusammen und transkribiert vollständig"
                 }
               ].map((item, index) => (
-                <Card key={index} className="p-8 hover:shadow-strong hover:scale-105 transition-all duration-300 group bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/40 relative overflow-hidden cursor-pointer">
-                  {/* Gradient background on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
-                  <div className="relative z-10 flex items-start space-x-6">
-                    {/* Step Icon */}
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white text-xl font-bold shadow-glow group-hover:scale-110 transition-transform duration-300">
-                        {item.step}
-                      </div>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1">
-                      <div className="flex items-center space-x-3 mb-4">
-                        <item.icon className="w-6 h-6 text-primary group-hover:text-primary/80 transition-colors duration-300" />
-                        <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">{item.title}</h3>
-                      </div>
-                      <p className="text-muted-foreground text-lg leading-relaxed group-hover:text-foreground transition-colors duration-300">{item.description}</p>
-                    </div>
+                <Card key={index} className="p-6 hover:shadow-lg transition-shadow text-center">
+                  <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                    {item.step}
                   </div>
-                  
-                  {/* Arrow indicator */}
-                  {index < 4 && (
-                    <div className="flex justify-center mt-6">
-                      <ArrowRight className="w-6 h-6 text-primary/40 group-hover:text-primary rotate-90 transition-all duration-300" />
-                    </div>
-                  )}
+                  <h3 className="text-lg font-bold mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
                 </Card>
               ))}
             </div>
 
             {/* Screenshots Carousel */}
-            <div className="mt-20 mb-4">
+            <div className="mt-12 mb-4">
               <h3 className="text-3xl font-bold text-center text-foreground mb-8">
-                <span className="bg-gradient-primary bg-clip-text text-transparent">Funktionen</span> im Detail
+                Funktionen im Detail
               </h3>
               <Carousel className="w-full max-w-6xl mx-auto">
                 <CarouselContent className="-ml-2 md:-ml-4">
@@ -394,12 +357,21 @@ const Fuhrpark = () => {
                         Schnelle Rückmeldungen per SMS direkt aus dem System heraus. 
                         Vollständiger Anrufverlauf mit allen Kategorien und Bearbeitungsständen.
                       </p>
-                      <div className="bg-white rounded-lg shadow-xl p-6 max-w-5xl mx-auto">
-                        <img 
-                          src={callHistoryImage} 
-                          alt="Screenshot der Follow-up & SMS-Kommunikation mit Anrufverlauf im Fuhrpark KI-System"
-                          className="w-full h-auto rounded-md shadow-lg"
-                        />
+                      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                        <div className="bg-white rounded-lg shadow-xl p-4">
+                          <img 
+                            src={smsInterfaceImage} 
+                            alt="Screenshot der SMS-Interface im Fuhrpark KI-System"
+                            className="w-full h-auto rounded-md shadow-lg"
+                          />
+                        </div>
+                        <div className="bg-white rounded-lg shadow-xl p-4">
+                          <img 
+                            src={callHistoryImage} 
+                            alt="Screenshot des Anrufverlaufs mit farbkodierten Tags"
+                            className="w-full h-auto rounded-md shadow-lg"
+                          />
+                        </div>
                       </div>
                     </div>
                   </CarouselItem>
@@ -417,7 +389,7 @@ const Fuhrpark = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-foreground mb-8">
-              Messbare Ergebnisse für Ihr <span className="bg-gradient-primary bg-clip-text text-transparent">Fuhrparkmanagement</span>
+              Messbare Ergebnisse für Ihr Fuhrparkmanagement
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">

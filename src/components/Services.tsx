@@ -80,7 +80,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-10 relative overflow-hidden">
+    <section id="services" className="py-20 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{
         backgroundImage: `url(${servicesBackground})`
