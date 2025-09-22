@@ -156,7 +156,16 @@ const Services = () => {
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-sm">
                           <div className="w-2 h-2 bg-primary rounded-full mr-3 shadow-sm"></div>
-                          {feature}
+                          {feature === "Fuhrparkmanagement" ? (
+                            <Link 
+                              to="/conversational-ai/fuhrpark" 
+                              className="text-primary hover:text-primary/80 font-medium transition-colors"
+                            >
+                              {feature}
+                            </Link>
+                          ) : (
+                            feature
+                          )}
                         </li>
                       ))}
                     </ul>
