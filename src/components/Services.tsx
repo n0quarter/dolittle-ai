@@ -163,6 +163,15 @@ const Services = () => {
                             >
                               {feature}
                             </Link>
+                          ) : feature === "Arztpraxen & Kliniken" ? (
+                            <a 
+                              href="https://docdolittle.io/" 
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary hover:text-primary/80 font-medium transition-colors"
+                            >
+                              {feature}
+                            </a>
                           ) : (
                             feature
                           )}
