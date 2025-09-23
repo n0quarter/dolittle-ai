@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#grad)" />
+
+  <!-- D -->
+  <text x="40" y="168" font-family="Arial Black, sans-serif" font-size="112" font-weight="900" fill="white">
+    D
+  </text>
+
+  <!-- Ai -->
+  <text x="128" y="168" font-family="Segoe UI, sans-serif" font-size="104" font-weight="700" fill="white" letter-spacing="4">
+    Ai
+  </text>
+</svg>
