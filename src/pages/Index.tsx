@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import Benefits from "@/components/Benefits";
 import Footer from "@/components/Footer";
 import TrainingCertificates from "@/components/TrainingCertificates";
+import CookieBanner from "@/components/CookieBanner";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
         <Benefits />
       </main>
       <Footer />
+      <CookieBanner />
     </div>
   );
 };
