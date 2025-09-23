@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import Benefits from "@/components/Benefits";
 import Footer from "@/components/Footer";
 import TrainingCertificates from "@/components/TrainingCertificates";
+import ContactFormSection from "@/components/ContactFormSection";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         <ProjectProcess />
         <TrainingCertificates />
         <Benefits />
+        <ContactFormSection />
       </main>
       <Footer />
     </div>
