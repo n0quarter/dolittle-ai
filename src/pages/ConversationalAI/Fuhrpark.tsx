@@ -118,7 +118,7 @@ const Fuhrpark = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="px-8 py-4 text-lg">
-                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">
+                <a href="https://meetings.hubspot.com/areichert/dolittleai" target="_blank" rel="noopener noreferrer">
                   <Phone className="w-5 h-5 mr-2" />
                   Demo anfragen
                 </a>
@@ -437,7 +437,7 @@ const Fuhrpark = () => {
               Mehr Zeit für strategische Fuhrparksführung statt administrativer Tätigkeiten
             </p>
             <Button asChild size="lg" className="px-8 py-4 text-lg">
-              <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">
+              <a href="https://meetings.hubspot.com/areichert/dolittleai" target="_blank" rel="noopener noreferrer">
                 Kostenlose Beratung für Ihr Fuhrparkmanagement
               </a>
             </Button>
