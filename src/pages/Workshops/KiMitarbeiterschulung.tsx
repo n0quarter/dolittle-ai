@@ -58,7 +58,7 @@ const KiMitarbeiterschulung = () => {
                 Praxisnahe KI-Trainings für Vertrieb, Support, Personal und mehr.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Beratungstermin vereinbaren</a>
+                <a href="https://meetings.hubspot.com/areichert/dolittleai-workshop" target="_blank" rel="noopener noreferrer">Beratungstermin vereinbaren</a>
               </Button>
             </div>
           </section>

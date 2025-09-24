@@ -52,7 +52,7 @@ const Workshops = () => {
                 und praktische Lösungen für Ihr Unternehmen entwickeln.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Workshop anfragen</a>
+                <a href="https://meetings.hubspot.com/areichert/dolittleai-workshop" target="_blank" rel="noopener noreferrer">Workshop anfragen</a>
               </Button>
             </div>
           </section>
@@ -619,7 +619,7 @@ const Workshops = () => {
 
                 <div className="text-center">
                   <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                    <a href="https://meetings.hubspot.com/areichert" target="_blank" rel="noopener noreferrer">Developer Workshop anfragen</a>
+                    <a href="https://meetings.hubspot.com/areichert/dolittleai-workshop" target="_blank" rel="noopener noreferrer">Developer Workshop anfragen</a>
                   </Button>
                 </div>
               </div>
