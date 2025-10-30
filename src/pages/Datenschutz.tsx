@@ -21,7 +21,7 @@ const Datenschutz = () => {
               <p className="mb-2">Verantwortlich für die Datenverarbeitung im Rahmen dieser Website ist:</p>
               <div className="ml-4">
                 <p className="font-semibold">Dolittle AI GbR</p>
-                <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor.</p>
+                <p>Pfarrer-Birnkammer-Str. 24 e, 83059 Kolbermoor.</p>
                 <p>andreas@dolittle-ai.de</p>
               </div>
             </section>
