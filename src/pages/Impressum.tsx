@@ -12,7 +12,7 @@ const Impressum = () => {
           <div className="prose prose-lg max-w-none text-foreground">
             <div className="mb-8">
               <p className="text-lg font-semibold">Dolittle AI GbR</p>
-              <p>Pfarrer-Birnkammer-Str. 24 e, Kolbermoor.</p>
+              <p>Pfarrer-Birnkammer-Str. 24 e, 83059 Kolbermoor.</p>
               <p>andreas@dolittle-ai.de</p>
             </div>
 
